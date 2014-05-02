@@ -53,11 +53,6 @@
                 android:persistent = "false"
                 android:defaultValue = "true" />
 
-        <!-- Also vibrate for calls -->
-        <SwitchPreference
-                android:key="vibrate_when_ringing"
-                android:title="@string/vibrate_when_ringing_title" />
-
         <!-- Increasing ring -->
         <com.xtended.xtensions.preferences.SystemSettingSwitchPreference
                 android:key="increasing_ring"
@@ -76,6 +71,11 @@
                 android:title="@string/volume_steps_title"
                 android:fragment="com.android.settings.aoscp.sound.VolumeSteps" />
 
+        <!-- Also vibrate for calls -->
+        <SwitchPreference
+                android:key="vibrate_when_ringing"
+                android:title="@string/vibrate_when_ringing_title" />
+
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
                 android:key="zen_mode"
@@ -84,6 +84,12 @@
                 settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
                 android:fragment="com.android.settings.notification.ZenModeSettings"
                 settings:allowDividerAbove="true" />
+
+        <!-- Volume Steps -->
+        <Preference
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.nitrogen.VolumeSteps" />
 
         <!-- Phone ringtone -->
         <com.android.settings.DefaultRingtonePreference
