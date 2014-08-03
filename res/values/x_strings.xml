@@ -320,4 +320,8 @@
     <string name="gaming_mode_use_menu_overlay_title">Show menu overlay</string>
     <string name="gaming_mode_use_menu_overlay_summary">Show menu overlay when game is running. If this option is disabled, some game mode features will be disabled, such as Danmaku notifications</string>
 
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
 </resources>
