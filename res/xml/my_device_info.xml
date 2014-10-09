@@ -42,6 +42,14 @@
         android:summary="@string/xtended_about_info_summary_title"
         android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
 
+    <!-- Changelog -->
+    <Preference
+        android:key="changelog"
+        android:order="1"
+        android:title="@string/changelog_title"
+        android:summary="@string/changelog_summary"
+        android:fragment="com.android.settings.xtended.Changelog" />
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"

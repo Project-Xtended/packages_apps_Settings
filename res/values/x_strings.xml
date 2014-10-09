@@ -191,4 +191,9 @@
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
+    <!-- Changelog -->
+    <string name="changelog_title">Xtended Changelog</string>
+    <string name="changelog_summary">Manifested changes done since a week</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>
