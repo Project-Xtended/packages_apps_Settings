@@ -571,5 +571,7 @@
     <string name="theme_accent_picker_title">Accent Manager</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
     <string name="theme_accent_picker_default">Default</string>
+
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 	
 </resources>
