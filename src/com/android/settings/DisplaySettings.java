@@ -92,7 +92,7 @@ public class DisplaySettings extends DashboardFragment {
         final AmbientDisplayConfiguration ambientDisplayConfig = new AmbientDisplayConfiguration(context);
         controllers.add(new FontPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
-        controllers.add(new AutoRotatePreferenceController(context, lifecycle));
+        // controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new FontSizePreferenceController(context));
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));
