@@ -315,4 +315,9 @@
     <string name="stabilization_position_friction_title">Position friction</string>
     <string name="stabilization_velocity_amplitude_title">Velocity amplitude</string>
 
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
+
 </resources>
