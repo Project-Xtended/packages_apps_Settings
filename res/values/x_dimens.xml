@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020-2021 The Project-Xtended
+     Copyright (C) 2019-2020 The Project-Xtended
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,17 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    
-    <string-array name="config_ignored_backup_transports" translatable="false">
-        <item>com.android.localtransport/.LocalTransport</item>
-    </string-array>
-
-    <!-- Defines the location of the fingerprint sensor on the device
-         0 = back
-         1 = front
-         2 = left side
-         3 = right side
-    -->
-    <integer name="config_fingerprintSensorLocation">0</integer>
+<resources>
+    <!-- Fingerprint -->
+    <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
 </resources>
