@@ -112,14 +112,16 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
         mViewPager.setOnPageChangeListener(adapter);
         PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
 
-        // This should be set in the XML layout, but PagerTabStrip lives in
-        // support-v4 and doesn't have styleable attributes.
-        final TypedArray ta = tabs.getContext().obtainStyledAttributes(
-                new int[] { android.R.attr.colorAccent });
-        final int colorAccent = ta.getColor(0, 0);
-        ta.recycle();
+        // HACK - https://code.google.com/p/android/issues/detail?id=213359
+        ((ViewPager.LayoutParams)tabs.getLayoutParams()).isDecor = true;
 
-        tabs.setTabIndicatorColorResource(colorAccent);
+        Resources.Theme theme = tabs.getContext().getTheme();
+        TypedValue typedValue = new TypedValue();
+        theme.resolveAttribute(android.R.attr.colorAccent, typedValue, true);
+        final int colorAccent = typedValue.resourceId != 0
+                ? getContext().getColor(typedValue.resourceId)
+                : getContext().getColor(R.color.fingerprint_title_area_bg);
+        tabs.setTabIndicatorColor(colorAccent);
 
         // We have to do this now because PreferenceFrameLayout looks at it
         // only when the view is added.
