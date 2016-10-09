@@ -217,4 +217,8 @@
     <string name="lock_directly_show_pin">Directly show PIN entry</string>
     <string name="lock_directly_show_summary">Skip the swipe up to unlock screen when unlocking the device</string>
 
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
 </resources>
