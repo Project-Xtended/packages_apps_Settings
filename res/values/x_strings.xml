@@ -373,4 +373,8 @@
     <string name="screen_time_summary_usage_today">%1$s today</string>
     <string name="high_power_apps_summary">Per-app battery optimization</string>
 
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
 </resources>
