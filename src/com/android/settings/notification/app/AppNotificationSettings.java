@@ -27,6 +27,7 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
 
 import com.android.internal.widget.LockPatternUtils;
+import com.android.settings.notification.SoundTimeoutPreferenceController;
 import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 
@@ -41,7 +42,8 @@ public class AppNotificationSettings extends NotificationSettings {
     private static String KEY_ADVANCED_CATEGORY = "app_advanced";
     private static String KEY_BADGE = "badge";
     private static String KEY_APP_LINK = "app_link";
-    private static String[] LEGACY_NON_ADVANCED_KEYS = {KEY_BADGE, KEY_APP_LINK};
+    private static String KEY_SOUND_TIMEOUT = "sound_timeout";
+    private static String[] LEGACY_NON_ADVANCED_KEYS = {KEY_BADGE, KEY_APP_LINK, KEY_SOUND_TIMEOUT};
 
     @Override
     public int getMetricsCategory() {
@@ -107,6 +109,7 @@ public class AppNotificationSettings extends NotificationSettings {
         mControllers.add(new HeaderPreferenceController(context, this));
         mControllers.add(new BlockPreferenceController(context, mDependentFieldListener, mBackend));
         mControllers.add(new BadgePreferenceController(context, mBackend));
+        mControllers.add(new SoundTimeoutPreferenceController(context, mBackend));
         mControllers.add(new AllowSoundPreferenceController(
                 context, mDependentFieldListener, mBackend));
         mControllers.add(new ImportancePreferenceController(

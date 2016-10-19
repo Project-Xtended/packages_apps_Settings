@@ -88,6 +88,7 @@ public class NotificationBackend {
         row.userId = UserHandle.getUserId(row.uid);
         row.blockedChannelCount = getBlockedChannelCount(row.pkg, row.uid);
         row.channelCount = getChannelCount(row.pkg, row.uid);
+        row.soundTimeout = getNotificationSoundTimeout(row.pkg, row.uid);
         recordAggregatedUsageEvents(context, row);
         return row;
     }
@@ -541,6 +542,25 @@ public class NotificationBackend {
         }
     }
 
+    public long getNotificationSoundTimeout(String pkg, int uid) {
+        try {
+            return sINM.getNotificationSoundTimeout(pkg, uid);
+        } catch (Exception e) {
+            Log.w(TAG, "Error calling NoMan", e);
+            return 0;
+        }
+    }
+
+    public boolean setNotificationSoundTimeout(String pkg, int uid, long timeout) {
+        try {
+            sINM.setNotificationSoundTimeout(pkg, uid, timeout);
+            return true;
+        } catch (Exception e) {
+            Log.w(TAG, "Error calling NoMan", e);
+            return false;
+        }
+    }
+
     public ShortcutInfo getConversationInfo(Context context, String pkg, int uid, String id) {
         LauncherApps la = context.getSystemService(LauncherApps.class);
 
@@ -606,6 +626,7 @@ public class NotificationBackend {
         public int userId;
         public int blockedChannelCount;
         public int channelCount;
+        public long soundTimeout;
         public Map<String, NotificationsSentState> sentByChannel;
         public NotificationsSentState sentByApp;
     }
