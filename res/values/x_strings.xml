@@ -435,4 +435,8 @@
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
     <string name="ringtone2_title">Phone ringtone - SIM 2</string>
 
+    <!-- Whether the keyguard will directly show the lock entry -->
+    <string name="directly_show_lock">Direct unlock</string>
+    <string name="directly_show_lock_summary">Skip the swipe to unlock screen and immediately begin key entry</string>
+
 </resources>
