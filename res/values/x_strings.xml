@@ -246,4 +246,7 @@
     </plurals>
     <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
 
+    <!-- Running Services -->
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>

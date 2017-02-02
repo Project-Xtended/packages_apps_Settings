@@ -242,5 +242,5 @@ public class Settings extends SettingsActivity {
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
     // X-Tensions Additions.
     public static class XtensionsSettingsActivity extends SettingsActivity {}
-
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
