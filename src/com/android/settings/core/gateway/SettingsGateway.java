@@ -40,6 +40,7 @@ import com.android.settings.applications.DirectoryAccessDetails;
 import com.android.settings.applications.ManageDomainUrls;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
+import com.android.settings.applications.RunningServices;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
@@ -265,7 +266,8 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
 	    Xtensions.class.getName(),
-	    ScreenStabilization.class.getName()
+	    ScreenStabilization.class.getName(),
+            RunningServices.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -306,6 +308,6 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
 	    Settings.XtensionsActivity.class.getName(),
 	    Settings.ScreenStabilizationActivity.class.getName(),
-
+            Settings.DevRunningServicesActivity.class.getName(),
     };
 }

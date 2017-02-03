@@ -176,5 +176,5 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class XtensionsActivity extends SettingsActivity {}
     public static class ScreenStabilizationActivity extends SettingsActivity {}
-
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }    
 }
