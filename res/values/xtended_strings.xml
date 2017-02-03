@@ -254,4 +254,7 @@
     <string name="stabilization_position_friction_title">Position friction</string>
     <string name="stabilization_velocity_amplitude_title">Velocity amplitude</string>
 
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>
