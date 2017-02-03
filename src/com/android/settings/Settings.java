@@ -180,4 +180,5 @@ public class Settings extends SettingsActivity {
     // X-Tensions Additions.
     public static class XtensionsSettingsActivity extends SettingsActivity {}
     public static class GamingModeActivity extends SettingsActivity {}
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
