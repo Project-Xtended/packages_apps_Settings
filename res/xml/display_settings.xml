@@ -67,7 +67,6 @@
             android:defaultValue="15000" />
 
     </PreferenceCategory>
-
     <PreferenceCategory
         android:title="@string/category_name_appearance">
 
@@ -127,11 +126,16 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
 
-    <ListPreference
+        <ListPreference
             android:key="peak_refresh_rate"
             android:title="@string/max_refresh_rate_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
+
+        <SwitchPreference
+            android:key="pocket_judge"
+            android:title="@string/proximity_wake_title"
+            android:summary="@string/proximity_wake_summary" />
 
         <SwitchPreference
             android:key="show_operator_name"
