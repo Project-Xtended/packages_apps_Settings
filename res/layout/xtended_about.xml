@@ -25,4 +25,3 @@
            android:scaleType="centerInside"
            android:adjustViewBounds="true" />
 </LinearLayout>
-

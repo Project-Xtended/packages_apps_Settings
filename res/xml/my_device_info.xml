@@ -174,4 +174,11 @@
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
 
+    <!-- Clang version -->
+    <Preference
+        android:key="clang_version"
+        android:order="45"
+        android:title="@string/clang_version"
+        android:summary="@string/clang_version_default" />
+
 </PreferenceScreen>
