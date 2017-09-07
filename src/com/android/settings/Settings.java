@@ -436,6 +436,8 @@ public class Settings extends SettingsActivity {
      * Activity for MediaControlsSettings
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
+    // X-Tensions Additions.
+    public static class XtensionsSettingsActivity extends SettingsActivity {}
 
     /**
      * Activity for AppDashboard.
