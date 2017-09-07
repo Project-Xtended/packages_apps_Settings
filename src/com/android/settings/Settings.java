@@ -177,4 +177,7 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
+    // X-Tensions Additions.
+    public static class XtensionsSettingsActivity extends SettingsActivity {}
+
 }

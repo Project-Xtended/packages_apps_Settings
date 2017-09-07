@@ -18,6 +18,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Xtensions -->
+    <string name="x_settings_title">X-Tensions</string>
+    <string name="x_settings_summary">Our Customization Hub</string>
+
     <!-- Rom version -->
     <string name="rom_version_title">Xtended Version</string>
 
