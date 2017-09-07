@@ -22,6 +22,14 @@
     android:title="Settings">
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.xtended.Xtensions"
+        android:icon="@drawable/ic_settings_xtensions"
+        android:key="top_level_xtensions"
+        android:order="-155"
+        android:title="@string/x_settings_title"
+        android:summary="@string/x_settings_summary" />
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"
