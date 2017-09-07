@@ -98,6 +98,7 @@
     <color name="homepage_location_background">#2EC7DC</color>
     <color name="homepage_about_background">#6F86DA</color>
     <color name="homepage_privacy_background">#5E97F6</color>
+    <color name="homepage_xtensions_background">#0060FF</color>
 
     <color name="contextual_card_stroke_color">#1f000000</color>
     <color name="contextual_card_dismissal_background">@*android:color/material_grey_100</color>
@@ -170,4 +171,3 @@
     <color name="palette_list_dark_mode_color_purple">#c58af9</color> <!-- Material Purple 300 -->
 
 </resources>
-

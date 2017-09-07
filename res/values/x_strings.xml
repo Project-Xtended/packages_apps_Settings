@@ -40,6 +40,10 @@
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
+    <!-- Xtensions -->
+    <string name="x_settings_title">X-Tensions</string>
+    <string name="x_settings_summary">Our customization hub</string>
+
     <!-- ROM version -->
     <string name="about_device_name">Device</string>
     <string name="build_date">Build date</string>

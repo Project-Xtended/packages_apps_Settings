@@ -3444,5 +3444,18 @@
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- X-Tensions -->
+        <activity android:name=".Settings$XtensionsSettingsActivity"
+                  android:label="@string/x_settings_title"
+                  android:icon="@drawable/ic_homepage_xtensions"
+                  android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="31">
+                      <action android:name="android.intent.action.MAIN" />
+                      <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.xtended.Xtensions"/>
+        </activity>
     </application>
 </manifest>
