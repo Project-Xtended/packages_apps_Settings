@@ -24,8 +24,8 @@ import com.android.internal.hardware.AmbientDisplayConfiguration;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.gestures.DoubleTapScreenPreferenceController;
-import com.android.settings.gestures.PickupGesturePreferenceController;
+import com.android.settings.display.DozeAutoBrightnessPreferenceController;
+import com.android.settings.display.DozeCustomBrightnessPreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -53,9 +53,9 @@ public class AmbientDisplaySettings extends DashboardFragment {
         use(AmbientDisplayAlwaysOnPreferenceController.class)
             .setConfig(getConfig(context))
             .setCallback(this::updatePreferenceStates);
-        use(AmbientDisplayNotificationsPreferenceController.class).setConfig(getConfig(context));
-        use(DoubleTapScreenPreferenceController.class).setConfig(getConfig(context));
-        use(PickupGesturePreferenceController.class).setConfig(getConfig(context));
+        use(AmbientDisplayNotificationsPreferenceController.class).setConfig(getConfig(context));	
+	addPreferenceController(new DozeCustomBrightnessPreferenceController(context));
+	addPreferenceController(new DozeAutoBrightnessPreferenceController(context));
     }
 
     @Override

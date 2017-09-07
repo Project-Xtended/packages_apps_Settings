@@ -360,4 +360,9 @@
     <string name="incall_notifications_vibrate">Vibrate in-call notifications</string>
     <string name="incall_notifications_vibrate_summary">Vibrate instead of playing a sound for in-call notifications</string>
 
+    <!-- Ambient Display Brightness -->
+    <string name="ambient_doze_custom_brightness_title">Ambient Brightness</string>
+    <string name="ambient_doze_auto_brightness_title">Ambient auto brightness</string>
+    <string name="ambient_doze_auto_brightness_summary">Use last screen-on adaptive brightness value for Ambient Display</string>
+
 </resources>
