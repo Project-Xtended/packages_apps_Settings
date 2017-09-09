@@ -143,7 +143,7 @@ public class ChooseLockPatternSize extends PreferenceActivity {
 
         @Override
         public int getMetricsCategory() {
-            return MetricsProto.MetricsEvent.COLT;
+            return MetricsProto.MetricsEvent.XTENDED;
         }
     }
 }
