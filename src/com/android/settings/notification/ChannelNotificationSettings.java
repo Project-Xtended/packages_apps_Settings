@@ -55,6 +55,8 @@ import static android.app.NotificationManager.IMPORTANCE_UNSPECIFIED;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
+import static android.provider.Settings.System.NOTIFICATION_LIGHT_PULSE;
+
 public class ChannelNotificationSettings extends NotificationSettingsBase {
     private static final String TAG = "ChannelSettings";
 
