@@ -37,7 +37,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Switch;
 
-import com.nitrogen.settings.preferences.CustomSeekBarPreference;
+import com.xtended.xtensions.preferences.CustomSeekBarPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.RingtonePreference;
@@ -276,6 +276,10 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         });
         //light on time pref
         int lightOn = mChannel.getLightOnTime();
+        int defaultLightOn = getResources().getInteger(
+                com.android.internal.R.integer.config_defaultNotificationLedOn);
+        mLightOnTime.setDefaultValue(defaultLightOn);
+        lightOn = lightOn == 0 ? defaultLightOn : lightOn;
         mLightOnTime.setValue(lightOn);
         mLightOnTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
@@ -289,6 +293,10 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
         });
         //light off time pref
         int lightOff = mChannel.getLightOffTime();
+        int defaultLightOff = getResources().getInteger(
+                com.android.internal.R.integer.config_defaultNotificationLedOff);
+        mLightOffTime.setDefaultValue(defaultLightOff);
+        lightOff = lightOff == 0 ? defaultLightOff : lightOff;
         mLightOffTime.setValue(lightOff);
         mLightOffTime.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
