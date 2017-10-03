@@ -53,5 +53,9 @@
     <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
     <string name="dev2_description">Developer, ROM and Customizations </string>
 
+    <!-- Battery image -->
+    <string name="battery_image">Battery image</string>
+    <string name="battery_image_description">Show battery image in status bar</string>
+
 </resources>
 
