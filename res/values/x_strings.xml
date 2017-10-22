@@ -321,4 +321,8 @@
     <string name="battery_info_category_title">Battery Health</string>
     <string name="battery_usage_category_title">Battery Info</string>
 
+    <!-- Charging vibration -->
+    <string name="charging_sounds_nos_title">Charging sound</string>
+    <string name="charging_vibro_title">Charging vibration</string>
+
 </resources>
