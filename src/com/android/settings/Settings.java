@@ -186,6 +186,7 @@ public class Settings extends SettingsActivity {
     public static class ButtonSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ColorSettingsActivity extends SettingsActivity { /* empty */ }
 
+<<<<<<< HEAD
     // Top level categories for new IA
     public static class NetworkDashboardActivity extends SettingsActivity {}
     public static class ConnectedDeviceDashboardActivity extends SettingsActivity {}
@@ -193,6 +194,9 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
+
+    // Extensions
+    public static class ScreenStabilizationActivity extends SettingsActivity { /* empty */ }
 
     // Xtended Options
     public static class XtensionsActivity extends SettingsActivity {}

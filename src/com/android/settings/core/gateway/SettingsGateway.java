@@ -268,7 +268,8 @@ public class SettingsGateway {
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
             ButtonSettings.class.getName(),
-            ColorManagerFragment.class.getName()
+            ColorManagerFragment.class.getName(),
+            ScreenStabilization.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -311,6 +312,7 @@ public class SettingsGateway {
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
-            Settings.PulseSettingsActivity.class.getName()
+            Settings.PulseSettingsActivity.class.getName(),
+            Settings.ScreenStabilizationActivity.class.getName()
     };
 }

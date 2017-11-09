@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 AOSPA Extended
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+ 
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:key="stabilization"
+    android:fragment="com.android.settings.custom.ScreenStabilization"
+    android:layout="@layout/preference_stabilization"
+    android:title="@string/screen_stabilization_title">
+    
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	android:key="stabilization_enable"
+	android:title="@string/screen_stabilization_enable"
+	android:summary="@string/screen_stabilization_enable_summary"
+	android:defaultValue="false" />
+	
+    <ListPreference
+	android:key="stabilization_velocity_friction"
+	android:dialogTitle="@string/stabilization_velocity_friction_title"
+	android:title="@string/stabilization_velocity_friction_title"
+	android:entries="@array/stabilization_velocity_friction_entries"
+	android:entryValues="@array/stabilization_velocity_friction_entry_values"
+	android:dependency="stabilization_enable"
+	android:persistent="false" />
+
+    <ListPreference
+	android:key="stabilization_position_friction"
+	android:dialogTitle="@string/stabilization_position_friction_title"
+	android:title="@string/stabilization_position_friction_title"
+	android:entries="@array/stabilization_position_friction_entries"
+	android:entryValues="@array/stabilization_position_friction_values"
+	android:dependency="stabilization_enable"
+	android:persistent="false" />
+	
+    <ListPreference
+	android:key="stabilization_velocity_amplitude"
+	android:dialogTitle="@string/stabilization_velocity_amplitude_title"
+	android:title="@string/stabilization_velocity_amplitude_title"
+	android:entries="@array/stabilization_velocity_amplitude_entries"
+	android:entryValues="@array/stabilization_velocity_amplitude_values"
+	android:dependency="stabilization_enable"
+	android:persistent="false" />
+</PreferenceScreen>

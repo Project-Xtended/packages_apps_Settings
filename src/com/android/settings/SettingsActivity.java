@@ -64,6 +64,8 @@ import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
+import com.android.settings.custom.ScreenStabilization;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
