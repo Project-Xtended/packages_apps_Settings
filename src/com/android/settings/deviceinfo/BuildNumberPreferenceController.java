@@ -45,6 +45,7 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.development.DevelopmentSettingsEnabler;
+import java.util.Random;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
@@ -68,22 +69,19 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     private boolean mProcessingLastDevHit;
 
     public final static java.lang.String[] insults = {
-            "Hahaha, n00b!",
             "What are you doing??",
-            "n00b alert!",
             "What is this...? Amateur hour!?",
             "This is not Windows",
             "Please step away from the device!",
-            "error code: 1D10T",
             "Go outside",
             "¯\\_(ツ)_/¯",
             "Pro tip: Stop doing this!",
             "Y u no speak computer???",
-            "Why are you so stupid?!",
             "Perhaps this Android thing is not for you...",
             "Don't you have anything better to do?!",
             "This is why nobody likes you...",
             "Are you even trying?!",
+            "This is Android. Go back to your EyePhone",
             "Looks like you're evolving... Just backwards",
             "This won't make you look cooler to your friends",
             "Go back to your stock ROM",
