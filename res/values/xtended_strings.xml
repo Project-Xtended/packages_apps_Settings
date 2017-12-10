@@ -226,4 +226,15 @@
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 
+    <!-- Ambient Display Brightness --> 
+    <string name="ambient_doze_auto_brightness_title">Ambient auto brightness</string> 
+    <string name="ambient_doze_auto_brightness_summary">Use last screen-on adaptive brightness value for Ambient Display or Lift to Wake screen</string> 
+
+    <!-- Doze battery options --> 
+    <string name="ambient_display_show_battery_cat">Battery Status</string> 
+    <string name="ambient_display_show_battery_icon">Enable</string> 
+    <string name="ambient_display_show_battery_icon_summary">Show battery indicator during pulse</string> 
+    <string name="ambient_display_show_battery_percent">Percent</string> 
+    <string name="ambient_display_show_battery_percent_summary">Show battery percent during pulse</string> 
+
 </resources>

@@ -38,14 +38,33 @@
             android:fragment="com.android.settings.gestures.PickupGestureSettings" />
 
     </PreferenceCategory>
+    <PreferenceCategory 
+            android:key="ambient_display_battery_status" 
+            android:title="@string/ambient_display_show_battery_cat"> 
+ 
+        <com.xtended.xtensions.preferences.SystemSettingSwitchPreference 
+            android:key="ambient_display_show_battery" 
+            android:title="@string/ambient_display_show_battery_icon" 
+            android:summary="@string/ambient_display_show_battery_icon_summary" 
+            android:defaultValue="true"/> 
+ 
+        <com.xtended.xtensions.preferences.SystemSettingSwitchPreference 
+            android:key="ambient_display_show_battery_text" 
+            android:title="@string/ambient_display_show_battery_percent" 
+            android:summary="@string/ambient_display_show_battery_percent_summary" 
+            android:dependency="ambient_display_show_battery" 
+            android:defaultValue="true"/> 
+ 
+    </PreferenceCategory> 
 
-    <PreferenceCategory>
+    <SwitchPreference
+        android:key="ambient_doze_auto_brightness"
+        android:title="@string/ambient_doze_auto_brightness_title"
+        android:summary="@string/ambient_doze_auto_brightness_summary" />
 
-        <SwitchPreference
-            android:key="ambient_display_notification"
-            android:title="@string/doze_title"
-            android:summary="@string/doze_summary" />
-
-    </PreferenceCategory>
+    <SwitchPreference
+        android:key="ambient_display_notification"
+        android:title="@string/doze_title"
+        android:summary="@string/doze_summary" />
 
 </PreferenceScreen>
