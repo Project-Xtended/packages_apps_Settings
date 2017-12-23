@@ -136,6 +136,8 @@ import com.xtended.xtensions.fragments.FlingSettings;
 import com.xtended.xtensions.fragments.NavbarSettings;
 import com.xtended.xtensions.fragments.PulseSettings;
 import com.xtended.xtensions.fragments.SmartbarSettings;
+import com.xtended.xtensions.fragments.ButtonSettings;
+import com.xtended.xtensions.fragments.HeadsUpSettings;
 
 public class SettingsGateway {
 
@@ -263,7 +265,8 @@ public class SettingsGateway {
             NavbarSettings.class.getName(),
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
-            PulseSettings.class.getName()
+            PulseSettings.class.getName(),
+            ButtonSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
