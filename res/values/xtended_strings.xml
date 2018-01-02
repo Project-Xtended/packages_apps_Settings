@@ -103,6 +103,8 @@
     <string name="theme_dark_title_summary">Themes the system to dark grey</string>
     <!-- Color Manager: Device accent -->
     <string name="device_accent_title">Device Accent</string>
+    <string name="theme_black_title">Black</string>
+    <string name="theme_black_title_summary">Themes the system to black</string>
 
 </resources>
 
