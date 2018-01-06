@@ -38,6 +38,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_vertical"
         android:paddingStart="8dp"
+        android:textColor="@color/sim_color_picker_edit_text_color"
         style="?android:attr/textAppearanceMedium" />
 
 </LinearLayout>

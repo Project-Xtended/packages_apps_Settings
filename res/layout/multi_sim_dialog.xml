@@ -46,7 +46,8 @@
                 android:singleLine="true"
                 android:hint="@string/sim_name_hint"
                 android:inputType="textNoSuggestions"
-                android:maxLength="@integer/sim_name_length"
+		android:maxLength="@integer/sim_name_length"
+		android:textColor="@color/sim_color_picker_list_text_color"
                 android:paddingStart="8dp" />
 
         </LinearLayout>
@@ -87,7 +88,8 @@
                 style="@style/device_info_dialog_label"
                 android:text="@string/sim_editor_carrier" />
 
-            <TextView android:id="@+id/carrier"
+ 	    <TextView android:id="@+id/carrier"
+		android:textColor="@color/sim_color_picker_carrier_text_color"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,7 +117,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:singleLine="true"
-                android:paddingStart="8dp"
+		android:paddingStart="8dp"
+		android:textColor="@color/sim_color_picker_number_text_color"
                 style="@style/device_info_dialog_value" />
 
         </LinearLayout>
