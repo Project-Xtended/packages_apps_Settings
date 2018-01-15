@@ -94,6 +94,14 @@
         android:order="-140"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
+    <!-- Link ringtone and notification volumes -->
+    <com.xtended.support.preferences.SecureSettingSwitchPreference
+        android:key="volume_link_notification"
+        android:title="@string/volume_link_notification_title"
+        android:defaultValue="true"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
+
     <!-- Increasing ring -->
     <com.xtended.support.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
@@ -215,7 +223,6 @@
     <SwitchPreference
         android:key="vibrate_on_touch"
         android:title="@string/vibrate_on_touch_title"
-        android:summary="@string/vibrate_on_touch_summary"
         settings:keywords="@string/keywords_vibrate_on_touch"
         android:order="-25"/>
 
