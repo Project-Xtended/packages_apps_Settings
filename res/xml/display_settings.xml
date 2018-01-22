@@ -118,6 +118,11 @@
         android:title="@string/ambient_display_screen_title"
         android:fragment="com.android.settings.display.AmbientDisplaySettings" />
 
+    <Preference
+        android:key="gesture_swipe_fingerprint_to_dismiss_summary"
+        android:title="@string/fp_swipe_to_dismiss_notifications_title"
+        android:fragment="com.android.settings.gestures.SwipeToDismissSettings" />
+
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml
     <Preference
         android:key="ambient_display"

@@ -42,6 +42,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settings.gestures.SwipeToDismissPreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +55,7 @@ public class DisplaySettings extends DashboardFragment {
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_AMBIENT_DISPLAY = "ambient_display";
+    private static final String KEY_SWIPE_DISMISS = "gesture_swipe_fingerprint_to_dismiss_summary";
 
     @Override
     public int getMetricsCategory() {
@@ -104,6 +106,8 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new WallpaperPreferenceController(context));
         controllers.add(new ColorManagerPreferenceController(context));
         controllers.add(new BrightnessLevelPreferenceController(context, lifecycle));
+	controllers.add(new SwipeToDismissPreferenceController(context, lifecycle,
+                KEY_SWIPE_DISMISS));
         controllers.add(new ColorModePreferenceController(context));
         return controllers;
     }
