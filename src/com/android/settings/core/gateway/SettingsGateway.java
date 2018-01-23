@@ -138,6 +138,7 @@ import com.xtended.xtensions.fragments.PulseSettings;
 import com.xtended.xtensions.fragments.SmartbarSettings;
 import com.xtended.xtensions.fragments.ButtonSettings;
 import com.xtended.xtensions.fragments.HeadsUpSettings;
+import com.android.settings.aoscp.display.ColorManagerFragment;
 
 public class SettingsGateway {
 
@@ -266,7 +267,8 @@ public class SettingsGateway {
             FlingSettings.class.getName(),
             SmartbarSettings.class.getName(),
             PulseSettings.class.getName(),
-            ButtonSettings.class.getName()
+            ButtonSettings.class.getName(),
+            ColorManagerFragment.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
