@@ -69,6 +69,7 @@ import com.android.settings.search.Indexable;
 
 import org.codeaurora.internal.IExtTelephony;
 
+import java.lang.NoClassDefFoundError;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -137,7 +138,11 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         mSubscriptionManager = SubscriptionManager.from(getActivity());
         final TelephonyManager tm =
                 (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
-        mExtTelephony = IExtTelephony.Stub.asInterface(ServiceManager.getService("extphone"));
+        try {
+            mExtTelephony = IExtTelephony.Stub.asInterface(ServiceManager.getService("extphone"));
+        } catch (NoClassDefFoundError ex) {
+            // ignore, device does not compile telephony-ext.
+        }
 
         addPreferencesFromResource(R.xml.sim_settings);
        
