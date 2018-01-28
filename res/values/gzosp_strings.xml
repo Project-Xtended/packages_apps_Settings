@@ -20,7 +20,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Rom version -->
-    <string name="rom_version_title">GZOSP version</string>
+    <string name="rom_version_title">Xtended Version</string>
 
     <string name="show_dev_already_enabled">No Need, Development settings are enabled by default.</string>
 
@@ -41,6 +41,17 @@
     <string name="sub_activate_failed">Activation failed.</string>
     <string name="sub_deactivate_success">SIM deactivated.</string>
     <string name="sub_deactivate_failed">Deactivation failed.</string>
+
+    <!-- Dev Info -->
+    <string name="xtended_about_nfo">About Xtended</string>
+    <string name="xtended_about_info_summary_title">Know Us!</string>
+    <string name="xtended_info_summary">Xtended Project is a ROM based on GZOSP and we are trying to take the better to the level best in coming future.</string>
+    <string name="devs_header">Developers</string>
+    <string name="maintainers_header">Maintainers</string>
+    <string name="dev_1">MadhuSudhan Painoori aka Mady51</string>
+    <string name="dev1_description">Lead Developer, Kernel Developer</string>
+    <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
+    <string name="dev2_description">Developer, ROM and Customizations </string>
 
 </resources>
 

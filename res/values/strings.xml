@@ -9058,4 +9058,5 @@
 
     <!-- Note displayed when certain features are not available on low ram devices. [CHAR LIMIT=NONE] -->
     <string name="disabled_low_ram_device">This feature is not available on this device</string>
+    <string name="xtended_about_info">About Xtended</string>
 </resources>

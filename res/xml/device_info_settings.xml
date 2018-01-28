@@ -31,6 +31,13 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </Preference>
 
+        <!-- About Devs -->
+        <Preference
+                android:key="dev_info"
+                android:title="@string/xtended_about_info"
+                android:summary="@string/xtended_about_info_summary_title"
+                android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
+
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"

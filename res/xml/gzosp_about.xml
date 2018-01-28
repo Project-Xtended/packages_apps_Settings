@@ -23,7 +23,7 @@
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:adjustViewBounds="true"
-            android:src="@drawable/gzosp_about"
+            android:src="@drawable/xtended_about"
         />
 
 </LinearLayout>
