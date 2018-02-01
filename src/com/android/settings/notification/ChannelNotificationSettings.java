@@ -78,6 +78,8 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
     private EntityHeaderController mHeaderPref;
     private PreferenceGroup mAdvanced;
 
+    private int mLedColor = 0;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.NOTIFICATION_TOPIC_NOTIFICATION;
@@ -234,19 +236,34 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 mCustomLight.setEnabled(lights);
                 mLightOnTime.setEnabled(lights);
                 mLightOffTime.setEnabled(lights);
+                mLightOnZen.setEnabled(lights);
+                //enable NOTIFICATION_LIGHT_PULSE if the user wants to enable notification light for an app
+                //if he disables mLights, don't do anything (other apps may have it still enabled)
+                if (lights && Settings.System.getInt(mContext.getContentResolver(),
+                        NOTIFICATION_LIGHT_PULSE, 1) == 0) {
+                    Settings.System.putInt(mContext.getContentResolver(),
+                        NOTIFICATION_LIGHT_PULSE, 1);
+                }
+                showLedPreview();
+                if (!lights) {
+                    mNm.forcePulseLedLight(-1, -1, -1);
+                }
                 return true;
             }
         });
         //light color pref
-        int color = mChannel.getLightColor();
+        int defaultLightColor = getResources().getColor(com.android.internal.R.color.config_defaultNotificationColor);
+        mCustomLight.setDefaultColor(defaultLightColor);
+        mLedColor = (mChannel.getLightColor() != 0 ? mChannel.getLightColor() : defaultLightColor);
         mCustomLight.setAlphaSliderEnabled(true);
-        mCustomLight.setNewPreviewColor(color);
+        mCustomLight.setNewPreviewColor(mLedColor);
         mCustomLight.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
-                int color = ((Integer) newValue).intValue();
-                mChannel.setLightColor(color);
+                mLedColor = ((Integer) newValue).intValue();
+                mChannel.setLightColor(mLedColor);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
+                showLedPreview();
                 return true;
             }
         });
@@ -259,6 +276,7 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 int val = (Integer) newValue;
                 mChannel.setLightOnTime(val);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
+                showLedPreview();
                 return true;
             }
         });
@@ -271,9 +289,52 @@ public class ChannelNotificationSettings extends NotificationSettingsBase {
                 int val = (Integer) newValue;
                 mChannel.setLightOffTime(val);
                 mBackend.updateChannel(mPkg, mUid, mChannel);
+                showLedPreview();
                 return true;
             }
         });
+        //light on zen pref
+        mLightOnZen.setChecked(mChannel.shouldLightOnZen());
+        mLightOnZen.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                final boolean show = (Boolean) newValue;
+                mChannel.setLightOnZen(show);
+                mBackend.updateChannel(mPkg, mUid, mChannel);
+                return true;
+            }
+        });
+
+        showLedPreview();
+    }
+
+    private void showLedPreview() {
+        if (mChannel.shouldShowLights()) {
+            if (mLedColor == 0xFFFFFFFF) {
+                // i've no idea why atm but this is needed
+                mLedColor = 0xffffff;
+            }
+            mNm.forcePulseLedLight(
+                    mLedColor, mChannel.getLightOnTime(), mChannel.getLightOffTime());
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mNm.forcePulseLedLight(-1, -1, -1);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mNm.forcePulseLedLight(-1, -1, -1);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mNm.forcePulseLedLight(-1, -1, -1);
     }
 
     private void setupVibrate() {
