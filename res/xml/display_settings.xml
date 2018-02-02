@@ -21,11 +21,6 @@
     settings:keywords="@string/keywords_display">
 
     <Preference
-        android:key="daynight"
-        android:fragment="com.android.settings.display.DayNightSettings"
-        android:title="@string/daynight_title"/>
-
-    <Preference
         android:key="brightness"
         android:title="@string/brightness"
         settings:keywords="@string/keywords_display_brightness_level">
