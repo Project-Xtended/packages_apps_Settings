@@ -85,7 +85,7 @@
             android:title="@string/custom_light_title"
             settings:defaultColorValue="0x00FFFFFF" />
 
-        <com.nitrogen.settings.preferences.CustomSeekBarPreference
+        <com.xtended.xtensions.preferences.CustomSeekBarPreference
             android:key="custom_light_on_time"
             android:title="@string/custom_light_on_time_title"
             android:defaultValue="0"
@@ -95,7 +95,7 @@
             settings:interval="100"
             settings:units="" />
 
-        <com.nitrogen.settings.preferences.CustomSeekBarPreference
+        <com.xtended.xtensions.preferences.CustomSeekBarPreference
             android:key="custom_light_off_time"
             android:title="@string/custom_light_off_time_title"
             android:defaultValue="0"
