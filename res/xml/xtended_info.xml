@@ -49,12 +49,42 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </Preference>
 
         <Preference
+            android:title="@string/dev_3"
+            android:summary="@string/dev3_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=5678679" />
+        </Preference>
+
+        <Preference
             android:title="@string/dev_2"
             android:summary="@string/dev2_description"
             android:icon="@drawable/ic_devs_pc" >
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=8829870" />
+        </Preference>
+
+</PreferenceCategory>
+
+<PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/maintainers_header" >
+
+        <Preference
+            android:title="@string/hht_1"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+
+        <Preference
+            android:title="@string/hht_2"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+
+        <Preference
+            android:title="@string/hht_3"
+            android:icon="@drawable/ic_devs_phone" >
         </Preference>
 
 </PreferenceCategory>

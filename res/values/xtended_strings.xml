@@ -46,12 +46,18 @@
     <string name="xtended_about_nfo">About Xtended</string>
     <string name="xtended_about_info_summary_title">Know Us!</string>
     <string name="xtended_info_summary">Xtended Project is a ROM based on GZOSP and we are trying to take the better to the level best in coming future.</string>
-    <string name="devs_header">Developers</string>
-    <string name="maintainers_header">Maintainers</string>
+    <string name="devs_header">Core Dev Team</string>
+    <string name="maintainers_header">Helping Hands and Testers</string>
     <string name="dev_1">MadhuSudhan Painoori aka Mady51</string>
-    <string name="dev1_description">Lead Developer, Kernel Developer</string>
+    <string name="dev1_description">Kernel Developer, The OS Boot Manager</string>
     <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
-    <string name="dev2_description">Developer, ROM and Customizations </string>
+    <string name="dev2_description">Base Developer, The U-I Changer </string>
+    <string name="dev_3">Mukesh Singh aka mukesh22584</string>
+    <string name="dev3_description">Customizations Developer, The Cherry-Picker</string>
+    <string name="hht_1">Babloo aka Babloo289</string>
+    <string name="hht_2">Dhairya Chandarana aka Dhairya</string>
+    <string name="hht_3">Priyankar Sharma aka ps_minky16</string>
+    <string name="hht_4">All Others Who Tested and Shared Feedback in Testing Group</string>
 
     <!-- Battery image -->
     <string name="battery_image">Battery image</string>
