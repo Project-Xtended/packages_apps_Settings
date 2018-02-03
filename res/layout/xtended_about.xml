@@ -15,13 +15,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal" >
+    android:gravity="center" >
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/xtended_about"
-        />
-
+           android:layout_width="625dp"
+           android:layout_height="100dp"
+           android:src="@drawable/ic_xtended_about"
+           android:tint="?android:attr/colorAccent"
+           android:scaleType="centerInside"
+           android:adjustViewBounds="true" />
 </LinearLayout>

@@ -21,6 +21,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
               android:key="about"
               android:title="@string/xtended_about_info" >
 
+        <!-- Xtended About logo -->
+        <PreferenceScreen
+                android:key="xtended_about"
+                android:enabled="false"
+                android:layout="@layout/xtended_about" />
+
         <Preference
                android:summary="@string/xtended_info_summary" 
                android:icon="@drawable/ic_devs_info" >
@@ -48,7 +54,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_pc" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=4987653" />
+            android:data="https://forum.xda-developers.com/member.php?u=8829870" />
         </Preference>
 
 </PreferenceCategory>

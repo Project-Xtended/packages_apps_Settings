@@ -17,11 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-        <!-- GZOSP About logo -->
+        <!-- Xtended About logo -->
         <PreferenceScreen
-                android:key="gzosp_about"
+                android:key="xtended_about"
                 android:enabled="false"
-                android:layout="@layout/gzosp_about" />
+                android:layout="@layout/xtended_about" />
 
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
