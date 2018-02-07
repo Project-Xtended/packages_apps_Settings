@@ -191,4 +191,6 @@ public class Settings extends SettingsActivity {
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
+    // Xtended Options
+    public static class XtensionsActivity extends SettingsActivity {}
 }

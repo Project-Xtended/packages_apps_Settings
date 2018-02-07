@@ -87,5 +87,9 @@
 
     <string name="link_volume_option_title">Unlink Ring and Notification Volume</string>
 
+	<!-- Liquid Lounge -->
+    <string name="xtensions_title">Xtended Options</string>
+    <string name="xtensions_activity_summary">Our Xtensions of Features </string>
+
 </resources>
 
