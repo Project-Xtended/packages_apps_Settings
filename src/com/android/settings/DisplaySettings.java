@@ -73,7 +73,7 @@ public class DisplaySettings extends DashboardFragment {
 
     @Override
     protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-        return buildPreferenceControllers(context());
+        return buildPreferenceControllers(context, getLifecycle());
     }
 
     @Override
@@ -81,11 +81,11 @@ public class DisplaySettings extends DashboardFragment {
         return R.string.help_uri_display;
     }
 
-    private static List<AbstractPreferenceController> buildPreferenceControllers(Context 
-            context) {
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
-        controllers.add(new AutoRotatePreferenceController(context));
+        controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new FontSizePreferenceController(context));
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));
@@ -122,7 +122,8 @@ public class DisplaySettings extends DashboardFragment {
 
                 @Override
                 public List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-                    return buildPreferenceControllers(context);
+                    return buildPreferenceControllers(context, null);
                 }
             };
 }
+
