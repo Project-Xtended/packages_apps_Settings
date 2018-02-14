@@ -132,6 +132,10 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.xtended.xtensions.Xtensions;
+import com.xtended.xtensions.fragments.FlingSettings;
+import com.xtended.xtensions.fragments.NavbarSettings;
+import com.xtended.xtensions.fragments.PulseSettings;
+import com.xtended.xtensions.fragments.SmartbarSettings;
 
 public class SettingsGateway {
 
@@ -255,7 +259,11 @@ public class SettingsGateway {
             BluetoothDeviceDetailsFragment.class.getName(),
             DataUsageList.class.getName(),
             // Xtended Options
-            Xtensions.class.getName()
+            Xtensions.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -295,5 +303,9 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             // Xtended Options
             Settings.XtensionsActivity.class.getName(),
+            Settings.NavigationSettingsActivity.class.getName(),
+            Settings.FlingSettingsActivity.class.getName(),
+            Settings.SmartbarSettingsActivity.class.getName(),
+            Settings.PulseSettingsActivity.class.getName()
     };
 }
