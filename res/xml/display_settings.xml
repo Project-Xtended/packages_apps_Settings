@@ -66,12 +66,6 @@
         android:title="@string/display_rotation_title" />
 
     <Preference
-        android:key="color_manager"
-        android:title="@string/color_manager_title"
-        android:summary="@string/color_manager_summary"
-        android:fragment="com.android.settings.aoscp.display.ColorManagerFragment" />
-
-    <Preference
         android:key="color_mode"
         android:title="@string/color_mode_title"
         android:fragment="com.android.settings.display.ColorModePreferenceFragment"
@@ -103,11 +97,6 @@
         android:key="density"
         android:title="@string/developer_smallest_width" />
 
-    <com.android.settings.display.FontDialogPreference
-        android:key="custom_font"
-        android:title="@string/font_picker_title"
-        android:persistent="false" />
-
     <Preference
         android:key="screensaver"
         android:title="@string/screensaver_settings_title"
@@ -122,6 +111,24 @@
         android:key="gesture_swipe_fingerprint_to_dismiss_summary"
         android:title="@string/fp_swipe_to_dismiss_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToDismissSettings" />
+
+    <PreferenceCategory
+        android:title="@string/theme_category_title">
+    <Preference
+        android:key="color_manager"
+        android:title="@string/color_manager_title"
+        android:summary="@string/color_manager_summary"
+        android:fragment="com.android.settings.aoscp.display.ColorManagerFragment" />
+
+    <Preference
+        android:key="accent_picker"
+        android:title="@string/theme_accent_picker_title" />
+
+    <com.android.settings.display.FontDialogPreference
+        android:key="custom_font"
+        android:title="@string/font_picker_title"
+        android:persistent="false" />
+    </PreferenceCategory>
 
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml
     <Preference
@@ -154,10 +161,5 @@
         android:key="tap_to_wake"
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" /> -->
-
-    <Preference
-        android:key="vr_display_pref"
-        android:title="@string/display_vr_pref_title"
-        android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
 </PreferenceScreen>

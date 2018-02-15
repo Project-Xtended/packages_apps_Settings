@@ -28,6 +28,7 @@ import com.android.internal.hardware.AmbientDisplayConfiguration;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.aoscp.display.ColorManagerPreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.display.AccentPickerPreferenceController;
 import com.android.settings.display.AmbientDisplayPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.AutoRotatePreferenceController;
@@ -132,6 +133,7 @@ public class DisplaySettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final AmbientDisplayConfiguration ambientDisplayConfig = new AmbientDisplayConfiguration(context);
         controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
+        controllers.add(new AccentPickerPreferenceController(context, lifecycle, fragment));
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         // controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new FontSizePreferenceController(context));

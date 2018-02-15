@@ -269,9 +269,6 @@
     <string name="security_settings_fingerprint_sensor_location_left">left side</string>
     <string name="security_settings_fingerprint_sensor_location_right">right side</string>
 
-    <string name="theme_applied_toast">Theme applied.</string>
-    <string name="applying_theme_toast">Applying theme, please wait...</string>
-
     <!-- Charging vibration -->
     <string name="charging_vibro_title">Charging vibration</string>
 
@@ -559,5 +556,19 @@
     <!-- Connected AP Signal Preference -->
     <string name="connected_signal_pref_title">Signal strength: %1$s</string>
     <string name="connected_signal_pref_summary">Tap for more info</string>
+
+    <!-- SystemUI Theme -->
+    <string name="theme_category_title">Themeing Menus</string>
+    <string name="system_theme_style_title">UI style</string>
+    <string name="system_theme_style_auto">Wallpaper based</string>
+    <string name="system_theme_style_light">Light UI</string>
+    <string name="system_theme_style_dark">Dark UI</string>
+    <string name="system_theme_style_black">Black UI</string>
+    <string name="theme_applied_toast">Theme applied successfully!</string>
+    <string name="applying_theme_toast">UI style applied!</string>
+    <string name="accent_picker_dialog_title">Select an accent color</string>
+    <string name="theme_accent_picker_title">Accent Manager</string>
+    <string name="theme_accent_picker_summary">Select system theme accent color</string>
+    <string name="theme_accent_picker_default">Default</string>
 	
 </resources>

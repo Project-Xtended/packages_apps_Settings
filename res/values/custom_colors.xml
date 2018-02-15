@@ -26,4 +26,8 @@
     <color name="ic_signal_meter_fair">#FF9800</color>
     <color name="ic_signal_meter_good_excellent">#4CAF50</color>
 
+    <!-- Accent picker -->
+    <color name="accent_picker_white_accent">@android:color/white</color>
+    <color name="accent_picker_dark_accent">@android:color/black</color>
+
 </resources>
