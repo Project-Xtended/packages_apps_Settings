@@ -124,6 +124,11 @@
           android:key="charging_sounds"
           android:title="@string/charging_sounds_title" />
 
+        <!-- Charging vibration -->
+        <SwitchPreference
+          android:key="charging_vibro"
+          android:title="@string/charging_vibro_title" />
+
         <!-- Docking sounds -->
         <SwitchPreference
           android:key="docking_sounds"
