@@ -78,6 +78,13 @@
         android:order="-140"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
+    <com.msm.xtended.preferences.SystemSettingSwitchPreference
+        android:key="incall_notifications_vibrate"
+        android:title="@string/incall_notifications_vibrate"
+        android:summary="@string/incall_notifications_vibrate_summary"
+        android:order="-139"
+        android:defaultValue="false" />
+
     <!-- Increasing ring -->
     <com.msm.xtended.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"

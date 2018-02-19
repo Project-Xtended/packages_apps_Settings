@@ -356,4 +356,8 @@
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
     <string name="less_notification_sounds_5m">Every 5 minutes</string>
 
+    <!-- Less annoying in call notifications -->
+    <string name="incall_notifications_vibrate">Vibrate in-call notifications</string>
+    <string name="incall_notifications_vibrate_summary">Vibrate instead of playing a sound for in-call notifications</string>
+
 </resources>
