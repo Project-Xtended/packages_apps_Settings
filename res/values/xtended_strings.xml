@@ -543,5 +543,12 @@
     <string name="sp_profile_entries_off">Off</string>
     <string name="sp_profile_entries_no_override">No override</string>
     <string name="profile_select">Select profile</string>
+
+
+    <!-- Default USB configuration -->
+    <string name="select_default_usb_configuration_title">Select default USB configuration</string>
+    <string name="select_default_usb_configuration_dialog_title">Select USB Configuration</string>
+    <string name="default_usb_configuration" translatable="false" >default</string>
+    <string name="select_usb_default_confguration_warning">WARNING: Default USB configuration is enabled also when device is locked!\n\nDo you really want to enable this configuration?</string>
 	
 </resources>
