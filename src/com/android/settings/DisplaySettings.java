@@ -27,9 +27,6 @@ import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.AutoRotatePreferenceController;
 import com.android.settings.display.BrightnessLevelPreferenceController;
 import com.android.settings.display.ColorModePreferenceController;
-import com.android.settings.display.DozePreferenceController;
-import com.android.settings.display.DozeAutoBrightnessPreferenceController;
-import com.android.settings.display.DozeCustomBrightnessPreferenceController;
 import com.android.settings.display.FontSizePreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
@@ -90,8 +87,6 @@ public class DisplaySettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         controllers.add(new AutoRotatePreferenceController(context, lifecycle));
-        controllers.add(new DozeCustomBrightnessPreferenceController(context));
-        controllers.add(new DozeAutoBrightnessPreferenceController(context));
         controllers.add(new FontSizePreferenceController(context));
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));

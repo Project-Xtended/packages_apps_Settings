@@ -221,9 +221,4 @@
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 
-    <!-- Ambient Display Brightness -->
-    <string name="ambient_doze_custom_brightness_title">Ambient and LiftToWake brightness</string>
-    <string name="ambient_doze_auto_brightness_title">Ambient and LiftToWake auto brightness</string>
-    <string name="ambient_doze_auto_brightness_summary">Use last screen-on adaptive brightness value for Ambient Display or Lift to Wake screen</string>
-
 </resources>
