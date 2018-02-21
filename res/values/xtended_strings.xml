@@ -211,4 +211,10 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
 
+    <!-- Pass swipe-up-to-unlock -->
+    <string name="lock_directly_show_password">Directly show password entry</string>
+    <string name="lock_directly_show_pattern">Directly show pattern view</string>
+    <string name="lock_directly_show_pin">Directly show PIN entry</string>
+    <string name="lock_directly_show_summary">Skip the swipe up to unlock screen when unlocking the device</string>
+
 </resources>
