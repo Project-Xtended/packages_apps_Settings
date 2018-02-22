@@ -240,4 +240,5 @@
     <string name="privacy_guard_advanced_settings_title">Advanced</string>
     <string name="privacy_guard_notification_title">Show notification</string>
 
+    <string name="security_privacy_settings_title">Security &amp; privacy</string>
 </resources>

@@ -607,4 +607,6 @@
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
+    <string name="security_privacy_settings_title">Security &amp; privacy</string>
+
 </resources>
