@@ -13,7 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
@@ -60,7 +59,7 @@
                 android:title="@string/vibrate_when_ringing_title" />
 
         <!-- Increasing ring -->
-        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        <com.xtended.xtensions.preferences.SystemSettingSwitchPreference
                 android:key="increasing_ring"
                 android:defaultValue="false"
                 android:title="@string/increasing_ring_volume_option_title" />
