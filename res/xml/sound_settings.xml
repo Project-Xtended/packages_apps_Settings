@@ -85,12 +85,6 @@
                 android:fragment="com.android.settings.notification.ZenModeSettings"
                 settings:allowDividerAbove="true" />
 
-        <!-- Volume Steps -->
-        <Preference
-                android:key="volume_steps"
-                android:title="@string/volume_steps_title"
-                android:fragment="com.android.settings.nitrogen.VolumeSteps" />
-
         <!-- Phone ringtone -->
         <com.android.settings.DefaultRingtonePreference
             android:key="ringtone"
