@@ -23,6 +23,7 @@ import com.android.internal.hardware.AmbientDisplayConfiguration;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.aoscp.display.ColorManagerPreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.display.AmbientDisplayPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.AutoRotatePreferenceController;
 import com.android.settings.display.BrightnessLevelPreferenceController;
@@ -50,6 +51,7 @@ public class DisplaySettings extends DashboardFragment {
     public static final String KEY_DISPLAY_SIZE = "screen_zoom";
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
+    private static final String KEY_AMBIENT_DISPLAY = "ambient_display";
 
     @Override
     public int getMetricsCategory() {
@@ -85,6 +87,7 @@ public class DisplaySettings extends DashboardFragment {
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        final AmbientDisplayConfiguration ambientDisplayConfig = new AmbientDisplayConfiguration(context);
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new FontSizePreferenceController(context));
@@ -92,6 +95,8 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new NightModePreferenceController(context));
         controllers.add(new ScreenSaverPreferenceController(context));
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
+        controllers.add(new AmbientDisplayPreferenceController(context, ambientDisplayConfig,
+                KEY_AMBIENT_DISPLAY));
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new WallpaperPreferenceController(context));
         controllers.add(new ColorManagerPreferenceController(context));

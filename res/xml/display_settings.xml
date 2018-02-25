@@ -96,6 +96,11 @@
         android:title="@string/screensaver_settings_title"
         android:fragment="com.android.settings.dream.DreamSettings" />
 
+    <Preference
+        android:key="ambient_display"
+        android:title="@string/ambient_display_screen_title"
+        android:fragment="com.android.settings.display.AmbientDisplaySettings" />
+
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml
     <Preference
         android:key="ambient_display"
