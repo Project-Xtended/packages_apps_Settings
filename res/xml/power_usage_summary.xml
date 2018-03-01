@@ -74,6 +74,13 @@
             android:entries="@array/screen_timeout_entries"
             android:entryValues="@array/screen_timeout_values"/>
 
+        <ListPreference
+            android:key="alert_on_charged_level"
+            android:title="@string/alert_on_charged_level_title"
+            android:summary="@string/alert_on_charged_level_summary"
+            android:entries="@array/alert_on_charged_entries"
+            android:entryValues="@array/alert_on_charged_level_values" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
