@@ -274,4 +274,7 @@
     <string name="ambient_display_bottom_info_battery">Battery percent</string>
     <string name="ambient_display_bottom_info_weather">Brief weather info</string>
 
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+
 </resources>
