@@ -24,7 +24,6 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.aoscp.display.ColorManagerPreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.AmbientDisplayPreferenceController;
-import com.android.settings.display.AmbientDisplayCustomPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
 import com.android.settings.display.AutoRotatePreferenceController;
 import com.android.settings.display.BrightnessLevelPreferenceController;
@@ -95,7 +94,6 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));
         controllers.add(new ScreenSaverPreferenceController(context));
-        controllers.add(new AmbientDisplayCustomPreferenceController(context));
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new AmbientDisplayPreferenceController(context, ambientDisplayConfig,
                 KEY_AMBIENT_DISPLAY));
