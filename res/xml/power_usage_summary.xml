@@ -59,13 +59,6 @@
             android:title="@string/battery_percentage"
             android:summary="@string/battery_percentage_description"/>
 
-        <!-- Cross-listed item, if you change this, also change it in display_settings.xml -->
-        <SwitchPreference
-            android:key="auto_brightness_battery"
-            android:title="@string/auto_brightness_title"
-            android:summary="@string/auto_brightness_summary"
-            settings:keywords="@string/keywords_display_auto_brightness"/>
-
         <ListPreference
             android:key="alert_on_charged_level"
             android:title="@string/alert_on_charged_level_title"
