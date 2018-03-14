@@ -57,6 +57,7 @@ import com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFrag
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.PreviouslyConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.usb.UsbDetailsFragment;
+import com.android.settings.custom.ScreenStabilization;
 import com.android.settings.datausage.DataUsageList;
 import com.android.settings.datausage.DataUsageSummary;
 import com.android.settings.datausage.DataUsageSummaryLegacy;
@@ -263,7 +264,8 @@ public class SettingsGateway {
             DirectoryAccessDetails.class.getName(),
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
-	    Xtensions.class.getName()
+	    Xtensions.class.getName(),
+	    ScreenStabilization.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -303,5 +305,7 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
 	    Settings.XtensionsActivity.class.getName(),
+	    Settings.ScreenStabilizationActivity.class.getName(),
+
     };
 }

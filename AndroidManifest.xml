@@ -1027,6 +1027,28 @@
                 android:value="true" />
         </activity>
 
+        <activity android:name="Settings$ScreenStabilizationActivity"
+                android:label="@string/screen_stabilization_title"
+                android:icon="@drawable/ic_screen_stabilization"
+                android:taskAffinity=""
+                android:parentActivityName="Settings$UIActivity">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.SCREEN_STABILIZATION" />
+                <action android:name="android.settings.SCREEN_STABILIZATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.DEFAULT" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.custom.ScreenStabilization" />
+        </activity>
+
         <activity
             android:name="Settings$ManageApplicationsActivity"
             android:label="@string/applications_settings"
