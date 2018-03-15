@@ -79,7 +79,7 @@
     <Preference
 	android:key="screen_stabilization"
 	android:title="@string/screen_stabilization_title"
-	android:layout="@layout/preference_stabilization"
+	android:summary="@string/screen_stabilization_summary"
 	android:fragment="com.android.settings.custom.ScreenStabilization" />
 
     <Preference
