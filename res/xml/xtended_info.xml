@@ -65,11 +65,60 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:data="https://forum.xda-developers.com/member.php?u=8829870" />
         </Preference>
 
+        <Preference
+            android:title="@string/dev_4"
+            android:summary="@string/dev4_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=7107153" />
+        </Preference>
+
+        <Preference
+            android:title="@string/dev_5"
+            android:summary="@string/dev5_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=7077053" />
+        </Preference>
+
 </PreferenceCategory>
 
 <PreferenceCategory
             android:key="xtended_dev"
-            android:title="@string/maintainers_header" >
+            android:title="@string/thanks_header" >
+
+        <Preference
+            android:title="@string/spt_1"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+
+        <Preference
+            android:title="@string/spt_2"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+
+        <Preference
+            android:title="@string/spt_3"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+
+        <Preference
+            android:title="@string/spt_4"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+
+        <Preference
+            android:title="@string/spt_5"
+            android:icon="@drawable/ic_devs_phone" >
+        </Preference>
+		
+</PreferenceCategory>
+
+<PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/testing_header" >
 
         <Preference
             android:title="@string/hht_1"
