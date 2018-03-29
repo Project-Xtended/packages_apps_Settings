@@ -57,28 +57,23 @@
     </PreferenceCategory>
     <PreferenceCategory 
             android:key="ambient_display_battery_status" 
-            android:title="@string/ambient_display_show_battery_cat"> 
- 
-        <com.xtended.xtensions.preferences.SystemSettingSwitchPreference 
-            android:key="ambient_display_show_battery" 
-            android:dependency="ambient_display_always_on"
-            android:title="@string/ambient_display_show_battery_icon" 
-            android:summary="@string/ambient_display_show_battery_icon_summary" 
-            android:defaultValue="true"/> 
- 
-        <com.xtended.xtensions.preferences.SystemSettingSwitchPreference 
-            android:key="ambient_display_show_battery_text" 
-            android:title="@string/ambient_display_show_battery_percent" 
-            android:summary="@string/ambient_display_show_battery_percent_summary" 
-            android:dependency="ambient_display_show_battery" 
-            android:defaultValue="true"/> 
- 
-    </PreferenceCategory> 
+	    android:title="@string/ambient_display_show_battery_cat"> 
 
     <SwitchPreference
         android:key="ambient_doze_auto_brightness"
         android:dependency="ambient_display_always_on"
         android:title="@string/ambient_doze_auto_brightness_title"
         android:summary="@string/ambient_doze_auto_brightness_summary" />
+
+    <com.xtended.xtensions.preferences.SystemSettingIntListPreference
+        android:key="ambient_bottom_display"
+        android:dependency="ambient_display_always_on"
+        android:entries="@array/ambient_display_bottom_info_entries"
+        android:entryValues="@array/ambient_display_bottom_info_values"
+        android:title="@string/ambient_display_bottom_info_title"
+        android:summary="%s"
+        android:defaultValue="0" />
+
+    </PreferenceCategory> 
 
 </PreferenceScreen>
