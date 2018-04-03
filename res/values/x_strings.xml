@@ -28,6 +28,9 @@
     <!-- Device Codename -->
     <string name="about_device_name">Device Codename</string>
 
+    <!-- Xtended maintainer -->
+    <string name="maintainer">Maintainer</string>
+
     <!-- Dev Info -->
     <string name="xtended_about_nfo">About Xtended</string>
     <string name="xtended_about_info_summary_title">Know Us!</string>
