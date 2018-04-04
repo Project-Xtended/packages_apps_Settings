@@ -16,6 +16,7 @@
 
 package com.android.settings;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.provider.SearchIndexableResource;
 
@@ -77,7 +78,7 @@ public class DisplaySettings extends DashboardFragment {
 
     @Override
     protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-        return buildPreferenceControllers(context, getLifecycle());
+        return buildPreferenceControllers(context, getLifecycle(), this);
     }
 
     @Override
@@ -86,7 +87,7 @@ public class DisplaySettings extends DashboardFragment {
     }
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(
-            Context context, Lifecycle lifecycle) {
+            Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final AmbientDisplayConfiguration ambientDisplayConfig = new AmbientDisplayConfiguration(context);
         controllers.add(new FontPickerPreferenceController(context, lifecycle, fragment));
@@ -130,7 +131,7 @@ public class DisplaySettings extends DashboardFragment {
 
                 @Override
                 public List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-                    return buildPreferenceControllers(context, null);
+                    return buildPreferenceControllers(context, null, null);
                 }
             };
 }

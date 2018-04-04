@@ -28,7 +28,6 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
-import com.dirtyunicorns.tweaks.fragments.AccentPicker;
 
 import android.app.Fragment;
 import android.content.Context;
