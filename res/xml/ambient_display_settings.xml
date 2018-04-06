@@ -31,15 +31,6 @@
             android:targetClass="com.custom.ambient.display.DozeSettings" />
     </Preference>
 
-    <Preference
-        android:key="ambient_display_lineage"
-        android:title="@string/ambient_display_screen_title" >
-        <intent
-            android:action="com.android.settings.action.EXTRA_SETTINGS"
-            android:targetPackage="org.lineageos.settings.doze"
-            android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity" />
-    </Preference>
-
     <SwitchPreference
         android:key="ambient_display_always_on"
         android:title="@string/doze_always_on_title"
