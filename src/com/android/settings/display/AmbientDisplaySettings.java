@@ -32,6 +32,8 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
+import com.android.settings.development.DevelopmentSettings;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +48,11 @@ public class AmbientDisplaySettings extends DashboardFragment {
     private static final String KEY_AMBIENT_DISPLAY_ALWAYS_ON = "ambient_display_always_on";
     private static final String KEY_AMBIENT_DISPLAY_NOTIFICATION = "ambient_display_notification";
     private static final String KEY_AMBIENT_DOZE_AUTO_BRIGHTNESS = "ambient_doze_auto_brightness";
+
+    private static final String KEY_OP_DOZE = "ambient_display_custom";
+    private static final String KEY_OP_DOZE_PACKAGE_NAME = "com.custom.ambient.display";
+    private static final String KEY_LOS_DOZE = "ambient_display_lineage";
+    private static final String KEY_LOS_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
             Lifecycle lifecycle, AmbientDisplayConfiguration config,
@@ -71,6 +78,15 @@ public class AmbientDisplaySettings extends DashboardFragment {
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.ambient_display_settings;
+        // OneplusThree Doze
+        if (!DevelopmentSettings.isPackageInstalled(getActivity(), KEY_OP_DOZE_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_OP_DOZE));
+        }
+
+        // LineageOS Doze
+        if (!DevelopmentSettings.isPackageInstalled(getActivity(), KEY_LOS_DOZE_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_LOS_DOZE));
+        }
     }
 
     @Override
