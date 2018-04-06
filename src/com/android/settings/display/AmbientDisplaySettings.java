@@ -32,6 +32,7 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
+import android.preference.Preference;
 import com.android.settings.development.DevelopmentSettings;
 
 import java.util.ArrayList;
