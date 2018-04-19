@@ -141,6 +141,7 @@ import com.xtended.xtensions.fragments.SmartbarSettings;
 import com.xtended.xtensions.fragments.ButtonSettings;
 import com.xtended.xtensions.fragments.HeadsUpSettings;
 import com.android.settings.aoscp.display.ColorManagerFragment;
+import com.xtended.xtensions.service.EventServiceSettings;
 
 public class SettingsGateway {
 
@@ -272,7 +273,8 @@ public class SettingsGateway {
             ButtonSettings.class.getName(),
             ColorManagerFragment.class.getName(),
             ScreenStabilization.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            EventServiceSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -317,6 +319,7 @@ public class SettingsGateway {
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.PulseSettingsActivity.class.getName(),
             Settings.ScreenStabilizationActivity.class.getName(),
-            Settings.DevRunningServicesActivity.class.getName()
+            Settings.DevRunningServicesActivity.class.getName(),
+            Settings.EventServiceSettingsActivity.class.getName()
     };
 }
