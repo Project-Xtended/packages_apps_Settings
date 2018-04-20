@@ -16,13 +16,20 @@
 
 package com.android.settings;
 
+import android.content.Intent;
+import android.nfc.NfcAdapter;
+import android.nfc.Tag;
 import android.util.Log;
+
+import com.android.settings.aospextended.profiles.NFCProfileTagCallback;
 
 /**
  * Stub class for showing sub-settings; we can't use the main Settings class
  * since for our app it is a special singleTask class.
  */
 public class SubSettings extends SettingsActivity {
+
+    private NFCProfileTagCallback mNfcProfileCallback;
 
     @Override
     public boolean onNavigateUp() {
@@ -34,5 +41,21 @@ public class SubSettings extends SettingsActivity {
     protected boolean isValidFragment(String fragmentName) {
         Log.d("SubSettings", "Launching fragment " + fragmentName);
         return true;
+    }
+
+    public void setNfcProfileCallback(NFCProfileTagCallback callback) {
+        mNfcProfileCallback = callback;
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
+            Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+            if (mNfcProfileCallback != null) {
+                mNfcProfileCallback.onTagRead(detectedTag);
+            }
+            return;
+        }
+        super.onNewIntent(intent);
     }
 }

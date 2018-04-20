@@ -115,7 +115,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     // show Back and Next buttons? takes boolean parameter
     // Back will then return RESULT_CANCELED and Next RESULT_OK
-    protected static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
+    public static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
 
     // add a Skip button?
     private static final String EXTRA_PREFS_SHOW_SKIP = "extra_prefs_show_skip";

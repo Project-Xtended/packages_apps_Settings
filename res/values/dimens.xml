@@ -308,4 +308,6 @@
     <dimen name="suggestion_condition_header_padding_expanded">5dp</dimen>
 
     <dimen name="icon_space_reserved_padding">24dp</dimen>
+
+    <dimen name="profile_instruction_padding">8dp</dimen>
 </resources>

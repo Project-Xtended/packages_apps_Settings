@@ -595,6 +595,9 @@ public final class Utils extends com.android.settingslib.Utils {
             boolean isShortcut, int sourceMetricsCategory) {
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.setClass(context, SubSettings.class);
+        if(args!=null && args.containsKey(SettingsActivity.EXTRA_PREFS_SHOW_BUTTON_BAR)){
+            intent.putExtra(SettingsActivity.EXTRA_PREFS_SHOW_BUTTON_BAR, args.getBoolean(SettingsActivity.EXTRA_PREFS_SHOW_BUTTON_BAR, false));
+        }
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT, fragmentName);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE_RES_PACKAGE_NAME,
