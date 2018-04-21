@@ -15,6 +15,10 @@
 <resources>
     <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
 
+    <style name="SecurityDialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:windowBackground">@drawable/security_dialog_corners</item>
+    </style>
+
     <style name="LockPatternSizeHeaderStyle" parent="android:style/TextAppearance.Material.Subhead">
         <item name="android:paddingTop">16dp</item>
         <item name="android:textColor">@color/primary_dark_material_light</item>
