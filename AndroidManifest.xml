@@ -3127,7 +3127,7 @@
         <activity android:name=".Settings$AppAndNotificationDashboardActivity"
                   android:label="@string/app_and_notification_dashboard_title"
                   android:icon="@drawable/ic_apps">
-            <intent-filter android:priority="12">
+            <intent-filter android:priority="11">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
@@ -3195,7 +3195,7 @@
 	<activity android:name=".Settings$XtensionsActivity"
                   android:label="@string/xtensions_title"
                   android:icon="@drawable/ic_settings">
-            <intent-filter android:priority="11">
+            <intent-filter android:priority="12">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"

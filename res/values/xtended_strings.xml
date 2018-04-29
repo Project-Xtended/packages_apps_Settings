@@ -555,5 +555,9 @@
     <string name="usb_paranoia_connect_title">USB secure connect</string>
     <string name="usb_paranoia_connect_summary">Only enable charging and disable ADB when USB plugged on secure lock screens</string>
     <string name="usb_category_title">USB</string>
+
+    <!-- Connected AP Signal Preference -->
+    <string name="connected_signal_pref_title">Signal strength: %1$s</string>
+    <string name="connected_signal_pref_summary">Tap for more info</string>
 	
 </resources>
