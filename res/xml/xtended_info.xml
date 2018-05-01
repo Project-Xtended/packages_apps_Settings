@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 Teh AOSP-RRO Project
+<!-- Copyright (C) 2016 MSM-Xtended Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -11,28 +11,42 @@ implied.
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-
 <PreferenceScreen
 xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="Xtended Project">
-
-<PreferenceCategory
+     <PreferenceCategory
               android:key="about" >
-
         <!-- Xtended About logo -->
         <PreferenceScreen
                 android:key="xtended_about"
                 android:enabled="false"
-                android:layout="@layout/xtended_about" />
+                android:layout="@layout/xtended_about"
+                android:summary="@string/xtended_info_summary" />
 
-        <Preference
-               android:summary="@string/xtended_info_summary" 
+	<Preference
+               android:title="@string/xtended_gplus"
+               android:summary="@string/xtended_gplus_summary" 
                android:icon="@drawable/ic_devs_info" >
-        <intent android:action="android.intent.action.VIEW"
-                android:data="https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-development/cardinal-aosp-5-0-android-8-0-pre-t3693585" />
-       </Preference>
+         <intent android:action="android.intent.action.VIEW"
+                android:data="https://plus.google.com/u/0/communities/104070483402051093195" />
+        </Preference>
+	<Preference
+               android:title="@string/xtended_telegram"
+               android:summary="@string/xtended_telegram_summary" 
+	       android:icon="@drawable/ic_devs_info">
+         <intent android:action="android.intent.action.VIEW"
+                android:data="https://t.me/XtendedOfficial" />
+        </Preference>
      </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="xtended_credits"
+            android:title="@string/thanks_header">	
+        <Preference			
+            android:key="xtended_credits"
+            android:title="@string/thanks_header"
+            android:fragment="com.android.settings.xtended.XtendedCreditsInfo"/>
+    </PreferenceCategory>
 
 <PreferenceCategory
             android:key="xtended_dev"
@@ -86,60 +100,61 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 </PreferenceCategory>
 
 <PreferenceCategory
-            android:key="xtended_dev"
-            android:title="@string/thanks_header" >
+            android:key="xtended_device_maintainers"
+            android:title="@string/devices_header" >
 
         <Preference
-            android:title="@string/spt_1"
+            android:title="@string/device_1"
+            android:summary="@string/device1_description"
             android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/oneplus-5t/development/msm-xtended-oreoandroid-8-1-t3754938" />
         </Preference>
 
-        <Preference
-            android:title="@string/spt_2"
-            android:icon="@drawable/ic_devs_phone" >
+	<Preference
+            android:title="@string/device_2"
+            android:summary="@string/device2_description"
+	    android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/oneplus-5/development/stable-msm-xtended-t3761012" />
         </Preference>
 
-        <Preference
-            android:title="@string/spt_3"
-            android:icon="@drawable/ic_devs_phone" >
+	<Preference
+            android:title="@string/device_3"
+            android:summary="@string/device3_description"
+	    android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-development/cardinal-aosp-5-0-android-8-0-pre-t3693585" />
         </Preference>
 
-        <Preference
-            android:title="@string/spt_4"
-            android:icon="@drawable/ic_devs_phone" >
+	<Preference
+            android:title="@string/device_4"
+            android:summary="@string/device4_description"
+	    android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/8-1-0-project-xtended-t3758581" />
         </Preference>
 
-        <Preference
-            android:title="@string/spt_5"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-		
-</PreferenceCategory>
-
-<PreferenceCategory
-            android:key="xtended_dev"
-            android:title="@string/testing_header" >
-
-        <Preference
-            android:title="@string/hht_1"
-            android:icon="@drawable/ic_devs_phone" >
+	<Preference
+            android:title="@string/device_5"
+            android:summary="@string/device5_description"
+	    android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/lenovo-zuk-z2/development/rom-project-xtended-t3781995" />
         </Preference>
 
-        <Preference
-            android:title="@string/hht_2"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
-        <Preference
-            android:title="@string/hht_3"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
-        <Preference
-            android:title="@string/hht_4"
-            android:icon="@drawable/ic_devs_phone" >
+	<Preference
+            android:title="@string/device_6"
+            android:summary="@string/device6_description"
+	    android:icon="@drawable/ic_devs_phone">
         </Preference>
 
 </PreferenceCategory>
 
 </PreferenceScreen>
+
