@@ -12,22 +12,140 @@ implied.
      limitations under the License.
 -->
 
-
 <PreferenceScreen
 xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="Xtended Credits">
-
-    <PreferenceCategory
-              android:key="about" >
+        android:title="Xtended Credits"
+        android:key="about" >
         <!-- Xtended About logo -->
         <PreferenceScreen
                 android:key="xtended_about"
                 android:enabled="false"
                 android:layout="@layout/xtended_about" />
-    </PreferenceCategory>
+  <PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/hail_to_teams" >			
+    <Preference
+            android:title="@string/team_1"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/LineageOS" />
+    </Preference>
+    <Preference
+            android:title="@string/team_2"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/GZOSP" />
+    </Preference>
+    <Preference
+            android:title="@string/team_3"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Colt-Oreo" />
+    </Preference>
+    <Preference
+            android:title="@string/team_4"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/omnirom" />
+    </Preference>
+    <Preference
+            android:title="@string/team_5"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/DirtyUnicorns" />
+    </Preference>
+    <Preference
+            android:title="@string/team_6"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/nitrogen-project/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_7"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/aicp" />
+    </Preference>
+    <Preference
+            android:title="@string/team_8"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/crdroidandroid" />
+    </Preference>
+    <Preference
+            android:title="@string/team_9"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ScrewdAOSP" />
+    </Preference>
+    <Preference
+            android:title="@string/team_10"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/CypherOS/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_11"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/LiquidRemix/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_12"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/BenzoROM/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_13"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/bootleggersrom/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_14"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/AospExtended" />
+    </Preference>
+    <Preference
+            android:title="@string/team_15"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ResurrectionRemix" />
+    </Preference>
+    <Preference
+            android:title="@string/team_16"
+   	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/havoc-os" />
+    </Preference>
+    <Preference
+            android:title="@string/team_17"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Substratum" />
+    </Preference>
+  </PreferenceCategory>
 
     <PreferenceCategory
-            android:key="xtended_dev"
             android:title="@string/thanks_header" >
         <Preference
             android:title="@string/spt_1"
@@ -62,6 +180,5 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/hht_4"
 	    android:icon="@drawable/ic_devs_phone" />
     </PreferenceCategory>
-
 </PreferenceScreen>
 
