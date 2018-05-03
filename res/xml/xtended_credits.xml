@@ -29,59 +29,39 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/thanks_header" >
-
         <Preference
             android:title="@string/spt_1"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/spt_2"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/spt_3"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/spt_4"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/spt_5"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-		
-</PreferenceCategory>
+	    android:icon="@drawable/ic_devs_phone" />
+    </PreferenceCategory>
 
-<PreferenceCategory
+    <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/testing_header" >
-
         <Preference
             android:title="@string/hht_1"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/hht_2"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/hht_3"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/hht_4"
-            android:icon="@drawable/ic_devs_phone" >
-        </Preference>
-
-</PreferenceCategory>
+	    android:icon="@drawable/ic_devs_phone" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
 

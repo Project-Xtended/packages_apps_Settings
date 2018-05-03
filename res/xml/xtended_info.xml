@@ -14,15 +14,13 @@ implied.
 <PreferenceScreen
 xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="Xtended Project">
-     <PreferenceCategory
-              android:key="about" >
         <!-- Xtended About logo -->
-        <PreferenceScreen
+        <Preference
                 android:key="xtended_about"
                 android:enabled="false"
-                android:layout="@layout/xtended_about"
-                android:summary="@string/xtended_info_summary" />
-
+		android:layout="@layout/xtended_about" />
+	<Preference
+               android:summary="@string/xtended_info_summary" />
 	<Preference
                android:title="@string/xtended_gplus"
                android:summary="@string/xtended_gplus_summary" 
@@ -30,15 +28,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
          <intent android:action="android.intent.action.VIEW"
                 android:data="https://plus.google.com/u/0/communities/104070483402051093195" />
         </Preference>
-	<Preference
+        <Preference
                android:title="@string/xtended_telegram"
                android:summary="@string/xtended_telegram_summary" 
 	       android:icon="@drawable/ic_devs_info">
          <intent android:action="android.intent.action.VIEW"
                 android:data="https://t.me/XtendedOfficial" />
         </Preference>
-     </PreferenceCategory>
-
     <PreferenceCategory
             android:key="xtended_credits"
             android:title="@string/thanks_header">	
@@ -47,11 +43,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/thanks_header"
             android:fragment="com.android.settings.xtended.XtendedCreditsInfo"/>
     </PreferenceCategory>
-
-<PreferenceCategory
+    <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/devs_header" >
-
         <Preference
             android:title="@string/dev_1"
             android:summary="@string/dev1_description"
@@ -60,7 +54,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=7072514" />
         </Preference>
-
         <Preference
             android:title="@string/dev_3"
             android:summary="@string/dev3_description"
@@ -69,7 +62,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=5678679" />
         </Preference>
-
         <Preference
             android:title="@string/dev_2"
             android:summary="@string/dev2_description"
@@ -78,7 +70,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=8829870" />
         </Preference>
-
         <Preference
             android:title="@string/dev_4"
             android:summary="@string/dev4_description"
@@ -87,7 +78,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=7107153" />
         </Preference>
-
         <Preference
             android:title="@string/dev_5"
             android:summary="@string/dev5_description"
@@ -96,13 +86,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=7077053" />
         </Preference>
-
-</PreferenceCategory>
-
-<PreferenceCategory
+    </PreferenceCategory>
+    <PreferenceCategory
             android:key="xtended_device_maintainers"
             android:title="@string/devices_header" >
-
         <Preference
             android:title="@string/device_1"
             android:summary="@string/device1_description"
@@ -111,7 +98,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/oneplus-5t/development/msm-xtended-oreoandroid-8-1-t3754938" />
         </Preference>
-
 	<Preference
             android:title="@string/device_2"
             android:summary="@string/device2_description"
@@ -120,7 +106,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/oneplus-5/development/stable-msm-xtended-t3761012" />
         </Preference>
-
 	<Preference
             android:title="@string/device_3"
             android:summary="@string/device3_description"
@@ -129,7 +114,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-development/cardinal-aosp-5-0-android-8-0-pre-t3693585" />
         </Preference>
-
 	<Preference
             android:title="@string/device_4"
             android:summary="@string/device4_description"
@@ -138,7 +122,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/8-1-0-project-xtended-t3758581" />
         </Preference>
-
 	<Preference
             android:title="@string/device_5"
             android:summary="@string/device5_description"
@@ -147,14 +130,19 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/lenovo-zuk-z2/development/rom-project-xtended-t3781995" />
         </Preference>
-
 	<Preference
+            android:title="@string/device_7"
+            android:summary="@string/device7_description"
+	    android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/redmi-4a/development/rom-project-xtended-xiaomi-redmi-4a-t3784935" />
+       </Preference>
+       <Preference
             android:title="@string/device_6"
             android:summary="@string/device6_description"
 	    android:icon="@drawable/ic_devs_phone">
-        </Preference>
-
-</PreferenceCategory>
-
+       </Preference>
+    </PreferenceCategory>
 </PreferenceScreen>
 
