@@ -25,4 +25,8 @@
          4 = FOD (front)
     -->
     <integer name="config_fingerprintSensorLocation">0</integer>
+
+    <!-- Whether to add AGPS parameter settings -->
+    <bool name="config_agps_enabled">false</bool>
+
 </resources>
