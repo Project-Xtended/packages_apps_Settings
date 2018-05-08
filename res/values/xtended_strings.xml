@@ -402,4 +402,9 @@
     <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
     <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string>
 
+    <!-- Xtended changelog -->
+    <string name="changelog_xtended_title">Changelog</string>
+    <string name="changelog_xtended_summary">View recent changes</string>
+    <string name="changelog_xtended_error">Unable to load changelog</string>
+
 </resources>
