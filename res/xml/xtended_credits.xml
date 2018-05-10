@@ -163,7 +163,34 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/spt_5"
 	    android:icon="@drawable/ic_devs_phone" />
     </PreferenceCategory>
-
+    <PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/translators_header" >
+        <Preference
+            android:title="@string/translator_1"
+	    android:summary="@string/language_1"
+ 	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_2"
+ 	    android:summary="@string/language_2"
+ 	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_3"
+    	    android:summary="@string/language_3"
+ 	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_4"
+  	    android:summary="@string/language_4"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_5"
+            android:summary="@string/language_5"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_6"
+ 	    android:summary="@string/language_6"
+ 	    android:icon="@drawable/ic_devs_phone" />
+    </PreferenceCategory>
     <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/testing_header" >

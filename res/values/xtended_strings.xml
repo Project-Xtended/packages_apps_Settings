@@ -107,6 +107,19 @@
     <string name="hht_2">Dhairya Chandarana aka Dhairya</string>
     <string name="hht_3">Priyankar Sharma aka ps_minky16</string>
     <string name="hht_4">All Others Who Tested and Shared Feedback in Testing Group</string>
+    <string name="translators_header">Translators Credits</string>
+    <string name="translator_1">novas78</string>
+    <string name="language_1">Czech</string>
+    <string name="translator_2">Z-Pepe</string>
+    <string name="language_2">Italian</string>
+    <string name="translator_3">vellosid</string>
+    <string name="language_3">Romanian</string>
+    <string name="translator_4">alexisya</string>
+    <string name="language_4">Russian</string>
+    <string name="translator_5">Evan2408</string>
+    <string name="language_5">Chinese Simplified</string>
+    <string name="translator_6">vo.stro</string>
+    <string name="language_6">Indonesian</string>
 
     <!-- Battery image -->
     <string name="battery_image">Battery image</string>
