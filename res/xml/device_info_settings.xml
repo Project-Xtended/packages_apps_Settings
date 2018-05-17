@@ -23,13 +23,6 @@
                 android:enabled="false"
                 android:layout="@layout/xtended_about" />
 
-        <!-- Xtended changelog -->
-        <PreferenceScreen
-                android:key="xtended_changelog"
-                android:title="@string/changelog_xtended_title"
-                android:summary="@string/changelog_xtended_summary"
-                android:fragment="com.android.settings.xtended.XtendedChangelog" />
-
         <!-- System update settings - launches activity -->
         <Preference android:key="additional_system_update_settings"
                     android:title="@string/additional_system_update_settings_list_item_title">
@@ -44,6 +37,13 @@
                 android:title="@string/xtended_about_info"
                 android:summary="@string/xtended_about_info_summary_title"
                 android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
+
+        <!-- Xtended changelog -->
+        <PreferenceScreen
+                android:key="xtended_changelog"
+                android:title="@string/changelog_xtended_title"
+                android:summary="@string/changelog_xtended_summary"
+                android:fragment="com.android.settings.xtended.XtendedChangelog" />
 
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
