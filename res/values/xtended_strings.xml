@@ -53,8 +53,8 @@
     <string name="xtended_gplus_summary">Join here to learn more</string>
     <string name="xtended_telegram">Official Telegram Support Group</string>
     <string name="xtended_telegram_summary">Join Here for Instant Support</string>
-    <string name="credits_header">Credits Section</string>
-    <string name="credits_summary">Huge Thanks To Them</string>
+    <string name="credits_header">Thanks Giving</string>
+    <string name="credits_summary">Huge Thanks To These Teams</string>
     <string name="dev_1">MadhuSudhan Painoori aka Mady51</string>
     <string name="dev1_description">Kernel Developer, The OS Boot Manager</string>
     <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
@@ -80,7 +80,12 @@
     <string name="device6_description">Ronak aka RonAk47</string>
     <string name="device_7">Xiaomi Redmi 4A | rolex</string>
     <string name="device7_description">Yousef Algadri</string>
-    <string name="hail_to_teams">All Hail To These Teams</string>
+    <string name="device_8">Moto G5s Plus | sanders</string>
+    <string name="device8_description">Raj aka raj_jdja</string>
+    <string name="device_9">Moto G5 Plus | potter</string>
+    <string name="device9_description">Kaabir aka king.ska</string>
+    <string name="credits_to_these_teams">Credits Section</string>
+    <string name="hail_to_teams"> Huge Thanks to These Teams</string>
     <string name="team_1">LineageOS | CyanogenMOD</string>
     <string name="team_2">Team GZOSP</string>
     <string name="team_3">Team ColtOS</string>

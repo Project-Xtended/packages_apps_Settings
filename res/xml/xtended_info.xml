@@ -37,10 +37,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </Preference>
     <PreferenceCategory
             android:key="xtended_credits"
-	    android:title="@string/credits_header">
+            android:title="@string/credits_header">
          <Preference			
              android:key="xtended_credits"
-             android:title="@string/credits_summary"
+             android:title="@string/credits_to_these_teams"
+             android:summary="@string/credits_summary"
              android:fragment="com.android.settings.xtended.XtendedCreditsInfo"/>
     </PreferenceCategory>
     <PreferenceCategory
@@ -137,6 +138,22 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/redmi-4a/development/rom-project-xtended-xiaomi-redmi-4a-t3784935" />
+       </Preference>
+        <Preference
+            android:title="@string/device_8"
+            android:summary="@string/device8_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/moto-g5s-plus/development/rom-xtended-rom-t3791439" />
+       </Preference>
+        <Preference
+            android:title="@string/device_9"
+            android:summary="@string/device9_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/g5-plus/development/rom-project-xtended-t3792113" />
        </Preference>
        <Preference
             android:title="@string/device_6"
