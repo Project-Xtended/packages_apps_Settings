@@ -131,7 +131,7 @@ public class DisplaySettings extends DashboardFragment {
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final AmbientDisplayConfiguration ambientDisplayConfig = new AmbientDisplayConfiguration(context);
-        controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle, fragment));
+        controllers.add(mFontPickerPreference = new FontPickerPreferenceController(context, lifecycle));
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         // controllers.add(new AutoRotatePreferenceController(context, lifecycle));
         controllers.add(new FontSizePreferenceController(context));
