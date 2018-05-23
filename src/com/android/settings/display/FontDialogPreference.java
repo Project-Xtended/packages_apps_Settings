@@ -28,7 +28,6 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.AttributeSet;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settingslib.CustomDialogPreference;
@@ -58,8 +57,6 @@ public class FontDialogPreference extends CustomDialogPreference {
                 try {
                     startProgress();
                     mFontService.applyFont(info);
-                    Toast.makeText(mContext, mContext.getString(R.string.font_picker_toast),
-                        Toast.LENGTH_LONG).show();
                 } catch (RemoteException e) {
                     stopProgress();
                 }
