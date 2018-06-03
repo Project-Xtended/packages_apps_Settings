@@ -38,6 +38,11 @@
         android:title="@string/theme_black_title"
         android:summary="@string/theme_black_title_summary" />
 
+   <com.android.settings.widget.RadioButtonPreference
+        android:key="theme_xtended"
+        android:title="@string/theme_xtended_title"
+        android:summary="@string/theme_xtended_title_summary" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/device_accent_title"

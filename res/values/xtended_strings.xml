@@ -155,7 +155,7 @@
 
     <string name="link_volume_option_title">Link Ring and Notification Volume</string>
 
-	<!-- Liquid Lounge -->
+	<!-- Xtended Options -->
     <string name="xtensions_title">Xtended Options</string>
     <string name="xtensions_activity_summary">Our Xtensions of Features </string>
 
@@ -173,7 +173,8 @@
     <string name="device_accent_title">Device Accent</string>
     <string name="theme_black_title">Black</string>
     <string name="theme_black_title_summary">Themes the system to black</string>
-
+    <string name="theme_xtended_title">Xtended</string>
+    <string name="theme_xtended_title_summary">Themes the system to Xtended Mode</string>
 
     <!-- App Ops Settings -->
     <!-- App Ops Categories -->
