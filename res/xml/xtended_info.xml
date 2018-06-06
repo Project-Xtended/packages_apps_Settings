@@ -159,6 +159,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/device_6"
             android:summary="@string/device6_description"
 	    android:icon="@drawable/ic_devs_phone">
+       <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/xiaomi-redmi-3s/development/rom-project-msm-xtended-t3798669" />
        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
