@@ -16,28 +16,48 @@
 package com.android.settings.deviceinfo;
 
 import android.content.Context;
-import android.os.SystemProperties;
+import android.content.Intent;
+import android.os.Build;
+import android.os.SystemClock;
+import android.os.UserHandle;
+import android.os.UserManager;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.core.lifecycle.LifecycleObserver;
+import com.android.settingslib.core.lifecycle.events.OnResume;
 
 public class ROMVersionPreferenceController extends AbstractPreferenceController
-        implements PreferenceControllerMixin {
+        implements PreferenceControllerMixin, LifecycleObserver, OnResume {
 
-    private static final String PROPERTY_XTENDED_VERSION = "ro.xtended.version";
-    private static final String KEY_XTENDED_VERSION = "modversion";
+    private static final String TAG = "XtendedVersionPref";
+    private static final String KEY_XTENDED_VERSION = "xtended_version";
 
-    public ROMVersionPreferenceController(Context context) {
+    private final UserManager mUserManager;
+
+    private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
+    private boolean mFunDisallowedBySystem;
+
+    private long[] mHits = new long[3];
+
+    public ROMVersionPreferenceController(Context context, Lifecycle lifecycle) {
         super(context);
+        mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
+        if (lifecycle != null) {
+            lifecycle.addObserver(this);
+        }
     }
 
     @Override
     public boolean isAvailable() {
-        return !TextUtils.isEmpty(SystemProperties.get(PROPERTY_XTENDED_VERSION));
+        return true;
     }
 
     @Override
@@ -49,9 +69,49 @@ public class ROMVersionPreferenceController extends AbstractPreferenceController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         final Preference pref = screen.findPreference(KEY_XTENDED_VERSION);
-        if (pref == null) return;
-        String version = SystemProperties.get(PROPERTY_XTENDED_VERSION);
-        pref.setSummary(version);
+        if (pref != null) {
+        pref.setSummary(android.os.Build.XTENDED_DISPLAY_VERSION);
+        pref.setEnabled(true);
+       }
+    }
+
+    public void onResume() {
+        mFunDisallowedAdmin = RestrictedLockUtils.checkIfRestrictionEnforced(
+                mContext, UserManager.DISALLOW_FUN, UserHandle.myUserId());
+        mFunDisallowedBySystem = RestrictedLockUtils.hasBaseUserRestriction(
+                mContext, UserManager.DISALLOW_FUN, UserHandle.myUserId());
+    }
+
+    @Override
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        if (!TextUtils.equals(preference.getKey(), KEY_XTENDED_VERSION)) {
+            return false;
+        }
+        System.arraycopy(mHits, 1, mHits, 0, mHits.length - 1);
+        mHits[mHits.length - 1] = SystemClock.uptimeMillis();
+        if (mHits[0] >= (SystemClock.uptimeMillis() - 500)) {
+            if (mUserManager.hasUserRestriction(UserManager.DISALLOW_FUN)) {
+                if (mFunDisallowedAdmin != null && !mFunDisallowedBySystem) {
+                    RestrictedLockUtils.sendShowAdminSupportDetailsIntent(mContext,
+                            mFunDisallowedAdmin);
+                }
+                Log.d(TAG, "Sorry, no fun for you!");
+                return false;
+            }
+
+            final Intent intent = new Intent(Intent.ACTION_MAIN)
+                    .putExtra("its_xtended", true)
+                    .setClassName(
+                            "android", com.android.internal.app.PlatLogoActivity.class.getName());
+            try {
+                mContext.startActivity(intent);
+                return true;
+            } catch (Exception e) {
+                Log.e(TAG, "Unable to start activity " + intent.toString());
+            }
+        }
+        return false;
     }
 }
+
 

@@ -123,7 +123,6 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new AdditionalSystemUpdatePreferenceController(context));
         controllers.add(new ManualPreferenceController(context));
         controllers.add(new KernelVersionPreferenceController(context));
-        controllers.add(new BasebandVersionPreferenceController(context));
         controllers.add(new FirmwareVersionPreferenceController(context, lifecycle));
         controllers.add(new RegulatoryInfoPreferenceController(context));
         controllers.add(new DeviceModelPreferenceController(context, fragment));
@@ -132,7 +131,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new SELinuxStatusPreferenceController(context));
         controllers.add(new SafetyInfoPreferenceController(context));
-        controllers.add(new ROMVersionPreferenceController(context));
+        controllers.add(new ROMVersionPreferenceController(context, lifecycle));
         return controllers;
     }
 
