@@ -16,7 +16,6 @@
 * limitations under the License.
 */
 -->
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Rom version -->
@@ -84,6 +83,12 @@
     <string name="device8_description">Raj aka raj_jdja</string>
     <string name="device_9">Moto G5 Plus | potter</string>
     <string name="device9_description">Kaabir aka king.ska</string>
+    <string name="device_10">LeEco Le Max 2 | lemax2</string>
+    <string name="device10_description">Duarte Ornelas aka shake_me</string>
+    <string name="device_11">Xiaomi Mi Max 2 | oxygen</string>
+    <string name="device11_description">Jayant | Jay_B</string>
+    <string name="device_12">Xiaomi Redmi Note 5 - 5 Plus | vince</string>
+    <string name="device12_description">Oveno Senpai aka TSG756</string>
     <string name="credits_to_these_teams">Credits Section</string>
     <string name="hail_to_teams"> Huge Thanks to These Teams</string>
     <string name="team_1">LineageOS | CyanogenMOD</string>

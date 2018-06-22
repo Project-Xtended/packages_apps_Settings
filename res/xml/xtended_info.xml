@@ -163,6 +163,30 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/xiaomi-redmi-3s/development/rom-project-msm-xtended-t3798669" />
        </Preference>
+       <Preference
+            android:title="@string/device_10"
+            android:summary="@string/device10_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/le-max-2/development/rom-project-xtended-shakeme-t3794392" />
+       </Preference>
+       <Preference
+            android:title="@string/device_11"
+            android:summary="@string/device11_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/mi-max-2/development/stable-msm-xtended-v2-5-t3805375" />
+        </Preference>
+        <Preference
+            android:title="@string/device_12"
+            android:summary="@string/device12_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/redmi-note-5/development/rom-project-xtended-t3805938" />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
 
