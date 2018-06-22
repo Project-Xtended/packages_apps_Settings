@@ -575,7 +575,8 @@
     <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
 
     <!-- Security dialog -->
-    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-04-01</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="aosp_security_bulletin_url" translatable="false"></string>
     <string name="security_dialog_title">Security updates</string>
     <string name="security_dialog_neutral_button">AOSP Security Bulletins</string>
     <string name="android_security_title">AOSP security patch level</string>
