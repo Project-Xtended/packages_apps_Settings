@@ -12,6 +12,7 @@
 
 # Xtended Xtensions
 -keep class com.xtended.xtensions.**
+-keep class com.android.settings.*Settings
 
 # Keep setters in Views so that animations can still work.
 -keep public class * extends android.view.View {
