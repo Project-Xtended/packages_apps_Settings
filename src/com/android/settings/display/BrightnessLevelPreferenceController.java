@@ -141,7 +141,7 @@ public class BrightnessLevelPreferenceController extends AbstractPreferenceContr
                 System.SCREEN_BRIGHTNESS_MODE, System.SCREEN_BRIGHTNESS_MODE_MANUAL);
         if (brightnessMode == System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
             final float value = Settings.System.getFloat(mContentResolver,
-                    System.SCREEN_AUTO_BRIGHTNESS_ADJ, 1);
+                    System.SCREEN_AUTO_BRIGHTNESS_ADJ, 0);
             // auto brightness is between -1 and 1
             return getPercentage(value, -1, 1);
         }
