@@ -80,12 +80,28 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:data="https://forum.xda-developers.com/member.php?u=7107153" />
         </Preference>
         <Preference
+            android:title="@string/dev_6"
+            android:summary="@string/dev6_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=7030109" />
+        </Preference>
+        <Preference
             android:title="@string/dev_5"
             android:summary="@string/dev5_description"
             android:icon="@drawable/ic_devs_pc" >
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=7077053" />
+        </Preference>
+        <Preference
+            android:title="@string/dev_7"
+            android:summary="@string/dev7_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=4479268" />
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory

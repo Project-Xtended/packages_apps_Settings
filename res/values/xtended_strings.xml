@@ -64,6 +64,10 @@
     <string name="dev4_description">Feature Manager, The Code Puller</string>
     <string name="dev_5">Honza aka svandasek</string>
     <string name="dev5_description">Graphics Organiser, The Image Factory</string>
+    <string name="dev_6">Danny aka mcdachpappe</string>
+    <string name="dev6_description">Code Dev, The Code Fixer</string>
+    <string name="dev_7">Jayant aka Jay_B</string>
+    <string name="dev7_description">Graphics Organiser, BootAnimator</string>
     <string name="devices_header">Officially Supported Devices</string>
     <string name="device_1">OnePlus 5T | dumpling</string>
     <string name="device1_description">Mukesh Singh aka mukesh22584</string>
