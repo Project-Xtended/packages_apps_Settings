@@ -144,6 +144,7 @@ import com.xtended.xtensions.fragments.ButtonSettings;
 import com.xtended.xtensions.fragments.HeadsUpSettings;
 import com.android.settings.aoscp.display.ColorManagerFragment;
 import com.xtended.xtensions.service.EventServiceSettings;
+import com.xtended.xtensions.fragments.PieSettings;
 
 public class SettingsGateway {
 
@@ -278,7 +279,8 @@ public class SettingsGateway {
             ScreenStabilization.class.getName(),
             RunningServices.class.getName(),
             EventServiceSettings.class.getName(),
-            ProfilesSettingsFragment.class.getName()
+            ProfilesSettingsFragment.class.getName(),
+	    PieSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -324,6 +326,7 @@ public class SettingsGateway {
             Settings.PulseSettingsActivity.class.getName(),
             Settings.ScreenStabilizationActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
-            Settings.EventServiceSettingsActivity.class.getName()
+            Settings.EventServiceSettingsActivity.class.getName(),
+	    Settings.PieControlSettingsActivity.class.getName()
     };
 }
