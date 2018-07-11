@@ -3482,6 +3482,19 @@
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="com.msm.xtended.fragments.hideappfromrecents.HAFRAppListActivity" />
 
+        <!-- PA Pie settings activity. -->
+        <activity android:name="Settings$PieControlSettingsActivity"
+                android:label="@string/pa_pie_control_title"
+                android:excludeFromRecents="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.PIE_SETTINGS" />
+                <action android:name="android.settings.PIE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.msm.xtended.fragments.PieSettings" />
+        </activity>
+
         <!-- Custom Button Settings -->
         <activity android:name=".Settings$XOTASettingsActivity"
                 android:label="@string/xtended_update_settings_title"

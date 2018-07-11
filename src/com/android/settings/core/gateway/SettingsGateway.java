@@ -148,6 +148,7 @@ import com.android.settings.custom.ambient.AmbientPlaySettings;
 import com.msm.xtended.Xtensions;
 import com.xtended.settings.fragments.about.Update;
 import com.msm.xtended.fragments.OmniJawsSettings;
+import com.msm.xtended.fragments.PieSettings;
 
 public class SettingsGateway {
 
@@ -283,7 +284,8 @@ public class SettingsGateway {
             NavigationSettingsActivity.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),
-            PulseSettingsActivity.class.getName()
+            PulseSettingsActivity.class.getName(),
+	    PieSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -328,6 +330,7 @@ public class SettingsGateway {
             Settings.NavigationSettingsActivity.class.getName(),
             Settings.SmartbarSettingsActivity.class.getName(),
             Settings.FlingSettingsActivity.class.getName(), 
-            Settings.PulseSettingsActivity.class.getName()
+            Settings.PulseSettingsActivity.class.getName(),
+	    Settings.PieControlSettingsActivity.class.getName()
     };
 }
