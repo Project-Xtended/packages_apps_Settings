@@ -96,6 +96,14 @@
     <string name="device11_description">Jayant | Jay_B</string>
     <string name="device_12">Xiaomi Redmi Note 5 - 5 Plus | vince</string>
     <string name="device12_description">Oveno Senpai aka TSG756</string>
+    <string name="device_13">Xiaomi Redmi Note 3 | kenzo</string>
+    <string name="device13_description">Amitava Mitra aka Amitava_123</string>
+    <string name="device_14">Lenovo P2 | kuntao</string>
+    <string name="device14_description">Priyesh aka PriyeshP</string>
+    <string name="device_15">Xiaomi Redmi Note 5 Pro | whyred</string>
+    <string name="device15_description">Taran Hora aka Taranhora</string>
+    <string name="device_16">Asus Zenfone Laser 2 | Z00L</string>
+    <string name="device16_description">Mrinal aka mg712702</string>
     <string name="credits_to_these_teams">Credits Section</string>
     <string name="hail_to_teams"> Huge Thanks to These Teams</string>
     <string name="team_1">LineageOS | CyanogenMOD</string>

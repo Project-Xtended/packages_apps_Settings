@@ -113,6 +113,38 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/redmi-note-5/development/rom-project-xtended-t3805938" />
         </Preference>
+       <Preference
+            android:title="@string/device_13"
+            android:summary="@string/device13_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/redmi-note-3/development/stable-msm-xtended-x9-t3817538" />
+       </Preference>
+       <Preference
+            android:title="@string/device_14"
+            android:summary="@string/device14_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/lenovo-p2/development/stable-msm-xtended-lenovo-p2-t3815988" />
+        </Preference>
+        <Preference
+            android:title="@string/device_15"
+            android:summary="@string/device15_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/@taran107" />
+        </Preference>
+        <Preference
+            android:title="@string/device_16"
+            android:summary="@string/device16_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/zenfone-2-laser/development/stable-msm-xtended-x9-t3819288" />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
 
