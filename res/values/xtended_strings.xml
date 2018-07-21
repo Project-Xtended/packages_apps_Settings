@@ -54,6 +54,9 @@
     <string name="xtended_telegram_summary">Join Here for Instant Support</string>
     <string name="credits_header">Thanks Giving</string>
     <string name="credits_summary">Huge Thanks To These Teams</string>
+    <string name="devices">Devices</string>
+    <string name="devices_title">Official Devices</string>
+    <string name="devices_summary">Devices We Support Currently</string>
     <string name="dev_1">MadhuSudhan Painoori aka Mady51</string>
     <string name="dev1_description">Kernel Developer, The OS Boot Manager</string>
     <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
