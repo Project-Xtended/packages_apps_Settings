@@ -8676,7 +8676,7 @@
     <string name="deletion_helper_preference_title">Free up space now</string>
 
     <!-- Preference title for gesture settings [CHAR LIMIT=40 BACKUP_MESSAGE_ID:5280023307132819052]-->
-    <string name="gesture_preference_title">Gestures</string>
+    <string name="gesture_preference_title">AOSP Gestures</string>
 
     <!-- Preference summary for gesture settings (phone) [CHAR LIMIT=NONE]-->
     <string name="gesture_preference_summary" product="default">Quick gestures to control your phone</string>
@@ -8715,6 +8715,7 @@
 
     <!-- Preference and settings suggestion title text for ambient display double tap (phone) [CHAR LIMIT=60]-->
     <string name="ambient_display_title" product="default">Double-tap to check phone</string>
+    <string name="doubletap_ambientdisplay_title">DoubleTap Phone in Ambient</string>
     <!-- Preference and settings suggestion title text for ambient display double tap (tablet) [CHAR LIMIT=60]-->
     <string name="ambient_display_title" product="tablet">Double-tap to check tablet</string>
     <!-- Preference and settings suggestion title text for ambient display double tap (device) [CHAR LIMIT=60]-->

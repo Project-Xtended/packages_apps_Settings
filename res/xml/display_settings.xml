@@ -107,6 +107,11 @@
         android:title="@string/ambient_display_screen_title"
         android:fragment="com.android.settings.display.AmbientDisplaySettings" />
 
+    <SwitchPreference
+        android:key="tap_to_wake"
+        android:title="@string/tap_to_wake"
+        android:summary="@string/tap_to_wake_summary" />
+
     <Preference
         android:key="gesture_swipe_fingerprint_to_dismiss_summary"
         android:title="@string/fp_swipe_to_dismiss_notifications_title"
@@ -155,11 +160,6 @@
 
     <SwitchPreference
         android:key="lift_to_wake"
-        android:title="@string/lift_to_wake_title" />
-
-    <SwitchPreference
-        android:key="tap_to_wake"
-        android:title="@string/tap_to_wake"
-        android:summary="@string/tap_to_wake_summary" /> -->
+	android:title="@string/lift_to_wake_title" />-->
 
 </PreferenceScreen>

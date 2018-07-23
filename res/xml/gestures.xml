@@ -17,7 +17,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/gesture_preference_title" >
+    android:title="@string/aosp_gestures_title" >
 
     <Preference
         android:key="gesture_assist_input_summary"
@@ -41,7 +41,7 @@
 
     <Preference
         android:key="gesture_double_tap_screen_input_summary"
-        android:title="@string/ambient_display_title"
+        android:title="@string/doubletap_ambientdisplay_title"
         android:fragment="com.android.settings.gestures.DoubleTapScreenSettings" />
 
     <Preference
