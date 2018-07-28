@@ -110,7 +110,6 @@ import com.xtended.xtensions.fragments.StatusBarClockSettings;
 import com.xtended.xtensions.fragments.SuspendActions;
 import com.xtended.xtensions.fragments.VolumeRockerSettings;
 import com.xtended.xtensions.fragments.WakeLockBlocker;
-import com.xtended.xtensions.service.EventServiceSettings;
 import com.xtended.xtensions.gestureanywhere.GestureAnywhereSettings;
 import com.xtended.xtensions.fragments.GestureSettings;
 import com.android.settings.xtended.XtendedDevsInfo;
@@ -261,7 +260,6 @@ public final class SearchIndexableResources {
         addIndex(VolumeRockerSettings.class, NO_DATA_RES_ID, R.drawable.ic_settings_event_service);
         addIndex(WakeLockBlocker.class, NO_DATA_RES_ID, R.drawable.ic_settings_event_service);
         addIndex(GestureAnywhereSettings.class, NO_DATA_RES_ID, R.drawable.ic_settings_event_service);
-        addIndex(EventServiceSettings.class, NO_DATA_RES_ID, R.drawable.ic_settings_event_service);
         addIndex(XtendedDevsInfo.class, NO_DATA_RES_ID, R.drawable.ic_settings_event_service);
         addIndex(SupportDashboardActivity.class, NO_DATA_RES_ID, R.drawable.ic_help);
         addIndex(
