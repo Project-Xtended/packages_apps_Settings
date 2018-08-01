@@ -105,7 +105,7 @@ public class ColorManagerFragment extends DashboardFragment
             }
         }
 
-        switch (Settings.Secure.getInt(getContentResolver(), Settings.Secure.DEVICE_THEME, 0)) {
+        switch (Settings.Secure.getInt(getContentResolver(), Settings.Secure.DEVICE_THEME, 4)) {
             case 0:
                 updateThemeItems(KEY_THEME_AUTO);
                 break;
