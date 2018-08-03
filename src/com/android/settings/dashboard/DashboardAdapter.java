@@ -18,6 +18,10 @@ package com.android.settings.dashboard;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.ContentResolver;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.service.settings.suggestions.Suggestion;
@@ -33,6 +37,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -336,7 +341,9 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
         }
         holder.icon.setImageDrawable(icon);
         holder.title.setText(tile.title);
-        if (!TextUtils.isEmpty(tile.summary)) {
+        if (!TextUtils.isEmpty(tile.summary)
+           && (Settings.System.getInt(mContext.getContentResolver(),
+	       Settings.System.REMOVE_TILE_SUMMARY, 0) == 0)) {
             holder.summary.setText(tile.summary);
             holder.summary.setVisibility(View.VISIBLE);
         } else {
