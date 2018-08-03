@@ -17,6 +17,7 @@ package com.android.settings.dashboard;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
@@ -37,6 +38,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -470,8 +472,13 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.Dash
             holder.icon.setImageDrawable(mCache.getIcon(tile.icon));
             holder.title.setText(tile.title);
             if (!TextUtils.isEmpty(tile.summary)) {
-                holder.summary.setText(tile.summary);
-                holder.summary.setVisibility(View.VISIBLE);
+                 if (Settings.System.getInt(mContext.getContentResolver(),
+	                     Settings.System.REMOVE_SETTINGS_TILE_SUMMARY, 0) == 1) {
+     		     holder.summary.setText(tile.summary);
+                     holder.summary.setVisibility(View.VISIBLE);
+		} else {
+		     holder.summary.setVisibility(View.GONE);
+		}
             } else {
                 holder.summary.setVisibility(View.GONE);
             }
