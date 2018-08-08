@@ -41,12 +41,11 @@
         android:dependency="ambient_display_always_on"
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
-
-        <!--
-        <Preference
-            android:key="ambient_display_double_tap"
-            android:title="@string/ambient_display_title"
-            android:fragment="com.android.settings.gestures.DoubleTapScreenSettings" />
+      
+<!--<Preference
+        android:key="ambient_display_double_tap"
+        android:title="@string/ambient_display_title"
+        android:fragment="com.android.settings.gestures.DoubleTapScreenSettings" />
 
         <Preference
             android:key="ambient_display_pick_up"
@@ -73,6 +72,12 @@
         android:title="@string/ambient_display_bottom_info_title"
         android:summary="%s"
         android:defaultValue="0" />
+
+    <Preference
+        android:key="force_ambient_for_media_pref"
+        android:title="@string/force_ambient_for_media_pref_title"
+        android:summary="@string/force_ambient_for_media_pref_summary"
+        android:fragment="com.xtended.xtensions.fragments.AmbientTicker" />
 
     </PreferenceCategory> 
 
