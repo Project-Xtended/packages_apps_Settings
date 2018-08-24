@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The MSM-Xtended Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="Xtended Credits"
+        android:key="about" >
+        <!-- Xtended About logo -->
+        <PreferenceScreen
+                android:key="xtended_about"
+                android:enabled="false"
+		android:layout="@layout/xtended_about" />
+
+  <PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/hail_to_teams" >			
+    <Preference
+            android:title="@string/team_1"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/LineageOS" />
+    </Preference>
+    <Preference
+            android:title="@string/team_2"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/GZOSP" />
+    </Preference>
+    <Preference
+            android:title="@string/team_3"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Colt-Oreo" />
+    </Preference>
+    <Preference
+            android:title="@string/team_4"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/omnirom" />
+    </Preference>
+    <Preference
+            android:title="@string/team_5"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/DirtyUnicorns" />
+    </Preference>
+    <Preference
+            android:title="@string/team_6"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/nitrogen-project/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_7"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/aicp" />
+    </Preference>
+    <Preference
+            android:title="@string/team_8"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/crdroidandroid" />
+    </Preference>
+    <Preference
+            android:title="@string/team_9"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ScrewdAOSP" />
+    </Preference>
+    <Preference
+            android:title="@string/team_10"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/CypherOS/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_11"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/LiquidRemix/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_12"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/BenzoROM/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_13"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/bootleggersrom/" />
+    </Preference>
+    <Preference
+            android:title="@string/team_14"
+	        android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/AospExtended" />
+    </Preference>
+    <Preference
+            android:title="@string/team_15"
+	    android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ResurrectionRemix" />
+    </Preference>
+    <Preference
+            android:title="@string/team_16"
+   	    android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/havoc-os" />
+    </Preference>
+    <Preference
+            android:title="@string/team_17"
+	    android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Substratum" />
+    </Preference>
+   </PreferenceCategory>
+    <PreferenceCategory
+            android:title="@string/thanks_header" >
+        <Preference
+            android:title="@string/spt_1"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/spt_2"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/spt_3"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/spt_4"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/spt_5"
+	    android:icon="@drawable/ic_devs_phone" />
+    </PreferenceCategory>
+    <!--PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/translators_header" >
+        <Preference
+            android:title="@string/translator_1"
+	    android:summary="@string/language_1"
+ 	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_2"
+ 	    android:summary="@string/language_2"
+ 	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_3"
+    	    android:summary="@string/language_3"
+ 	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_4"
+  	    android:summary="@string/language_4"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_5"
+            android:summary="@string/language_5"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/translator_6"
+ 	    android:summary="@string/language_6"
+ 	    android:icon="@drawable/ic_devs_phone" />
+    </PreferenceCategory-->
+    <PreferenceCategory
+            android:key="xtended_dev"
+            android:title="@string/testing_header" >
+        <Preference
+            android:title="@string/hht_5"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_6"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_7"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_8"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_9"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_3"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_1"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_2"
+	    android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_4"
+	    android:icon="@drawable/ic_devs_phone" />
+    </PreferenceCategory>
+</PreferenceScreen>
+
+
