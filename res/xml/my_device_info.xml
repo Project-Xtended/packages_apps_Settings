@@ -21,12 +21,20 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!-- Xtended logo -->
     <com.android.settingslib.widget.LayoutPreference
-        android:key="my_device_info_header"
-        android:order="0"
-        android:layout="@layout/settings_entity_header"
-        android:selectable="false"
-        settings:isPreferenceVisible="false"/>
+        android:key="xtended_about"
+        android:order="-5"
+        android:layout="@layout/xtended_about"
+        android:selectable="false" />
+
+    <!-- About Devs -->
+    <Preference
+         android:key="dev_info"
+         android:order="-1"
+         android:title="@string/xtended_about_info"
+         android:summary="@string/xtended_about_info_summary_title"
+         android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
 
     <PreferenceCategory
         android:key="basic_info_category"
