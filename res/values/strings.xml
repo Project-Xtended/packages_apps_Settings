@@ -10080,4 +10080,7 @@
 
     <!-- Title for Connected device shortcut [CHAR LIMIT=30] -->
     <string name="devices_title">Devices</string>
+
+    <string name="xtended_about_info">About Xtended</string>
+
 </resources>
