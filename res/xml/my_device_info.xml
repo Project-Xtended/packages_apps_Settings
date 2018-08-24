@@ -21,15 +21,6 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-<!--
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="my_device_info_header"
-        android:order="0"
-        android:layout="@layout/settings_entity_header"
-        android:selectable="false"
-        settings:isPreferenceVisible="false"/>
--->
-
     <!-- Xtended logo -->
     <Preference
         android:key="xtended_about"
@@ -37,10 +28,18 @@
         android:enabled="false"
         android:layout="@layout/xtended_about" />
 
+    <!-- About Devs -->
+    <Preference
+        android:key="dev_info"
+        android:order="1"
+        android:title="@string/xtended_about_info"
+        android:summary="@string/xtended_about_info_summary_title"
+        android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
-        android:order="1"
+        android:order="2"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -49,7 +48,7 @@
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="2"
+        android:order="3"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
@@ -57,7 +56,7 @@
     <!-- Phone number
     <Preference
         android:key="phone_number"
-        android:order="3"
+        android:order="4"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
@@ -65,7 +64,7 @@
 
     <Preference
         android:key="emergency_info"
-        android:order="14"
+        android:order="15"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
@@ -73,7 +72,7 @@
     <!-- Legal information -->
     <!--Preference
         android:key="legal_container"
-        android:order="15"
+        android:order="16"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"
@@ -82,7 +81,7 @@
     <!-- Regulatory labels -->
     <!--<Preference
         android:key="regulatory_info"
-        android:order="16"
+        android:order="17"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
     </Preference>-->
