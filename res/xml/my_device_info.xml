@@ -93,22 +93,6 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
 
-    <!-- Regulatory labels -->
-    <Preference
-        android:key="regulatory_info"
-        android:order="17"
-        android:title="@string/regulatory_labels">
-        <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
-    </Preference>
-
-    <!-- Safety & regulatory manual -->
-    <Preference
-        android:key="safety_info"
-        android:order="17"
-        android:title="@string/safety_and_regulatory_info">
-        <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
-    </Preference>
-
     <!-- SIM status -->
     <Preference
         android:key="sim_status"
@@ -150,15 +134,6 @@
         android:order="48"
         android:title="@string/status_up_time"
         android:summary="@string/summary_placeholder"/>
-
-    <!-- IMEI -->
-    <Preference
-        android:key="imei_info"
-        android:order="49"
-        android:title="@string/status_imei"
-        settings:keywords="@string/keywords_imei_info"
-	settings:allowDividerAbove="true"
-        android:summary="@string/imei_information_summary"/>
 
     <!--IP address -->
     <Preference
