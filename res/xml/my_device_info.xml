@@ -85,29 +85,13 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
 
-    <!-- Legal information -->
+    <!-- Legal information
     <Preference
         android:key="legal_container"
         android:order="16"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"/>
-
-    <!-- Regulatory labels -->
-    <Preference
-        android:key="regulatory_info"
-        android:order="17"
-        android:title="@string/regulatory_labels">
-        <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
-    </Preference>
-
-    <!-- Safety & regulatory manual -->
-    <Preference
-        android:key="safety_info"
-        android:order="17"
-        android:title="@string/safety_and_regulatory_info">
-        <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
-    </Preference>
+        settings:allowDividerAbove="true"/>-->
 
     <!-- SIM status -->
     <Preference
@@ -129,16 +113,6 @@
         settings:enableCopying="true"
         settings:keywords="@string/keywords_model_and_hardware"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
-    <!-- IMEI -->
-    <Preference
-        android:key="imei_info"
-        android:order="32"
-        android:title="@string/status_imei"
-        android:summary="@string/summary_placeholder"
-        settings:keywords="@string/keywords_imei_info"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
     <!--IP address -->
     <Preference
