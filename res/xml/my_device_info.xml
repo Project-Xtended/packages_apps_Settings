@@ -54,14 +54,14 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
 
-    <!-- Phone number -->
+    <!-- Phone number
     <Preference
         android:key="phone_number"
         android:order="3"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
-        settings:enableCopying="true"/>
+        settings:enableCopying="true"/> -->
 
     <Preference
         android:key="emergency_info"
@@ -115,16 +115,6 @@
         settings:enableCopying="true"
         settings:keywords="@string/keywords_model_and_hardware"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
-    <!-- IMEI -->
-    <Preference
-        android:key="imei_info"
-        android:order="32"
-        android:title="@string/status_imei"
-        android:summary="@string/summary_placeholder"
-        settings:keywords="@string/keywords_imei_info"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
     <!-- Android version -->
     <Preference
