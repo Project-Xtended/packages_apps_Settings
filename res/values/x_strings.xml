@@ -535,4 +535,6 @@
     <string name="data_usage_app_restrict_all">Allow network access</string>
     <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
 
+    <string name="weather_title">Weather</string>
+
 </resources>
