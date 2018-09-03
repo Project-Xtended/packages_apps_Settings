@@ -249,4 +249,7 @@
     <!-- Running Services -->
     <string name="background_processes_settings_title">Background processes</string>
 
+    <!-- OmniJaws -->
+    <string name="weather_title">Weather</string>
+
 </resources>
