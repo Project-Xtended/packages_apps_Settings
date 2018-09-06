@@ -21,6 +21,10 @@
     <!-- Rom version -->
     <string name="rom_version_title">Xtended Version</string>
 
+    <!-- Xtensions -->
+    <string name="x_settings_title">X-Tensions</string>
+    <string name="x_settings_summary">Our Customization Hub</string>
+
     <!-- Dev Info -->
     <string name="xtended_about_nfo">About Xtended</string>
     <string name="xtended_about_info_summary_title">Know Us!</string>
