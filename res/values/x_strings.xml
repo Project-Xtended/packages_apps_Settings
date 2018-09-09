@@ -155,4 +155,8 @@
     <!-- Phone Specs -->
     <string name="specs_title">Phone Specifications</string>
 
+    <!-- AOSP Gestures -->
+    <string name="aosp_gesture_preference">System Gestures</string>
+    <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
+
 </resources>
