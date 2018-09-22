@@ -165,4 +165,7 @@
     <!-- Phone Specs -->
     <string name="specs_title">Phone Specifications</string>
 
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
 </resources>
