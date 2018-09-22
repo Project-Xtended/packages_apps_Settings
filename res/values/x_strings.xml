@@ -160,4 +160,7 @@
     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
     <string name="system_navigation_summary">Configure navigation menus</string>
 
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
 </resources>
