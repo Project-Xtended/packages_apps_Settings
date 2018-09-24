@@ -365,4 +365,8 @@
     <string name="ambient_doze_auto_brightness_title">Ambient auto brightness</string>
     <string name="ambient_doze_auto_brightness_summary">Use last screen-on adaptive brightness value for Ambient Display</string>
 
+    <!-- Custom Ambient Display Config -->
+    <string name="ambient_display_screen_title">Xtended Ambient Display</string>
+    <string name="ambient_display_screen_summary">Custom Ambient Display Configuration</string>
+    
 </resources>

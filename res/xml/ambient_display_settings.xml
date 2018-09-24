@@ -22,6 +22,16 @@
     settings:keywords="@string/keywords_ambient_display_screen"
     android:title="@string/ambient_display_screen_title">
 
+    <Preference
+        android:key="ambient_display_custom"
+	android:title="@string/ambient_display_screen_title"
+	android:summary="@string/ambient_display_screen_summary" >
+        <intent
+            android:action="com.android.settings.action.EXTRA_SETTINGS"
+            android:targetPackage="com.custom.ambient.display"
+            android:targetClass="com.custom.ambient.display.DozeSettings" />
+    </Preference>
+
         <SwitchPreference
             android:key="ambient_display_always_on"
             android:title="@string/doze_always_on_title"
