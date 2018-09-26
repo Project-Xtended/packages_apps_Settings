@@ -35,7 +35,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
          <intent android:action="android.intent.action.VIEW"
                 android:data="https://t.me/XtendedOfficial" />
         </Preference>
-    <!--<PreferenceCategory
+    <PreferenceCategory
             android:key="xtended_credits"
             android:title="@string/credits_header">
          <Preference			
@@ -43,7 +43,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
              android:title="@string/credits_to_these_teams"
              android:summary="@string/credits_summary"
              android:fragment="com.android.settings.xtended.XtendedCreditsInfo"/>
-    </PreferenceCategory>-->
+    </PreferenceCategory>
     <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/devs_header" >
