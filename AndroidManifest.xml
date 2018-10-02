@@ -3385,6 +3385,9 @@
                   <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                   android:value="com.msm.xtended.fragments.ThanksActivity" />
         </activity>
+        <!-- So why not make it longer and add Carbon Features? -->
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.msm.xtended.fragments.hideappfromrecents.HAFRAppListActivity" />
     </application>
 </manifest>
 
