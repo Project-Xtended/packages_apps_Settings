@@ -21,7 +21,10 @@ LOCAL_USE_AAPT2 := true
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../Xtensions/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../XOta/src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../SmartNavSettings/src)
 LOCAL_ASSET_DIR := packages/apps/XOta/assets
+
+LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     $(ANDROID_SUPPORT_DESIGN_TARGETS) \
@@ -55,6 +58,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/Xtensions/res \
+    packages/apps/SmartNavSettings/res \
     packages/apps/XOta/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
