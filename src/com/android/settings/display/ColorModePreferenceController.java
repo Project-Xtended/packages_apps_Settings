@@ -35,6 +35,7 @@ public class ColorModePreferenceController extends BasePreferenceController {
                 com.android.internal.R.array.config_availableColorModes);
         return availableColorModes.length > 0 &&
                 mContext.getSystemService(ColorDisplayManager.class).isDeviceColorManaged()
+                && availableColorModes.length > 0
                 && !ColorDisplayManager.areAccessibilityTransformsEnabled(mContext) ?
                 AVAILABLE : DISABLED_FOR_USER;
     }
