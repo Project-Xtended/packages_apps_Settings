@@ -403,4 +403,8 @@
     <string name="sub_deactivate_success">SIM deactivated.</string>
     <string name="sub_deactivate_failed">Deactivation failed.</string>
     
+     <!-- OTA -->
+    <string name="xtended_update_settings_title">Xtended Updates</string>
+    <string name="xtended_update_settings_summary">Check available update</string>
+
 </resources>

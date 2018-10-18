@@ -140,6 +140,7 @@ import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.msm.xtended.Xtensions;
+import com.xtended.settings.fragments.about.Update;
 
 public class SettingsGateway {
 
@@ -267,7 +268,8 @@ public class SettingsGateway {
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
 	    Xtensions.class.getName(),
 	    ScreenStabilization.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+	    Update.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
