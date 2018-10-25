@@ -36,8 +36,8 @@ public class BuildNumberDialogController {
     }
 
     private String getXtendedVersion(){
-        String buildType = SystemProperties.get("ro.xtended.buildtype","");
-        return buildType.equals("") ? "" : "MSM-Xtended-" + "-" + buildType;
+        String buildType = SystemProperties.get("ro.xtended.display.version","");
+        return buildType.equals("") ? "" : "MSM-Xtended" + "-" + buildType;
     }
 
     /**

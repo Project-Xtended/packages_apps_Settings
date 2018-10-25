@@ -101,7 +101,7 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
     }
 
     private String getXtendedVersion(){
-	String buildType = SystemProperties.get("ro.xtended.buildtype","");
+	String buildType = SystemProperties.get("ro.xtended.display.version","");
         return buildType.equals("") ? "" : "MSM-Xtended" + "-" + buildType;
     }
 
