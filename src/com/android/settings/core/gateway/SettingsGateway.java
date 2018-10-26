@@ -141,6 +141,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 
 import com.msm.xtended.Xtensions;
 import com.xtended.settings.fragments.about.Update;
+import com.msm.xtended.fragments.OmniJawsSettings;
 
 public class SettingsGateway {
 
@@ -270,6 +271,7 @@ public class SettingsGateway {
 	    ScreenStabilization.class.getName(),
             RunningServices.class.getName(),
 	    Update.class.getName(),
+	    OmniJawsSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
