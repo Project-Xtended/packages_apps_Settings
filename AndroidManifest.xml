@@ -3388,6 +3388,9 @@
         <!-- So why not make it longer and add Carbon Features? -->
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="com.msm.xtended.fragments.hideappfromrecents.HAFRAppListActivity" />
+        <!-- Gesture Anywhere -->
+        <activity android:name="com.msm.xtended.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name="com.msm.xtended.gestureanywhere.GestureAnywhereCreateGestureActivity" />
     </application>
 </manifest>
 
