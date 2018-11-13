@@ -139,6 +139,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.custom.ambient.history.AmbientPlayHistory;
+import com.android.settings.custom.ambient.AmbientPlaySettings;
 
 import com.msm.xtended.Xtensions;
 import com.xtended.settings.fragments.about.Update;
@@ -274,6 +275,7 @@ public class SettingsGateway {
 	    Update.class.getName(),
 	    OmniJawsSettings.class.getName(),
             AmbientPlayHistory.class.getName(),
+            AmbientPlaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
