@@ -602,4 +602,6 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 
+    <string name="battery_temp">Battery temperature</string>
+
 </resources>
