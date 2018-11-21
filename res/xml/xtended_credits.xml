@@ -20,7 +20,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <PreferenceScreen
                 android:key="xtended_about"
                 android:enabled="false"
-                android:layout="@layout/xtended_about" />
+		android:layout="@layout/xtended_about" />
+
   <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/hail_to_teams" >			
@@ -124,27 +125,26 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </Preference>
     <Preference
             android:title="@string/team_15"
-	        android:icon="@drawable/ic_devs_info" >
+	    android:icon="@drawable/ic_devs_info" >
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/ResurrectionRemix" />
     </Preference>
     <Preference
             android:title="@string/team_16"
-   	        android:icon="@drawable/ic_devs_info" >
+   	    android:icon="@drawable/ic_devs_info" >
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/havoc-os" />
     </Preference>
     <Preference
             android:title="@string/team_17"
-	        android:icon="@drawable/ic_devs_info" >
+	    android:icon="@drawable/ic_devs_info" >
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/Substratum" />
     </Preference>
-  </PreferenceCategory>
-
+   </PreferenceCategory>
     <PreferenceCategory
             android:title="@string/thanks_header" >
         <Preference
@@ -163,7 +163,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/spt_5"
 	    android:icon="@drawable/ic_devs_phone" />
     </PreferenceCategory>
-    <PreferenceCategory
+    <!--PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/translators_header" >
         <Preference
@@ -190,18 +190,33 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:title="@string/translator_6"
  	    android:summary="@string/language_6"
  	    android:icon="@drawable/ic_devs_phone" />
-    </PreferenceCategory>
+    </PreferenceCategory-->
     <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/testing_header" >
+        <Preference
+            android:title="@string/hht_5"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_6"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_7"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_8"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_9"
+            android:icon="@drawable/ic_devs_phone" />
+        <Preference
+            android:title="@string/hht_3"
+	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/hht_1"
 	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/hht_2"
-	    android:icon="@drawable/ic_devs_phone" />
-        <Preference
-            android:title="@string/hht_3"
 	    android:icon="@drawable/ic_devs_phone" />
         <Preference
             android:title="@string/hht_4"
