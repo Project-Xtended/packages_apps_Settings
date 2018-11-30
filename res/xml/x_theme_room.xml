@@ -41,6 +41,15 @@
         android:defaultValue="0xffffff"
         android:persistent="false" />
 
+    <!-- Settings dashboard icon style -->
+    <com.msm.xtended.preferences.SystemSettingIntListPreference
+        android:key="theming_settings_dashboard_icons"
+        android:title="@string/theming_settings_dashboard_icons_title"
+        android:entries="@array/theming_settings_dashboard_icons_entries"
+        android:entryValues="@array/theming_settings_dashboard_icons_values"
+        android:defaultValue="0"
+        android:summary="%s" />
+
     <com.msm.xtended.preferences.SystemSettingListPreference
         android:key="systemui_plugin_volume"
         android:title="@string/audio_panel_view_theme_title"
