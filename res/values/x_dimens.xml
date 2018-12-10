@@ -18,5 +18,8 @@
 
     <dimen name="fab_line_width">2dp</dimen>
 
+    <dimen name="dashboard_category_height">48dp</dimen>
+    <dimen name="dashboard_text_margin_end">10dp</dimen>
+
 </resources>
 
