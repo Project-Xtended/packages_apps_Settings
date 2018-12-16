@@ -45,7 +45,8 @@
             style="@style/device_info_dialog_value"
             android:id="@+id/firmware_version_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorAccent"/>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -71,7 +72,8 @@
             style="@style/device_info_dialog_value"
             android:id="@+id/baseband_version_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorAccent"/>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -83,7 +85,21 @@
             style="@style/device_info_dialog_value"
             android:id="@+id/kernel_version_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorAccent"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:id="@+id/build_date_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/build_date"/>
+        <TextView
+            style="@style/device_info_dialog_value"
+            android:id="@+id/build_date_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorAccent"/>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -95,6 +111,7 @@
             style="@style/device_info_dialog_value"
             android:id="@+id/build_number_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/colorAccent"/>
     </LinearLayout>
 </ScrollView>
