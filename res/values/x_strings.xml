@@ -64,4 +64,8 @@
 
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_summary">Tap to switch scale</string>
 </resources>
