@@ -605,4 +605,8 @@
     <string name="battery_temp">Battery temperature</string>
     <string name="build_date">Build date</string>
 
+    <!-- doze on charge -->
+    <string name="doze_on_charge_title">Show when charging</string>
+    <string name="doze_on_charge_summary">Wake screen when charging</string>
+
 </resources>

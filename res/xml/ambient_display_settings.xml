@@ -56,6 +56,12 @@
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" /-->
 
+        <com.msm.xtended.preferences.SystemSettingSwitchPreference
+            android:key="doze_on_charge"
+            android:title="@string/doze_on_charge_title"
+            android:summary="@string/doze_on_charge_summary"
+            android:defaultValue="false" />
+
         <SwitchPreference
             android:key="ambient_doze_auto_brightness"
             android:title="@string/ambient_doze_auto_brightness_title"
