@@ -39,6 +39,7 @@ import androidx.loader.app.LoaderManager;
 import androidx.loader.app.LoaderManager.LoaderCallbacks;
 import androidx.loader.content.Loader;
 
+import com.android.internal.util.xtended.XtendedUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
@@ -101,8 +102,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     boolean mNeedUpdateBatteryTip;
     @VisibleForTesting
     BatteryTipPreferenceController mBatteryTipPreferenceController;
-
-    private boolean batteryTemp = false;
 
     @VisibleForTesting
     final ContentObserver mSettingsObserver = new ContentObserver(new Handler()) {
@@ -232,7 +231,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
-        updateBatteryTempPreference();
     }
 
     @Override
@@ -244,8 +242,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                         .setTitleRes(R.string.advanced_battery_title)
                         .launch();
             return true;
-        } else if (KEY_BATTERY_TEMP.equals(preference.getKey())) {
-            updateBatteryTempPreference();
         }
         return super.onPreferenceTreeClick(preference);
     }
@@ -326,9 +322,13 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
         updateLastFullChargePreference();
-        updateBatteryTempPreference();
         mScreenUsagePref.setSummary(StringUtil.formatElapsedTime(getContext(),
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
+        mBatteryTemp.setSubtitle(
+                XtendedUtils.mccCheck(getContext()) ?
+                XtendedUtils.batteryTemperature(getContext(), true) + "°F" :
+                XtendedUtils.batteryTemperature(getContext(), false) + "°C");
+
     }
 
     @VisibleForTesting
@@ -356,19 +356,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             mLastFullChargePref.setSummary(
                     StringUtil.formatRelativeTime(getContext(), lastFullChargeTime,
                             false /* withSeconds */));
-        }
-    }
-
-    @VisibleForTesting
-    void updateBatteryTempPreference() {
-        if (batteryTemp) {
-            mBatteryTemp.setSubtitle(
-                com.android.internal.util.xtended.XtendedUtils.batteryTemperature(getContext(), false));
-            batteryTemp = false;
-        } else {
-            mBatteryTemp.setSubtitle(
-                com.android.internal.util.xtended.XtendedUtils.batteryTemperature(getContext(), true));
-            batteryTemp = true;
         }
     }
 
