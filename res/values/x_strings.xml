@@ -605,8 +605,4 @@
     <string name="battery_temp">Battery temperature</string>
     <string name="build_date">Build date</string>
 
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
-
 </resources>
