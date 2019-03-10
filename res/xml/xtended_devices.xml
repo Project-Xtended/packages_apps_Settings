@@ -97,6 +97,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/moto-g5s-plus/development/rom-msm-xtended-pie-9-0-t3868296" />
        </Preference>
+        <Preference
+            android:title="@string/device_11"
+            android:summary="@string/device11_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/lenovo-zuk-z2/development/stable-msm-xtended-xp4-release-v8-5-t3882775" />
+       </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
 
