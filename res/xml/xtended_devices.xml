@@ -105,6 +105,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/lenovo-zuk-z2/development/stable-msm-xtended-xp4-release-v8-5-t3882775" />
        </Preference>
+        <Preference
+            android:title="@string/device_12"
+            android:summary="@string/device12_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/g5-plus/development/rom-msm-xtended-t3851041" />
+       </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
 
