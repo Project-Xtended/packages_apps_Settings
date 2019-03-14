@@ -27,7 +27,6 @@ LOCAL_ASSET_DIR := packages/apps/XOta/assets
 LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
-    $(ANDROID_SUPPORT_DESIGN_TARGETS) \
     android-slices-builders \
     android-slices-core \
     android-slices-view \

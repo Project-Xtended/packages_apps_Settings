@@ -72,13 +72,4 @@
             android:key="ambient_doze_custom_brightness"
             android:title="@string/ambient_doze_custom_brightness_title" />
 
-    <PreferenceCategory android:key="divider" />
-
-    <!-- Ambient play -->
-    <PreferenceScreen
-        android:key="ambient_play"
-        android:title="@string/ambient_play_title"
-        android:summary="@string/ambient_play_summary"
-        android:fragment="com.android.settings.custom.ambient.AmbientPlaySettings" />
-
 </PreferenceScreen>

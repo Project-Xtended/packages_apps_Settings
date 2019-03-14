@@ -142,8 +142,6 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
-import com.android.settings.custom.ambient.history.AmbientPlayHistory;
-import com.android.settings.custom.ambient.AmbientPlaySettings;
 
 import com.msm.xtended.Xtensions;
 import com.xtended.settings.fragments.about.Update;
@@ -279,8 +277,6 @@ public class SettingsGateway {
             RunningServices.class.getName(),
 	    Update.class.getName(),
 	    OmniJawsSettings.class.getName(),
-            AmbientPlayHistory.class.getName(),
-            AmbientPlaySettings.class.getName(),
             NavigationSettingsActivity.class.getName(),
             SmartbarSettingsActivity.class.getName(),
             FlingSettingsActivity.class.getName(),

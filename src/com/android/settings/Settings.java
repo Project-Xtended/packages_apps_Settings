@@ -179,9 +179,6 @@ public class Settings extends SettingsActivity {
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
     public static class PieControlSettingsActivity extends SettingsActivity { /* empty */ }
     public static class XOTAActivity extends SettingsActivity { /* empty */ }    
-    // Ambient play
-    public static class AmbientPlayHistoryActivity extends SettingsActivity { /* empty */ }
-    public static class AmbientPlaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class NavigationSettingsActivity extends SettingsActivity {}
     public static class SmartbarSettingsActivity extends SettingsActivity {}
     public static class FlingSettingsActivity extends SettingsActivity {}
