@@ -56,6 +56,12 @@
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" /-->
 
+        <Preference
+            android:key="force_ambient_for_media_pref"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"
+            android:fragment="com.msm.xtended.fragments.AmbientTicker" />
+
         <com.msm.xtended.preferences.SystemSettingSwitchPreference
             android:key="doze_on_charge"
             android:title="@string/doze_on_charge_title"
