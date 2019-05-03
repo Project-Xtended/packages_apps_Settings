@@ -56,7 +56,6 @@
     <string name="dev7_description">Önyükleme animasyonu geliştiricisi</string>
     <string name="devices_header">Resmi olarak desteklenen cihazlar</string>
     <string name="credits_to_these_teams">Krediler bölümü</string>
-    <string name="hht_4">Test grubunda test eden ve paylaşan diğer kişiler</string>
     <string name="hail_to_teams">Bu takımlara büyük teşekkür</string>
     <string name="team_1">LineageOS | CyanogenMOD</string>
     <string name="team_2">GZOSP takımı</string>
@@ -532,7 +531,7 @@
 
     <!-- doze on charge -->
     <string name="doze_on_charge_title">Şarj olurken göster</string>
-    <string name="doze_on_charge_summary">Şarj olurken aod\'u göster/string>
+    <string name="doze_on_charge_summary">Şarj olurken aod\'u göster</string>
 
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Optimizasyon profili</string>
