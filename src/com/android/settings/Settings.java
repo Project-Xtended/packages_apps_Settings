@@ -182,4 +182,8 @@ public class Settings extends SettingsActivity {
     public static class XtensionsSettingsActivity extends SettingsActivity {}
     public static class GamingModeActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
+
 }
