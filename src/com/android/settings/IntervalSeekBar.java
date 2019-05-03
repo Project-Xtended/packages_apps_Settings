@@ -101,4 +101,3 @@ public class IntervalSeekBar extends SeekBar {
         mMin = min;
     }
 }
-
