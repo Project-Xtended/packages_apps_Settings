@@ -133,7 +133,6 @@ public class StorageVolumePreference extends Preference {
     public void onBindViewHolder(PreferenceViewHolder view) {
         final ImageView unmount = (ImageView) view.findViewById(R.id.unmount);
         if (unmount != null) {
-            unmount.setImageTintList(ColorStateList.valueOf(mIconColor));
             unmount.setOnClickListener(mUnmountListener);
         }
 
