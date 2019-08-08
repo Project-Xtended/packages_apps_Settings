@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/user_icon"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter" />
 </RelativeLayout>
