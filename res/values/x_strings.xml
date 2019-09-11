@@ -365,4 +365,14 @@
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
 
+    <!-- About phone screen, Xtended version -->
+    <string name="xtended_version">Xtended version</string>
+    <string name="xtended_version_default">Unknown</string>
+    <string name="keywords_xtended_version">xtended version</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">build date, build info</string>
+
 </resources>
