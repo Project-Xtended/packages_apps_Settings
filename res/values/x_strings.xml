@@ -193,4 +193,7 @@
     <!-- Lockscreen timeout -->
     <string name="lockscreen_timeout_title">Lockscreen timeout</string>
 
+    <!-- Themes customisation -->
+    <string name="theme_customization_systemui_title">Theme color</string>
+
 </resources>
