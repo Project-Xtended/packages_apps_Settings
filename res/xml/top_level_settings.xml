@@ -21,6 +21,14 @@
     android:key="top_level_settings">
 
     <Preference
+        android:key="top_level_xtensions_settings"
+        android:title="@string/x_settings_title"
+        android:summary="@string/x_settings_summary"
+        android:icon="@drawable/ic_homepage_xtensions"
+        android:order="-130"
+        android:fragment="com.msm.xtended.Xtensions"/>
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
