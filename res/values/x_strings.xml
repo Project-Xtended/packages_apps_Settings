@@ -32,8 +32,8 @@
     <string name="devs_header">Core Dev Team</string>
     <string name="testing_header">Helping Hands and Testers</string>
     <string name="thanks_header">Special Thanks to These Devs</string>
-    <string name="xtended_gplus">Official G+ Community</string>
-    <string name="xtended_gplus_summary">Join here to learn more</string>
+    <string name="xtended_web">Official Website</string>
+    <string name="xtended_web_summary">Visit for more details</string>
     <string name="xtended_telegram">Official Telegram Support Group</string>
     <string name="xtended_telegram_summary">Join Here for Instant Support</string>
     <string name="credits_header">Thanks Giving</string>
