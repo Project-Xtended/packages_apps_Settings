@@ -26,7 +26,8 @@
         android:summary="@string/x_settings_summary"
         android:icon="@drawable/ic_homepage_xtensions"
         android:order="-130"
-        android:fragment="com.msm.xtended.Xtensions"/>
+        android:fragment="com.msm.xtended.Xtensions"
+        settings:controller="com.msm.xtended.TopLevelOmniEntryPreferenceController" />
 
     <Preference
         android:key="top_level_network"

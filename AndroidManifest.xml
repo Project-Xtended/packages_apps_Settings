@@ -3287,12 +3287,13 @@
                   android:label="@string/x_settings_title"
                   android:icon="@drawable/ic_homepage_xtensions"
                   android:parentActivityName="com.android.settings">
-            <intent-filter android:priority="69">
-                <action android:name="android.intent.action.MAIN" />    
-                <category android:name="com.android.settings.SHORTCUT" />
- 	    </intent-filter>
+            <intent-filter>
+                  <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.msm.xtended.Xtensions"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/x_settings_summary"/>
         </activity>
     </application>
 </manifest>
