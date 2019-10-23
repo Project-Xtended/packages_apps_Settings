@@ -162,12 +162,12 @@
         settings:controller="com.android.settings.sound.MediaControlsParentPreferenceController"
         settings:keywords="@string/keywords_media_controls"/>
 
-    <Preference
+    <!--Preference
         android:key="gesture_prevent_ringing_sound"
         android:title="@string/gesture_prevent_ringing_sound_title"
         android:order="-107"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
-        settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController"/>
+        settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController"/-->
 
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
