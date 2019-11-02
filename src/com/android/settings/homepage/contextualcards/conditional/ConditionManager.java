@@ -52,6 +52,7 @@ public class ConditionManager {
 
     public ConditionManager(Context context, ConditionListener listener) {
         mAppContext = context.getApplicationContext();
+	mContext = context;
         mExecutorService = Executors.newCachedThreadPool();
         mCardControllers = new ArrayList<>();
         mListener = listener;
