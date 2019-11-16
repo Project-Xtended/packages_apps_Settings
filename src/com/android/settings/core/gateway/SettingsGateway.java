@@ -162,6 +162,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.msm.xtended.Xtensions;
+import com.msm.xtended.fragments.GamingMode;
 
 public class SettingsGateway {
 
@@ -313,7 +314,8 @@ public class SettingsGateway {
             MediaControlsSettings.class.getName(),
             // X-Tesions Additions
             Xtensions.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            GamingMode.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -356,5 +358,6 @@ public class SettingsGateway {
             // X-Tensions Additions
             Settings.XtensionsSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName()
     };
 }
