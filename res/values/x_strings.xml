@@ -25,6 +25,9 @@
     <!-- Rom version -->
     <string name="rom_version_title">Xtended Version</string>
 
+    <!-- Device Codename -->
+    <string name="about_device_name">Device Codename</string>
+
     <!-- Dev Info -->
     <string name="xtended_about_nfo">About Xtended</string>
     <string name="xtended_about_info_summary_title">Know Us!</string>
