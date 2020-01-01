@@ -22,7 +22,7 @@
     style="@style/SearchBarStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:layout_scrollFlags="scroll|enterAlways">
+    app:layout_scrollFlags="enterAlways|scroll">
     <Toolbar
         android:id="@+id/search_action_bar"
         android:layout_width="match_parent"
