@@ -168,4 +168,10 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- Theming -->
+    <string name="themeroom_title">Theme Room</string>
+    <string name="themeroom_summary">accent-gradient theming</string>
+    <string name="accent_color">Accent picker</string>
+    <string name="accent_summary">System wide accent maker</string>
+
 </resources>
