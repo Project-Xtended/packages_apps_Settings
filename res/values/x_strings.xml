@@ -313,4 +313,9 @@
     <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
     <string name="adb_over_network_warning_title">Allow ADB over network?</string>
 
+    <string name="themeroom_title">Theme Room</string>
+    <string name="themeroom_summary">accent-gradient theming</string>
+    <string name="accent_color">Accent picker</string>
+    <string name="accent_summary">System wide accent maker</string>
+
 </resources>
