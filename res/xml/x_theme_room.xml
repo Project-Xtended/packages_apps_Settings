@@ -15,13 +15,20 @@
 -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:title="@string/themeroom_title"
+        android:title="@string/themeroom_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="accent_color"
         android:title="@string/accent_color"
         android:summary="@string/accent_summary"
+        android:defaultValue="0xffffff"
+        android:persistent="false" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="gradient_color"
+        android:title="@string/gradient_color"
+        android:summary="@string/gradient_summary"
         android:defaultValue="0xffffff"
         android:persistent="false" />
 
