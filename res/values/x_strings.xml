@@ -572,4 +572,7 @@
     <string name="theme_customization_statusbar_height_title">Statusbar Height</string>
     <string name="theme_customization_ui_radius_title">UI Radius</string>
 
+    <!-- Back gesture vibration -->
+    <string name="back_gesture_haptic">Enable haptic tick effect on back gesture</string>
+
 </resources>
