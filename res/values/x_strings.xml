@@ -580,6 +580,9 @@
     <string name="audio_panel_theme_default">Xtended Default</string>
     <string name="audio_panel_theme_aosp">Xtended AOSP</string>
     <string name="audio_panel_theme_custom">Xtended Custom</string>
+    
+    <!-- Back gesture vibration -->
+    <string name="back_gesture_haptic">Enable haptic tick effect on back gesture</string>
 
     <!-- Minimal brightness -->
     <string name="auto_brightness_min_title">Minimal brightness level</string>

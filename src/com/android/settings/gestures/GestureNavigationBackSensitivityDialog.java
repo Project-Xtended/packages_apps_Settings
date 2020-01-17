@@ -38,6 +38,8 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
 
     private boolean mArrowSwitchChecked;
 
+    private boolean mGestureHapticChecked;
+
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
     private static final String KEY_BACK_SENSITIVITY = "back_sensitivity";
     private static final String KEY_BACK_HEIGHT = "back_height";
@@ -89,6 +91,16 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
         });
         final SeekBar seekBarHandleHeight = view.findViewById(R.id.home_handle_height_seekbar);
         seekBarHandleHeight.setProgress(getArguments().getInt(KEY_HOME_HANDLE_HEIGHT));
+        final Switch GestureHapticSwitch = view.findViewById(R.id.back_gesture_haptic);
+        mGestureHapticChecked = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.BACK_GESTURE_HAPTIC, 0) == 1;
+        GestureHapticSwitch.setChecked(mGestureHapticChecked);
+        GestureHapticSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mGestureHapticChecked = GestureHapticSwitch.isChecked() ? true : false;
+            }
+        });
         return new AlertDialog.Builder(getContext())
                 .setTitle(R.string.back_options_dialog_title)
                 .setMessage(R.string.back_sensitivity_dialog_message)
@@ -109,6 +121,8 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                     Settings.Secure.putInt(getActivity().getContentResolver(),
                             Settings.Secure.SHOW_BACK_ARROW_GESTURE, mArrowSwitchChecked ? 1 : 0);
                     SystemNavigationGestureSettings.setHomeHandleHeight(getActivity(), handleHeight);
+                    Settings.System.putInt(getActivity().getContentResolver(),
+                            Settings.System.BACK_GESTURE_HAPTIC, mGestureHapticChecked ? 1 : 0);
                 })
                 .create();
     }
