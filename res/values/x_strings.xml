@@ -320,4 +320,8 @@
     <string name="gradient_color">Gradient picker</string>
     <string name="gradient_summary">Gradient effect maker</string>
 
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">Notification vibration</string>
+    <string name="vibrate_on_notifications_summary">Vibrate on notifications</string>
+
 </resources>
