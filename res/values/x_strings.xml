@@ -324,4 +324,11 @@
     <string name="vibrate_on_notifications_title">Notification vibration</string>
     <string name="vibrate_on_notifications_summary">Vibrate on notifications</string>
 
+    <!-- Themes -->
+    <string name="theme_type_title">System theme</string>
+    <string name="theme_type_summary">Select theme</string>
+    <string name="theme_type_light">Light</string>
+    <string name="theme_type_pitch_black">Pitch black</string>
+    <string name="theme_type_solarized_dark">Solarized dark</string>
+
 </resources>
