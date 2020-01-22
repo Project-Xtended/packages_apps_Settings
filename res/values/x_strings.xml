@@ -314,7 +314,7 @@
     <string name="adb_over_network_warning_title">Allow ADB over network?</string>
 
     <string name="themeroom_title">Theme Room</string>
-    <string name="themeroom_summary">accent-gradient theming</string>
+    <string name="themeroom_summary">Themes-accents-gradients</string>
     <string name="accent_color">Accent picker</string>
     <string name="accent_summary">System wide accent maker</string>
     <string name="gradient_color">Gradient picker</string>
@@ -330,5 +330,7 @@
     <string name="theme_type_light">Light</string>
     <string name="theme_type_pitch_black">Pitch black</string>
     <string name="theme_type_solarized_dark">Solarized dark</string>
+    <string name="theme_type_baked_green">Baked Green</string>
+    <string name="theme_type_choco_x">Choco X</string>
 
 </resources>
