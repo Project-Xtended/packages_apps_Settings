@@ -23,7 +23,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/oneplus-5t/development/msm-xtended-oreoandroid-8-1-t3754938" />
+            android:data="https://forum.xda-developers.com/oneplus-6t/development/rom-msm-xtended-t4019203" />
         </Preference>
 	    <Preference
             android:title="@string/device_2"
@@ -31,7 +31,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/oneplus-5/development/stable-msm-xtended-t3761012" />
+            android:data="https://forum.xda-developers.com/oneplus-5t/development/beta-msm-xtended-t3987429" />
         </Preference>
 	    <Preference
             android:title="@string/device_3"
@@ -39,7 +39,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-development/cardinal-aosp-5-0-android-8-0-pre-t3693585" />
+            android:data="https://forum.xda-developers.com/oneplus-5/development/stable-beta-msm-xtended-t3992183" />
         </Preference>
 	    <Preference
             android:title="@string/device_4"
@@ -47,7 +47,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/official-msm-xtended-pie-9-0-t3846001" />
+            android:data="https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-development/cardinal-aosp-5-0-android-8-0-pre-t3693585" />
         </Preference>
   	    <Preference
             android:title="@string/device_5"
@@ -55,7 +55,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/redmi-4a/development/stable-msm-xtended-pie-firstblood-t3843313" />
+            android:data="https://forum.xda-developers.com/oneplus-one/development/beta-msm-xtended-xq-release-v2-t3991747" />
         </Preference>
         <Preference
             android:title="@string/device_6"
@@ -63,7 +63,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/xiaomi-redmi-3s/development/stable-msm-xtended-xp-1-release-v2-t3845979" />
+            android:data="https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/official-msm-xtended-pie-9-0-t3846001" />
         </Preference>
 	    <Preference
             android:title="@string/device_7"
@@ -71,7 +71,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/redmi-note-5/development/official-msm-xtended-9-0-pie-t3859327" />
+            android:data="https://forum.xda-developers.com/redmi-note-5/development/rom-msm-xtended-os-v5-5-t4038719" />
        </Preference>
         <Preference
             android:title="@string/device_8"
@@ -79,7 +79,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/mi-a1/development/stable-msm-xtended-xp-1-release-v1-t3854187" />
+            android:data="https://forum.xda-developers.com/redmi-note-5-pro/development/stable-msm-xtended-xp4-release-v9-t3889353" />
        </Preference>
         <Preference
             android:title="@string/device_9"
@@ -87,7 +87,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-msm-xtended-pie-t3852960" />
+            android:data="https://forum.xda-developers.com/redmi-7/development/onc-onclite-msm-xtended-xq-release-v4-0-t4032963" />
        </Preference>
         <Preference
             android:title="@string/device_10"
@@ -95,7 +95,63 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:icon="@drawable/ic_devs_phone" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/moto-g5s-plus/development/rom-msm-xtended-pie-9-0-t3868296" />
+            android:data="https://forum.xda-developers.com/redmi-note-7-pro/development/xq-android-10-0-msm-xtended-v5-5-t4040301" />
+       </Preference>
+        <Preference
+            android:title="@string/device_11"
+            android:summary="@string/device11_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/k20-pro/development/stable-msm-xtended-xp9-release-v18-t3966117" />
+       </Preference>
+       <Preference
+            android:title="@string/device_12"
+            android:summary="@string/device12_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/poco-f1/development/beta-msm-xtended-xq-beta-v2-t3987781" />
+       </Preference>
+       <Preference
+            android:title="@string/device_13"
+            android:summary="@string/device13_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/mi-a1/development/rom-msm-xtended-t4024035" />
+       </Preference>
+       <Preference
+            android:title="@string/device_14"
+            android:summary="@string/device14_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/moto-g5s-plus/development/rom-msm-xtended-release-v5-0-t4033885" />
+       </Preference>
+       <Preference
+            android:title="@string/device_15"
+            android:summary="@string/device15_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data=" https://forum.xda-developers.com/lenovo-zuk-z2/development/rom-msm-xtended-t4016147" />
+       </Preference>
+       <Preference
+            android:title="@string/device_16"
+            android:summary="@string/device16_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/asus-zenfone-max-pro-m1/development/msm-xtended-t4036253" />
+       </Preference>
+       <Preference
+            android:title="@string/device_17"
+            android:summary="@string/device17_description"
+            android:icon="@drawable/ic_devs_phone" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/max-pro-m2/development/stable-msm-xtended-xp8-release-v16-july-t3950089" />
        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>
