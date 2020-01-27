@@ -273,9 +273,6 @@
     <string name="smart_charging_reset_stats_summary">Reset battery statistics after reaching user defined charging level</string>
     <string name="smart_charging_footer">Smart Charging allows you to set maximum charging level to extend the lifespan of your battery</string>
 
-    <!-- String for removal of sensitive info on about, depending on tap -->
-    <string name="device_info_protected_single_press">Tap to show info</string>
-
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_data">Cellular data</string>
     <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
