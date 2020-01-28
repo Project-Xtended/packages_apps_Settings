@@ -103,6 +103,22 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:action="android.intent.action.VIEW"
             android:data="https://forum.xda-developers.com/member.php?u=4479268" />
         </Preference>
+        <Preference
+            android:title="@string/dev_8"
+            android:summary="@string/dev8_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=5545371" />
+        </Preference>
+        <Preference
+            android:title="@string/dev_9"
+            android:summary="@string/dev9_description"
+            android:icon="@drawable/ic_devs_pc" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://forum.xda-developers.com/member.php?u=7916453" />
+        </Preference>
     </PreferenceCategory>
     <PreferenceCategory
 	    android:title="@string/devices">

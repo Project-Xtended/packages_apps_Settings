@@ -95,6 +95,12 @@
         android:order="-138"
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
+    <!-- Notification Vibration -->
+    <com.msm.xtended.preferences.SystemSettingSwitchPreference
+        android:key="vibrate_on_notifications"
+        android:title="@string/vibrate_on_notifications_title"
+        android:defaultValue="true" />
+
     <!-- Increasing ring -->
     <com.msm.xtended.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
