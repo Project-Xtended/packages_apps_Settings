@@ -114,13 +114,6 @@
             android:title="@string/notification_show_lights_title"
             settings:useAdditionalSummary="true"/>
 
-        <!-- Lights on DND -->
-        <com.android.settingslib.RestrictedSwitchPreference
-            android:key="show_light_on_zen"
-   	    android:dependency="lights"
-	    android:order="18"
-            android:title="@string/show_light_on_zen_title"/>
-
         <!-- Custom led color -->
         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="custom_light"
