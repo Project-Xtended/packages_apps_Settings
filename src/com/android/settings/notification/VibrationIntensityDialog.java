@@ -28,7 +28,6 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
 
 import com.android.settings.R;
@@ -64,7 +63,7 @@ public class VibrationIntensityDialog extends InstrumentedDialogFragment {
         int dialogTitle;
         
         mIsRinger = mPreferenceKey.equals(RING_VIBRATION_INTENSITY);
-        final ContentResolver mContentResolver = mContext.getContentResolver();
+        final ContentResolver contentResolver = mContext.getContentResolver();
 
         final View view = getActivity().getLayoutInflater().inflate(
                 R.layout.dialog_vibration_intensity, null);
@@ -74,14 +73,14 @@ public class VibrationIntensityDialog extends InstrumentedDialogFragment {
         if (mIsRinger) {
             sb.setMin(1);
             sb.setMax(3);
-            mProgress = Settings.System.getIntForUser(mContentResolver, RING_VIBRATION_INTENSITY, 2, UserHandle.USER_CURRENT);
+            mProgress = Settings.System.getIntForUser(contentResolver, RING_VIBRATION_INTENSITY, 2, UserHandle.USER_CURRENT);
             sb.setProgress(mProgress);
             setText(txtView, mPreference, mProgress);
             dialogTitle = R.string.vibration_intensity_ringer;
         } else {
             sb.setMin(0);
             sb.setMax(3);
-            mProgress = Settings.System.getIntForUser(mContentResolver, NOTIFICATION_VIBRATION_INTENSITY, 2, UserHandle.USER_CURRENT);
+            mProgress = Settings.System.getIntForUser(contentResolver, NOTIFICATION_VIBRATION_INTENSITY, 2, UserHandle.USER_CURRENT);
             sb.setProgress(mProgress);
             setText(txtView, mPreference, mProgress);
             dialogTitle = R.string.vibration_intensity_notification;
@@ -102,7 +101,7 @@ public class VibrationIntensityDialog extends InstrumentedDialogFragment {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Settings.System.putIntForUser(mContentResolver, (mIsRinger) ? RING_VIBRATION_INTENSITY : NOTIFICATION_VIBRATION_INTENSITY,
+                Settings.System.putIntForUser(contentResolver, (mIsRinger) ? RING_VIBRATION_INTENSITY : NOTIFICATION_VIBRATION_INTENSITY,
                     mProgress, UserHandle.USER_CURRENT);
             }
         });
@@ -117,24 +116,24 @@ public class VibrationIntensityDialog extends InstrumentedDialogFragment {
     private void setText(TextView txtView, Preference preference, int status) {
         switch(status) {
             case 0:
-                txtView.setText("Disabled");
-                preference.setSummary("Disabled");
+                txtView.setText(R.string.vibration_intensity_disabled);
+                preference.setSummary(R.string.vibration_intensity_disabled);
                 break;
             case 1:
-                txtView.setText("Light");
-                preference.setSummary("Light");
+                txtView.setText(R.string.vibration_intensity_light);
+                preference.setSummary(R.string.vibration_intensity_light);
                 break;
             case 2:
-                txtView.setText("Medium");
-                preference.setSummary("Medium");
+                txtView.setText(R.string.vibration_intensity_medium);
+                preference.setSummary(R.string.vibration_intensity_medium);
                 break;
             case 3:
-                txtView.setText("Strong");
-                preference.setSummary("Strong");
+                txtView.setText(R.string.vibration_intensity_strong);
+                preference.setSummary(R.string.vibration_intensity_strong);
                 break;
             case 4:
-                txtView.setText("Custom");
-                preference.setSummary("Custom");
+                txtView.setText(R.string.vibration_intensity_custom);
+                preference.setSummary(R.string.vibration_intensity_custom);
                 break;
         }
     }
