@@ -283,12 +283,12 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 new ScreenLockSoundPreferenceController(context, fragment, lifecycle);
         final ChargingSoundPreferenceController chargingSoundPreferenceController =
                 new ChargingSoundPreferenceController(context, fragment, lifecycle);
+        final VibrateOnTouchPreferenceController vibrateOnTouchPreferenceController =
+                new VibrateOnTouchPreferenceController(context, fragment, lifecycle);
         final DockingSoundPreferenceController dockingSoundPreferenceController =
                 new DockingSoundPreferenceController(context, fragment, lifecycle);
         final TouchSoundPreferenceController touchSoundPreferenceController =
                 new TouchSoundPreferenceController(context, fragment, lifecycle);
-        final VibrateOnTouchPreferenceController vibrateOnTouchPreferenceController =
-                new VibrateOnTouchPreferenceController(context, fragment, lifecycle);
         final DockAudioMediaPreferenceController dockAudioMediaPreferenceController =
                 new DockAudioMediaPreferenceController(context, fragment, lifecycle);
         final BootSoundPreferenceController bootSoundPreferenceController =
@@ -301,9 +301,9 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
         controllers.add(dialPadTonePreferenceController);
         controllers.add(screenLockSoundPreferenceController);
         controllers.add(chargingSoundPreferenceController);
+        controllers.add(vibrateOnTouchPreferenceController);
         controllers.add(dockingSoundPreferenceController);
         controllers.add(touchSoundPreferenceController);
-        controllers.add(vibrateOnTouchPreferenceController);
         controllers.add(dockAudioMediaPreferenceController);
         controllers.add(bootSoundPreferenceController);
         controllers.add(emergencyTonePreferenceController);
@@ -313,9 +313,9 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 Arrays.asList(dialPadTonePreferenceController,
                         screenLockSoundPreferenceController,
                         chargingSoundPreferenceController,
+                        vibrateOnTouchPreferenceController,
                         dockingSoundPreferenceController,
                         touchSoundPreferenceController,
-                        vibrateOnTouchPreferenceController,
                         dockAudioMediaPreferenceController,
                         bootSoundPreferenceController,
                         emergencyTonePreferenceController)));
