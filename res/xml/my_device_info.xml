@@ -42,6 +42,15 @@
         android:summary="@string/xtended_about_info_summary_title"
         android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
 
+    <!-- Firmware version -->
+    <Preference
+        android:key="firmware_version"
+        android:order="42"
+        android:title="@string/xtended_firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
@@ -130,15 +139,6 @@
         settings:keywords="@string/keywords_imei_info"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
-
-    <!-- Android version -->
-    <Preference
-        android:key="firmware_version"
-        android:order="42"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <!--IP address -->
     <Preference
