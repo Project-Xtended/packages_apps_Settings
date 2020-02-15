@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="firmware_version_screen"
-    android:title="@string/firmware_version"
+    android:title="@string/xtended_firmware_version"
     settings:keywords="@string/keywords_android_version">
 
     <!-- Xtended Logo -->
@@ -27,14 +27,6 @@
         android:key="xtended_about"
         android:enabled="false"
         android:layout="@layout/xtended_about" />
-
-    <!-- Android version -->
-    <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
     <!-- Xtended version -->
     <Preference
@@ -44,14 +36,6 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.XtendedVersionPreferenceController"/>
 
-    <!-- Build Number -->
-    <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
-
     <!-- Build date -->
     <Preference 
         android:key="build_date"
@@ -59,6 +43,14 @@
         android:summary="@string/build_date_default"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
+
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference

@@ -42,6 +42,15 @@
         android:summary="@string/xtended_about_info_summary_title"
         android:fragment="com.android.settings.xtended.XtendedDevsInfo" />
 
+    <!-- Firmware version -->
+    <Preference
+        android:key="firmware_version"
+        android:order="42"
+        android:title="@string/xtended_firmware_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+
     <!-- Changelog -->
     <Preference
         android:key="changelog"
@@ -135,15 +144,6 @@
         android:title="@string/status_imei"
         settings:keywords="@string/keywords_imei_info"
         android:summary="@string/imei_information_summary"/>
-
-    <!-- Android version -->
-    <Preference
-        android:key="firmware_version"
-        android:order="42"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <!--IP address -->
     <Preference
