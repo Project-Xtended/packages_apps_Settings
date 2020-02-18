@@ -93,15 +93,6 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
 
-    <!-- Legal information -->
-    <Preference
-        android:key="legal_container"
-        android:order="16"
-        android:title="@string/legal_information"
-        android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"
-        settings:searchable="false"/>
-
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
@@ -137,18 +128,42 @@
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
+    <!-- Build number -->
+    <Preference
+        android:key="build_number"
+        android:order="44"
+        android:title="@string/build_number"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
+
+    <!-- SELinux status information -->
+    <Preference
+        android:key="selinux_status"
+        android:order="46"
+        android:title="@string/selinux_status"
+        android:summary="@string/selinux_status_enforcing"/>
+
+    <!-- Up time -->
+    <Preference
+        android:key="status_up_time"
+        android:order="48"
+        android:title="@string/status_up_time"
+        android:summary="@string/summary_placeholder"/>
+
     <!-- IMEI -->
     <Preference
         android:key="imei_info"
-        android:order="32"
+        android:order="49"
         android:title="@string/status_imei"
         settings:keywords="@string/keywords_imei_info"
+	settings:allowDividerAbove="true"
         android:summary="@string/imei_information_summary"/>
 
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
-        android:order="44"
+        android:order="51"
         android:title="@string/wifi_ip_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
@@ -158,7 +173,7 @@
     <!-- Wi-Fi MAC address -->
     <Preference
         android:key="wifi_mac_address"
-        android:order="45"
+        android:order="53"
         android:title="@string/status_wifi_mac_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
@@ -167,34 +182,10 @@
     <!-- Bluetooth address -->
     <Preference
         android:key="bt_address"
-        android:order="46"
+        android:order="55"
         android:title="@string/status_bt_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"/>
-
-    <!-- Build number -->
-    <Preference
-        android:key="build_number"
-        android:order="47"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
-
-    <!-- Up time -->
-    <Preference
-        android:key="status_up_time"
-        android:order="48"
-        android:title="@string/status_up_time"
-        android:summary="@string/summary_placeholder"/>
-
-    <!-- SELinux status information -->
-    <Preference
-        android:key="selinux_status"
-        android:order="49"
-        android:title="@string/selinux_status"
-        android:summary="@string/selinux_status_enforcing"/>
-
+   
 </PreferenceScreen>
