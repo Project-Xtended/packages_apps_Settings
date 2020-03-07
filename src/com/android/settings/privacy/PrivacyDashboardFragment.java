@@ -18,9 +18,9 @@ package com.android.settings.privacy;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
-import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.view.View;
+import android.os.Bundle;
 
 import androidx.annotation.VisibleForTesting;
 

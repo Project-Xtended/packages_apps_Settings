@@ -258,3 +258,4 @@ public class PermissionBarChartPreferenceControllerTest {
         assertThat(infos.get(6).getName()).isEqualTo(SMS);
     }
 }
+

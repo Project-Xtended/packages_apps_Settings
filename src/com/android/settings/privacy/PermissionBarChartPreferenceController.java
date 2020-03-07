@@ -243,3 +243,4 @@ public class PermissionBarChartPreferenceController extends BasePreferenceContro
         return true;
     }
 }
+

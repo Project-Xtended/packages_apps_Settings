@@ -109,3 +109,4 @@ public class PrivacyDashboardFragmentTest {
         assertThat(mFragment.mProgressAnimation.getVisibility()).isEqualTo(View.INVISIBLE);
     }
 }
+
