@@ -442,4 +442,7 @@
     <string name="gesture_navbar_handle_middle">Middle</string>
     <string name="gesture_navbar_handle_large">Large</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
 </resources>
