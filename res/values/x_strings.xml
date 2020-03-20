@@ -185,6 +185,7 @@
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco X</string>
     <string name="theme_type_du_pitchblack">Pitch black</string>
+    <string name="theme_type_dark_grey">Dark Grey</string>
 
     <!-- Theme Reset Option -->
     <string name="theme_option_reset_title">Reset Theme Options</string>
