@@ -300,22 +300,13 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
     }
 
     static void setHomeHandleSize(Context context, int length) {
-        // length cant be range 0 - 2
-        // 2 means long
-        // 1 measns middle
-        // 0 means aosp size
         Settings.System.putInt(context.getContentResolver(),
                 Settings.System.NAVIGATION_HANDLE_WIDTH, length);
     }
 
     static int getHomeHandleSize(Context context) {
         return Settings.System.getInt(context.getContentResolver(),
-                Settings.System.NAVIGATION_HANDLE_WIDTH, 0);
-    }
-
-    static int getPillToggleState(Context context) {
-        return Settings.System.getInt(context.getContentResolver(),
-                Settings.System.GESTURE_PILL_TOGGLE, 0);
+                Settings.System.NAVIGATION_HANDLE_WIDTH, 1);
     }
 
     @VisibleForTesting
