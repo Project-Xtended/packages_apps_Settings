@@ -35,4 +35,7 @@
     <!-- Text size of the label text in the donut. -->
     <dimen name="storage_donut_view_label_text_size">14sp</dimen>
 
+    <!-- The Team -->
+    <dimen name="team_recycler_height">250dp</dimen>
+
 </resources>

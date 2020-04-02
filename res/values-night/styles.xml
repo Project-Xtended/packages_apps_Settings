@@ -17,8 +17,18 @@
 
 <resources>
 
-<style name="Widget.ActionBar.Base" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
-  <item name="android:background">?android:attr/colorPrimaryDark</item>
-</style>
+    <style name="Widget.ActionBar.Base" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:background">?android:attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="TeamDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/TeamAnimation.Window</item>
+    </style>
+
+    <style name="TeamAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
 
 </resources>

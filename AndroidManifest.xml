@@ -3569,5 +3569,19 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.xtended.fragments.GamingMode" />
         </activity>
+
+        <!-- Xtended Team dialog -->
+        <activity android:name="com.android.settings.xtended.helpers.TeamActivity"
+                  android:taskAffinity=""
+                  android:parentActivityName="Settings"
+                  android:theme="@style/TeamDialog"
+                  android:label="@string/dialog_team_title" >
+                  <intent-filter>  
+                  		<action android:name="com.android.settings.xtended.helpers.TeamActivity"/>  
+                		<category android:name="android.intent.category.DEFAULT" />  
+            	  </intent-filter>
+            	  <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                  android:value="com.android.settings.xtended.helpers.TeamActivity" />
+        </activity>
     </application>
 </manifest>

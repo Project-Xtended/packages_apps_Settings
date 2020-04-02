@@ -37,71 +37,26 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <PreferenceCategory
             android:key="xtended_credits"
             android:title="@string/credits_header">
-         <Preference			
-             android:key="xtended_credits"
-             android:title="@string/credits_to_these_teams"
-             android:summary="@string/credits_summary"
-             android:fragment="com.android.settings.xtended.XtendedCreditsInfo"/>
+        <!-- Thanks & Credits -->
+        <PreferenceScreen
+            android:key="thanks_credits"
+            android:title="@string/credits_to_these_teams"
+            android:summary="@string/credits_summary"
+            android:icon="@drawable/ic_devs_pc">
+               <intent android:action="com.android.settings.xtended.helpers.ThanksActivity"/>
+        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory
             android:key="xtended_dev"
             android:title="@string/devs_header" >
-        <Preference
-            android:title="@string/dev_1"
-            android:summary="@string/dev1_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=7072514" />
-        </Preference>
-        <Preference
-            android:title="@string/dev_3"
-            android:summary="@string/dev3_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=5678679" />
-        </Preference>
-        <Preference
-            android:title="@string/dev_2"
-            android:summary="@string/dev2_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=8829870" />
-        </Preference>
-        <Preference
-            android:title="@string/dev_4"
-            android:summary="@string/dev4_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=7107153" />
-        </Preference>
-        <Preference
-            android:title="@string/dev_6"
-            android:summary="@string/dev6_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=7030109" />
-        </Preference>
-        <Preference
-            android:title="@string/dev_5"
-            android:summary="@string/dev5_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=7077053" />
-        </Preference>
-        <Preference
-            android:title="@string/dev_7"
-            android:summary="@string/dev7_description"
-            android:icon="@drawable/ic_devs_pc" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://forum.xda-developers.com/member.php?u=4479268" />
-        </Preference>
+        <!-- The team -->
+        <PreferenceScreen
+            android:key="the_team"
+            android:title="@string/xtended_about_nfo"
+            android:summary="@string/xtended_about_info_summary_title"
+            android:icon="@drawable/ic_x_team">
+               <intent android:action="com.android.settings.xtended.helpers.TeamActivity"/>
+        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory
 	    android:title="@string/devices">
@@ -109,6 +64,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
              android:key="xtended_devices"
 	     android:title="@string/devices_title"
              android:summary="@string/devices_summary"
+             android:icon="@drawable/ic_devs_phone"
              android:fragment="com.android.settings.xtended.XtendedDevices"/>
     </PreferenceCategory>
 </PreferenceScreen>

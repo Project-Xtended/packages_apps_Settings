@@ -469,4 +469,9 @@
     <!-- Phone Specs -->
     <string name="specs_title">Phone Specifications</string>
 
+    <!-- The Team -->
+    <string name="dialog_team_title">The team</string>
+    <string name="developer_title">Developer</string>
+    <string name="maintainer_title">Maintainer</string>
+
 </resources>
