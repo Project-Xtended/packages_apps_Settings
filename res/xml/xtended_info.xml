@@ -52,8 +52,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <!-- The team -->
         <PreferenceScreen
             android:key="the_team"
-            android:title="@string/xtended_about_nfo"
-            android:summary="@string/xtended_about_info_summary_title"
+            android:title="@string/xtended_about_team"
+            android:summary="@string/xtended_about_team_summary"
             android:icon="@drawable/ic_x_team">
                <intent android:action="com.android.settings.xtended.helpers.TeamActivity"/>
         </PreferenceScreen>

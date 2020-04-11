@@ -20,6 +20,8 @@
     <string name="xtended_about_info">About Xtended</string>
     <string name="xtended_about_info_summary_title">Know Us!</string>
     <string name="xtended_info_summary">Project-Xtended is a Custom ROM based on hybrid mix of AOSP n CAF. We are trying to make it simple in terms of UI yet a power packed Android System having all neccessary and usefull customization. Yeah, we know in flow we have got some Xtended Features as well.</string>
+    <string name="xtended_about_team">Team Xtended</string>
+    <string name="xtended_about_team_summary">Know About The Team Xtended</string>
     <string name="devs_header">Core Dev Team</string>
     <string name="testing_header">Helping Hands and Testers</string>
     <string name="thanks_header">Special Thanks to These Devs</string>
@@ -473,5 +475,6 @@
     <string name="dialog_team_title">The team</string>
     <string name="developer_title">Developer</string>
     <string name="maintainer_title">Maintainer</string>
+    <string name="designer_title">Designer</string>
 
 </resources>
