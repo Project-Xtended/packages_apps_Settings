@@ -264,4 +264,8 @@
     <string name="volume_steps_7" translatable="false">7</string>
     <string name="volume_steps_5" translatable="false">5</string>
 
+    <!-- Transparent lockscreen notifications -->
+    <string name="transparent_lockscreen_notification_title">Transparent notifications</string>
+    <string name="transparent_lockscreen_notification_summary">Enable lockscreen notifications with semi-transparent backgrounds</string>
+
 </resources>

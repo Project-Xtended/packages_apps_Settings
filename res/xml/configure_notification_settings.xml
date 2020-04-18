@@ -109,6 +109,12 @@
             android:title="@string/silent_notifications_status_bar"
             settings:controller="com.android.settings.notification.SilentStatusBarPreferenceController"/>
 
+        <com.msm.xtended.preferences.SecureSettingSwitchPreference
+            android:key="lock_screen_transparent_notifications_enabled"
+            android:title="@string/transparent_lockscreen_notification_title"
+            android:summary="@string/transparent_lockscreen_notification_summary"
+            android:defaultValue="false" />
+
         <SwitchPreference
             android:key="show_snooze_options"
             android:title="@string/snooze_options_title"
