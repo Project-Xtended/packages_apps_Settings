@@ -470,4 +470,8 @@
     <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
     <string name="auto_refresh_rate">Auto</string>
 
+    <!-- Ultra Power -->
+    <string name="ultra_power_save_title">Ultra Power Saving</string>
+    <string name="ultra_power_save_summary">When screen goes off device will switch to ultra power mode</string>
+
 </resources>

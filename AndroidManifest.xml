@@ -3372,6 +3372,19 @@
             	  <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                   android:value="com.msm.xtended.fragments.TeamActivity" />
         </activity>
+        <!-- Thanks & Credits dialog -->
+        <activity android:name="com.msm.xtended.fragments.ThanksActivity"
+                  android:taskAffinity=""
+                  android:parentActivityName="Settings"
+                  android:theme="@style/TeamDialog"
+                  android:label="@string/hail_to_teams" >
+                  <intent-filter>
+                                <action android:name="com.msm.xtended.ThanksActivity"/>
+                                <category android:name="android.intent.category.DEFAULT" />
+                  </intent-filter>
+                  <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                  android:value="com.msm.xtended.fragments.ThanksActivity" />
+        </activity>
     </application>
 </manifest>
 
