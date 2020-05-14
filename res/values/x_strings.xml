@@ -162,4 +162,7 @@
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
+    <!-- Phone Specs -->
+    <string name="specs_title">Phone Specifications</string>
+
 </resources>
