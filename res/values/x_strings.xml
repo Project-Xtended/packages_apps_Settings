@@ -581,4 +581,6 @@
     <string name="audio_panel_theme_aosp">Xtended AOSP</string>
     <string name="audio_panel_theme_custom">Xtended Custom</string>
 
+    <!-- Phone Specs -->
+    <string name="specs_title">Phone Specifications</string>
 </resources>
