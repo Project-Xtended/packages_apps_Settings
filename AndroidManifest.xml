@@ -3457,5 +3457,13 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.xtended.Xtensions"/>
         </activity>
+
+        <receiver android:name="com.xtended.utils.OnBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
