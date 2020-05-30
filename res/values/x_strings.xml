@@ -187,6 +187,7 @@
     <string name="theme_type_du_pitchblack">Pitch black</string>
     <string name="theme_type_dark_grey">Dark Grey</string>
     <string name="theme_type_material_ocean">Material Ocean</string>
+    <string name="theme_type_xtended_clear">Xtended Clear</string>
 
     <!-- Theme Reset Option -->
     <string name="theme_option_reset_title">Reset Theme Options</string>
