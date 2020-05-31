@@ -41,6 +41,8 @@ import java.util.Objects;
 import com.android.internal.util.xtended.ThemesUtils;
 import com.android.internal.util.xtended.XtendedUtils;
 import com.android.settings.SettingsPreferenceFragment;
+import com.msm.xtended.preferences.CustomSeekBarPreference;
+import com.msm.xtended.preferences.SystemSettingSwitchPreference;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class XThemeRoom extends SettingsPreferenceFragment implements
@@ -52,6 +54,12 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
     private static final String GRADIENT_COLOR_PROP = "persist.sys.theme.gradientcolor";
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String QS_HEADER_STYLE = "qs_header_style";
+    private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
+    private static final String QS_PANEL_COLOR = "qs_panel_color";
+    private static final String QS_BLUR_ALPHA = "qs_blur_alpha";
+    private static final String QS_BLUR_INTENSITY = "qs_blur_intensity";
+    private static final String PREF_R_NOTIF_HEADER = "notification_headers";
+    static final int DEFAULT_QS_PANEL_COLOR = 0xffffffff;
     private static final int MENU_RESET = Menu.FIRST;
 
     static final int DEFAULT = 0xff1a73e8;
@@ -63,6 +71,11 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
     private ColorPickerPreference mGradientColor;
     private ListPreference mThemeSwitch;
     private ListPreference mQsHeaderStyle;
+    private CustomSeekBarPreference mQsPanelAlpha;
+    private ColorPickerPreference mQsPanelColor;
+    private CustomSeekBarPreference mQsBlurAlpha;
+    private CustomSeekBarPreference mQsBlurIntensity;
+    private SystemSettingSwitchPreference mNotifHeader;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -79,6 +92,11 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
         setupGradientPref();
         setupThemeSwitchPref();
         getQsHeaderStylePref();
+        getQsPanelAlphaPref();
+        getQsPanelColorPref();
+        getQsBlurAlphaPref();
+        getQsBlurIntenPref();
+        getRStylePref();
         setHasOptionsMenu(true);
     }
 
@@ -110,6 +128,37 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
 			    Settings.System.QS_HEADER_STYLE, Integer.valueOf(value));
             int newIndex = mQsHeaderStyle.findIndexOfValue(value);
             mQsHeaderStyle.setSummary(mQsHeaderStyle.getEntries()[newIndex]);
+            return true;
+        } else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) objValue;
+            int trueValue = (int) (((double) bgAlpha / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, trueValue);
+            return true;
+        } else if (preference == mQsPanelColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_COLOR, intHex, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mQsBlurAlpha) {
+            int value = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_BLUR_ALPHA, value);
+            return true;
+        } else if (preference == mQsBlurIntensity) {
+            int valueInt = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_BLUR_INTENSITY, valueInt);
+            return true;
+        } else if (preference == mNotifHeader) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NOTIFICATION_HEADERS, value ? 1 : 0);
+            XtendedUtils.showSystemUiRestartDialog(getContext());
+            return true;
         } else if (preference == mThemeSwitch) {
             String theme_switch = (String) objValue;
             final Context context = getContext();
@@ -210,13 +259,54 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
     }
 
     private void getQsHeaderStylePref() {
-        mQsHeaderStyle = (ListPreference) screen.findPreference(QS_HEADER_STYLE);
-        int qsHeaderStyle = Settings.System.getInt(getActivity.getContentResolver(),
+        mQsHeaderStyle = (ListPreference) findPreference(QS_HEADER_STYLE);
+        int qsHeaderStyle = Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.QS_HEADER_STYLE, 0);
         int valueIndex = mQsHeaderStyle.findIndexOfValue(String.valueOf(qsHeaderStyle));
         mQsHeaderStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mQsHeaderStyle.setSummary(mQsHeaderStyle.getEntry());
         mQsHeaderStyle.setOnPreferenceChangeListener(this);
+    }
+
+    private void getQsPanelAlphaPref() {
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, 255);
+        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
+    }
+
+    private void getQsPanelColorPref() {
+        mQsPanelColor = (ColorPickerPreference) findPreference(QS_PANEL_COLOR);
+        mQsPanelColor.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.QS_PANEL_BG_COLOR, DEFAULT_QS_PANEL_COLOR, UserHandle.USER_CURRENT);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mQsPanelColor.setSummary(hexColor);
+        mQsPanelColor.setNewPreviewColor(intColor);
+    }
+
+    private void getQsBlurAlphaPref() {
+        mQsBlurAlpha = (CustomSeekBarPreference) findPreference(QS_BLUR_ALPHA);
+        int qsBlurAlpha = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.QS_BLUR_ALPHA, 100, UserHandle.USER_CURRENT);
+        mQsBlurAlpha.setValue(qsBlurAlpha);
+        mQsBlurAlpha.setOnPreferenceChangeListener(this);
+    }
+
+    private void getQsBlurIntenPref() {
+        mQsBlurIntensity = (CustomSeekBarPreference) findPreference(QS_BLUR_INTENSITY);
+        int qsBlurIntensity = Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.QS_BLUR_INTENSITY, 100, UserHandle.USER_CURRENT);
+        mQsBlurIntensity.setValue(qsBlurIntensity);
+        mQsBlurIntensity.setOnPreferenceChangeListener(this);
+    }
+
+    private void getRStylePref() {
+        mNotifHeader = (SystemSettingSwitchPreference) findPreference(PREF_R_NOTIF_HEADER);
+        mNotifHeader.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NOTIFICATION_HEADERS, 1) == 1));
+        mNotifHeader.setOnPreferenceChangeListener(this);
     }
 
     private void setupThemeSwitchPref() {
