@@ -507,4 +507,11 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
 
+    <!-- Switch styles -->
+    <string name="switch_style_title">Switch Styles</string>
+    <string name="switch_default">Default</string>
+    <string name="switch_oneplus">OnePlus</string>
+    <string name="switch_narrow">Narrow</string>
+    <string name="switch_contained">Contained</string>
+
 </resources>
