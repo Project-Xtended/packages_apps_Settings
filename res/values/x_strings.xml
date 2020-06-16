@@ -541,4 +541,11 @@
     <string name="clock_style_title">Clock styles</string>
     <string name="clock_style_summary">Customize lockscreen clock</string>
 
+    <!-- Switch styles -->
+    <string name="switch_style_title">Switch Styles</string>
+    <string name="switch_default">Default</string>
+    <string name="switch_oneplus">OnePlus</string>
+    <string name="switch_narrow">Narrow</string>
+    <string name="switch_contained">Contained</string>
+
 </resources>
