@@ -513,5 +513,6 @@
     <string name="switch_oneplus">OnePlus</string>
     <string name="switch_narrow">Narrow</string>
     <string name="switch_contained">Contained</string>
+    <string name="switch_telegram">Telegram</string>
 
 </resources>
