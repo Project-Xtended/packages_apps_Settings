@@ -65,18 +65,18 @@
     <color name="timestamp_text_incoming">#99ffffff</color>
     <color name="message_bubble_incoming">#689f38</color>
     <color name="message_bubble_outgoing">#ffffffff</color>
-    <color name="message_icon_background_incoming">#689f38</color>
+    <color name="message_icon_background_incoming">@*android:color/primary_dark_device_default_settings_light</color>
     <color name="message_icon_text_incoming">#ffffffff</color>
-    <color name="message_icon_background_outgoing">#4285f4</color>
+    <color name="message_icon_background_outgoing">@*android:color/primary_dark_device_default_settings_light</color>
     <color name="message_icon_text_outgoing">#ffffffff</color>
 
     <color name="usage_graph_dots">#B0BEC5</color>
 
     <!-- Gestures settings -->
-    <color name="gestures_setting_background_color">#ffffff</color>
+    <color name="gestures_setting_background_color">@*android:color/primary_dark_device_default_settings_light</color>
 
     <!-- Color for the background of the shortcut icons.-->
-    <color name="shortcut_background">#fff5f5f5</color>
+    <color name="shortcut_background">@*android:color/primary_dark_device_default_settings_light</color>
 
     <!-- The fallback color for tinting icons. Only used when colorControlNormal is unavailable -->
     <color name="fallback_tintColor">#89000000</color>
@@ -101,8 +101,8 @@
     <color name="homepage_xtensions_background">#EB0029</color>
 
     <color name="contextual_card_stroke_color">#1f000000</color>
-    <color name="contextual_card_dismissal_background">@*android:color/material_grey_100</color>
-    <color name="contextual_card_background">@*android:color/background_device_default_light</color>
+    <color name="contextual_card_dismissal_background">@*android:color/primary_dark_device_default_settings_light</color>
+    <color name="contextual_card_background">@*android:color/primary_dark_device_default_settings_light</color>
     <!-- End of dashboard/homepage icon background colors -->
 
     <color name="switchbar_background_color">@*android:color/material_grey_600</color>
@@ -145,14 +145,14 @@
     <color name="search_bar_background">@*android:color/primary_device_default_settings_light</color>
 
     <!-- Dialog background color -->
-    <color name="dialog_background">@*android:color/background_device_default_light</color>
+    <color name="dialog_background">@*android:color/primary_dark_device_default_settings_light</color>
 
     <color name="face_intro_outline">#ffdadce0</color>
 
     <color name="back_gesture_indicator">#4182ef</color>
 
     <!-- Palette list preference colors. -->
-    <color name="palette_list_gradient_background">@android:color/white</color>
+    <color name="palette_list_gradient_background">@*android:color/primary_dark_device_default_settings_light</color>
     <color name="palette_list_color_red">#d93025</color> <!-- Material Red 600 -->
     <color name="palette_list_color_orange">#e8710a</color> <!-- Material Orange 600 -->
     <color name="palette_list_color_yellow">#f9ab00</color> <!-- Material Yellow 600 -->
