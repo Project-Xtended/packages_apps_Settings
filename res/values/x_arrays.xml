@@ -224,6 +224,8 @@
         <item>@string/qstile_inkdrop</item>
         <item>@string/qstile_cookie</item>
         <item>@string/qstile_circleoutline</item>
+        <item>@string/qstile_neon</item>
+        <item>@string/qstile_triangle</item>
     </string-array>
 
     <string-array name="qs_selector_values" translatable="false">
@@ -240,6 +242,8 @@
         <item>10</item>
         <item>11</item>
         <item>12</item>
+        <item>13</item>
+        <item>14</item>
     </string-array>
 
 </resources>

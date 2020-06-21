@@ -537,5 +537,7 @@
     <string name="qstile_inkdrop">Ink</string>
     <string name="qstile_cookie">Cookie</string>
     <string name="qstile_circleoutline">CircleOutline</string>
+    <string name="qstile_neon">Neon Light</string>
+    <string name="qstile_triangle">Triangle</string>
 
 </resources>
