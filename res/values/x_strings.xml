@@ -190,4 +190,7 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+
 </resources>
