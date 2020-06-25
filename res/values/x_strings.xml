@@ -595,4 +595,8 @@
 
     <!-- Phone Specs -->
     <string name="specs_title">Phone Specifications</string>
+
+    <!-- Lockscreen timeout -->
+    <string name="lockscreen_timeout_title">Lockscreen timeout</string>
+
 </resources>
