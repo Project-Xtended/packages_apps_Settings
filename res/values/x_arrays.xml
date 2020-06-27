@@ -104,19 +104,6 @@
        <item>2000</item>
     </string-array>
 
-    <!-- Gesture navbar handle -->
-    <string-array name="gesture_navbar_handle_entries">
-        <item>@string/gesture_navbar_handle_default</item>
-        <item>@string/gesture_navbar_handle_middle</item>
-        <item>@string/gesture_navbar_handle_large</item>
-    </string-array>
-
-    <string-array name="gesture_navbar_handle_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Fingerprint sensor locations.  Devices should configure their sensor location using
          config_fingerprintSensorLocation -->
     <string-array name="security_settings_fingerprint_sensor_locations" translatable="false">
