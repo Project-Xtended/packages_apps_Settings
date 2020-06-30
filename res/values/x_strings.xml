@@ -532,4 +532,8 @@
     <string name="home_handle_low_label">Hidden</string>
     <string name="home_handle_high_label">Long</string>
 
+    <!-- Qs Tile Icon Bright-Dark -->
+    <string name="qs_icon_primary_title">Qs Tile Icon Bright|Dark</string>
+    <string name="qs_icon_primary_summary">Make Qs Icon Bright-Dark if gradient tint enabled</string>
+
 </resources>
