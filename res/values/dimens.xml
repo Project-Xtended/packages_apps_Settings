@@ -456,4 +456,9 @@
     <dimen name="chartview_trapezoid_radius">5dp</dimen>
     <dimen name="chartview_trapezoid_margin_start">1dp</dimen>
     <dimen name="chartview_trapezoid_margin_bottom">2dp</dimen>
+
+    <!-- Category HEaders -->
+    <dimen name="x_preference_category_padding_top">0.0dip</dimen>
+    <dimen name="x_preference_category_line_margin_start">10.0dip</dimen>
+    <dimen name="x_preference_category_height">40.0dip</dimen>
 </resources>
