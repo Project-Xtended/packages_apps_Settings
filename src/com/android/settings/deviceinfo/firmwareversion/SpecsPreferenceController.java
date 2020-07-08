@@ -87,7 +87,7 @@ public class SpecsPreferenceController extends BasePreferenceController {
         if (!cpu.isEmpty()) {
             return cpu + " | " + memory;
         } else if (cpu.isEmpty()) {
-          return "Unknown | " + memory;
+          return "" + memory;
         } else {
           return mContext.getString(R.string.unknown);
        }
