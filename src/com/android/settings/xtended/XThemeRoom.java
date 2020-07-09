@@ -21,6 +21,7 @@ import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.os.ServiceManager;
 import android.os.UserHandle;
+import androidx.fragment.app.Fragment;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
@@ -35,18 +36,30 @@ import android.view.MenuInflater;
 import com.android.settings.R;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 
 import com.android.internal.util.xtended.ThemesUtils;
 import com.android.internal.util.xtended.XtendedUtils;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.dashboard.DashboardFragment;
+import android.provider.SearchIndexableResource;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
+import com.android.settings.display.OverlayCategoryPreferenceController;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.msm.xtended.preferences.CustomSeekBarPreference;
 import com.msm.xtended.preferences.SystemSettingSwitchPreference;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
-public class XThemeRoom extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+public class XThemeRoom extends DashboardFragment implements
+        OnPreferenceChangeListener, Indexable {
+
+    private static final String TAG = "X ThemeRoom";
 
     private static final String ACCENT_COLOR = "accent_color";
     private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
@@ -78,10 +91,20 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mNotifHeader;
 
     @Override
+    protected String getLogTag() {
+        return TAG;
+    }
+
+    @Override
+    protected int getPreferenceScreenResId() {
+        return R.xml.x_theme_room;
+    }
+
+    @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.x_theme_room);
+//        addPreferencesFromResource(R.xml.x_theme_room);
 
         mUiModeManager = getContext().getSystemService(UiModeManager.class);
 
@@ -98,6 +121,23 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
         getQsBlurIntenPref();
         getRStylePref();
         setHasOptionsMenu(true);
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, Fragment fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.font"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.adaptive_icon_shape"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.icon_pack.android"));
+        return controllers;
     }
 
     @Override
@@ -430,4 +470,25 @@ public class XThemeRoom extends SettingsPreferenceFragment implements
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.XTENSIONS;
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.x_theme_room;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    return keys;
+                }
+    };
 }
