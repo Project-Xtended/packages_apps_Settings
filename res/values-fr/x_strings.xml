@@ -278,12 +278,6 @@
     <string name="theme_type_xtended_clear">Xtended Clear</string>
     <!-- Running services -->
     <string name="background_processes_settings_title">Background processes</string>
-    <!-- NavigationBar Gestural Mode Tweaks -->
-    <string name="navbar_gesture_mode_category_title">Gesture mode tweaks</string>
-    <string name="navbar_gesture_mode_category_key">gesture_mode_tweaks</string>
-    <string name="navbar_gesture_pill_toggle_title">Full screen gestures</string>
-    <string name="navbar_gesture_pill_toggle_summary">This will hide both the navigation bar and the pill for a seamless fullscreen gesture experience.</string>
-    <string name="navbar_gesture_pill_toggle_summary_disabled">This option is only available for gesture navigation!</string>
     <!-- Control Vibration intensities -->
     <string name="vibration_preferences">Vibration &amp; haptics</string>
     <string name="summary_vibration_preferences">Change intensities, pattern and more</string>
@@ -360,11 +354,6 @@
     <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the apps picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
     <string name="back_swipe_extended_title">Extended swipe action</string>
     <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
-    <!-- Gesture navbar handle -->
-    <string name="gesture_navbar_handle_title">Gesture bar size</string>
-    <string name="gesture_navbar_handle_default">Default</string>
-    <string name="gesture_navbar_handle_middle">Middle</string>
-    <string name="gesture_navbar_handle_large">Large</string>
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
     <!-- Fingerprint sensor locations -->
@@ -443,6 +432,10 @@
     <string name="theming_settings_dashboard_icons_default_accent2">Accent background</string>
     <string name="theming_settings_dashboard_icons_plain">Plain</string>
     <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
+    <string name="theming_settings_dashboard_icons_bg_random">Random Background</string>
+    <string name="theming_settings_dashboard_icons_random">Random Icon</string>
+    <string name="theming_settings_dashboard_icons_random_bg_accent">Icon Random Bg Accent</string>
+    <string name="theming_settings_dashboard_icons_accent_bg_random">Icon Accent Bg Random</string>
     <!-- QS tile styles -->
     <string name="qs_tile_style_title">QS tile style</string>
     <string name="qstile_default">Default</string>
@@ -460,4 +453,13 @@
     <string name="qstile_circleoutline">CircleOutline</string>
     <string name="qstile_neon">Neon Light</string>
     <string name="qstile_triangle">Triangle</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Length used for the gestural navigation bar handle.</string>
+    <string name="home_handle_low_label">Hidden</string>
+    <string name="home_handle_high_label">Long</string>
+    <!-- Qs Tile Icon Bright-Dark -->
+    <string name="qs_icon_primary_title">Qs Tile Icon Bright|Dark</string>
+    <string name="qs_icon_primary_summary">Make Qs Icon Bright-Dark if gradient tint enabled</string>
 </resources>
