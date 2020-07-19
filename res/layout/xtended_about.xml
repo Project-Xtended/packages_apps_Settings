@@ -16,18 +16,24 @@
 ** limitations under the License.
 */
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
    android:gravity="center"
    android:layout_width="match_parent"
    android:layout_height="wrap_content"
-   android:selectable="false">
+   android:selectable="false"
+   android:orientation="horizontal" >
 
-   <ImageView
-       android:layout_width="191dp"
-       android:layout_height="200dp"
-       android:src="@drawable/ic_xtended_about"
-       android:tint="?android:attr/colorAccent"
-       android:adjustViewBounds="true"
-       android:scaleType="centerInside" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/xtended_about"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:clickable="false"
+        app:lottie_rawRes="@raw/xtended"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="true" />
+
 </LinearLayout>
 
