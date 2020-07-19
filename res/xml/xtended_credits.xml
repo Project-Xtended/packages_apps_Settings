@@ -19,7 +19,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <!-- Xtended About logo -->
         <PreferenceScreen
                 android:key="xtended_about"
-                android:enabled="false"
 		android:layout="@layout/xtended_about" />
 
   <PreferenceCategory

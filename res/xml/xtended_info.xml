@@ -17,7 +17,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <!-- Xtended About logo -->
         <Preference
                 android:key="xtended_about"
-                android:enabled="false"
 		android:layout="@layout/xtended_about" />
 	<Preference
                android:summary="@string/xtended_info_summary" />
