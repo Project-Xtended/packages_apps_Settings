@@ -14,6 +14,11 @@ implied.
 <PreferenceScreen
 xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="MSM-Xtended Officially Supported Devices">
+
+    <Preference
+        android:key="xtended_about"
+        android:layout="@layout/xtended_about" />
+
     <PreferenceCategory
             android:key="xtended_device_maintainers"
             android:title="@string/devices_header" >
