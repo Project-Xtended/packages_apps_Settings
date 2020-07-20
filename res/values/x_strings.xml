@@ -562,4 +562,10 @@
     <string name="sbc_hd_priority_title">SBC HD audio</string>
     <string name="sbc_hd_priority_summary">Whether to use Dual Channel mode for SBC codec by default</string>
 
+    <!-- Xtensions Styling -->
+    <string name="xtensions_style_title">Xtensions Background</string>
+    <string name="xtensions_style_accent">Accent Color</string>
+    <string name="xtensions_style_gradient">Gradient Color</string>
+    <string name="xtensions_style_random">Random Color</string>
+
 </resources>
