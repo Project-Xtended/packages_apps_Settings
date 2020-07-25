@@ -17,51 +17,51 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Xtensions -->
-    <string name="x_settings_title">X-Tensions</string>
-    <string name="x_settings_summary">Our Customization Hub</string>
+    <string name="x_settings_title">X-Tensiones</string>
+    <string name="x_settings_summary">Nuestro Hub de Personalización</string>
     <!-- Rom version -->
-    <string name="rom_version_title">Xtended Version</string>
+    <string name="rom_version_title">Versión de Xtended</string>
     <!-- Device Codename -->
-    <string name="about_device_name">Device Codename</string>
+    <string name="about_device_name">Nombre del dispositivo</string>
     <!-- Xtended maintainer -->
-    <string name="maintainer">Maintainer</string>
+    <string name="maintainer">Mantenedor</string>
     <!-- Dev Info -->
-    <string name="xtended_about_nfo">About Xtended</string>
-    <string name="xtended_about_info_summary_title">Know Us!</string>
-    <string name="xtended_info_summary">MSM-Xtended is creating an Android OS based on Google AOSP Project with more Stability and Features</string>
-    <string name="devs_header">Core Dev Team</string>
-    <string name="testing_header">Helping Hands and Testers</string>
-    <string name="thanks_header">Special Thanks to These Devs</string>
-    <string name="xtended_web">Official Website</string>
-    <string name="xtended_web_summary">Visit for more details</string>
-    <string name="xtended_telegram">Official Telegram Support Group</string>
-    <string name="xtended_telegram_summary">Join Here for Instant Support</string>
-    <string name="credits_header">Thanks Giving</string>
-    <string name="credits_summary">Huge Thanks To These Teams</string>
-    <string name="devices">Devices</string>
-    <string name="devices_title">Official Devices</string>
-    <string name="devices_summary">Devices We Support Currently</string>
+    <string name="xtended_about_nfo">Sobre Xtended</string>
+    <string name="xtended_about_info_summary_title">Conócenos!</string>
+    <string name="xtended_info_summary">MSM-Xtended está creando un sistema operativo basado en Google AOSP Project con más estabilidad y características</string>
+    <string name="devs_header">Equipo de desarrollo Principal</string>
+    <string name="testing_header">Manos Ayudantes y Testers</string>
+    <string name="thanks_header">Agradecimientos especiales a estos desarrolladores</string>
+    <string name="xtended_web">Sitio web oficial</string>
+    <string name="xtended_web_summary">Visita para más detalles</string>
+    <string name="xtended_telegram">Grupo Oficial de Soporte de Telegram</string>
+    <string name="xtended_telegram_summary">Únete aquí para soporte instantáneo</string>
+    <string name="credits_header">Dando Gracias</string>
+    <string name="credits_summary">Enormes Gracias a estos equipos</string>
+    <string name="devices">Dispositivos</string>
+    <string name="devices_title">Dispositivos oficiales</string>
+    <string name="devices_summary">Dispositivos que soportamos actualmente</string>
     <string name="dev_1">MadhuSudhan Painoori aka Mady51</string>
-    <string name="dev1_description">Kernel Developer, The OS Boot Manager</string>
+    <string name="dev1_description">Desarrollador de Kernel, el gestor de arranque de OS</string>
     <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
-    <string name="dev2_description">Base Developer, The U-I Changer </string>
+    <string name="dev2_description">Desarrollador base, el cambiador de U-I </string>
     <string name="dev_3">Mukesh Singh aka mukesh22584</string>
-    <string name="dev3_description">Customizations Developer, The Cherry-Picker</string>
+    <string name="dev3_description">Desarrollador de Personalizaciones, El selector</string>
     <string name="dev_4">Dhanush Krishanan aka Ded_Boi</string>
-    <string name="dev4_description">Feature Manager, The Code Puller</string>
+    <string name="dev4_description">Gestor de Características, Extractor de Código</string>
     <string name="dev_5">Honza aka svandasek</string>
     <string name="dev5_description">Graphics Organiser, The Image Factory</string>
     <string name="dev_6">Danny aka mcdachpappe</string>
-    <string name="dev6_description">Code Dev, The Code Fixer</string>
+    <string name="dev6_description">Desarrollo de Código, Fix de Códigos</string>
     <string name="dev_7">Jayant aka Jay_B</string>
     <string name="dev7_description">Graphics Organiser, BootAnimator</string>
     <string name="dev_8">Roger Truttmann aka Roger.T</string>
     <string name="dev8_description">Graphics Organiser, BootAnimator</string>
-    <string name="dev_9">Anish Pratheepan aka uLtRaNoOb</string>
-    <string name="dev9_description">Web Developer, Feature Manager</string>
-    <string name="devices_header">Officially Supported Devices</string>
+    <string name="dev_9">uLtRaNoOb Anish Pratheepan</string>
+    <string name="dev9_description">Director de desarrollo Web</string>
+    <string name="devices_header">Dispositivos con soporte oficial</string>
     <string name="device_1">OnePlus 6T | fajita</string>
-    <string name="device1_description">Anish Pratheepan aka uLtRaNoOb</string>
+    <string name="device1_description">uLtRaNoOb Anish Pratheepan</string>
     <string name="device_2">OnePlus 5T | dumpling</string>
     <string name="device2_description">Mukesh Singh aka mukesh22584</string>
     <string name="device_3">OnePlus 5 | cheeseburger</string>
@@ -71,19 +71,19 @@
     <string name="device_5">OnePlus 1 | bacon</string>
     <string name="device5_description">Osama alamoudi aka xawlw</string>
     <string name="device_6">Xiaomi Redmi Note 4 | mido</string>
-    <string name="device6_description">Sagar Rokade aka sagar.rokade.982</string>
-    <string name="device_7">Xiaomi Redmi Note 5 | vince</string>
+    <string name="device6_description">Sagar aka sagar.rokade.982</string>
+    <string name="device_7">Xiaomi Redmi Note 5 | mido</string>
     <string name="device7_description">Mahmoud Ayman</string>
     <string name="device_8">Xiaomi Redmi Note 5 Pro | whyred</string>
     <string name="device8_description">Ritesh Majumdar aka Ritzzz</string>
-    <string name="device_9">Xiaomi Redmi 7 (Y3)| onc (onclite)</string>
-    <string name="device9_description">Mohamed Saad aka mylove90</string>
-    <string name="device_10">Xiaomi Redmi 7 Pro| violet</string>
-    <string name="device10_description">Vishwas Mehta</string>
+    <string name="device_9">Redmi Xiaomi 7 (Y3)| onc (onclite)</string>
+    <string name="device9_description">Saad llamado mylove90</string>
+    <string name="device_10">Xiaomi Redmi Note 7 Pro| violet</string>
+    <string name="device10_description">Mehta Vishwas</string>
     <string name="device_11">Xiaomi Redmi K20Pro aka Mi 9T Pro | raphael</string>
     <string name="device11_description">Ritesh Majumdar aka Ritzzz</string>
     <string name="device_12">Xiaomi Pocofone F1 | berylliyum</string>
-    <string name="device12_description">Abhijiths aka Abhijiths362 </string>
+    <string name="device12_description">Abhijiths362 aka Abhijiths362 </string>
     <string name="device_13">Xiaomi Mi A1 | tissot</string>
     <string name="device13_description">Amar Bajpai</string>
     <string name="device_14">Moto G5s Plus | sanders</string>
@@ -93,9 +93,9 @@
     <string name="device_16">Asus Zenfone Max Pro M1 | X00T</string>
     <string name="device16_description">Pranav Kapoor aka pranavkapoor001</string>
     <string name="device_17">Asus Zenfone Max Pro M2 | X01BD</string>
-    <string name="device17_description">Sonal Singh aka SonalSingh18</string>
-    <string name="credits_to_these_teams">Credits Section</string>
-    <string name="hail_to_teams"> Huge Thanks to These Teams</string>
+    <string name="device17_description">Sonal Singh también SonalSingh18</string>
+    <string name="credits_to_these_teams">Sección de créditos</string>
+    <string name="hail_to_teams"> Enormes Gracias a estos equipos</string>
     <string name="team_1">LineageOS | CyanogenMOD</string>
     <string name="team_2">Team GZOSP</string>
     <string name="team_3">Team ColtOS</string>
@@ -121,345 +121,367 @@
     <string name="hht_1">Babloo aka Babloo289</string>
     <string name="hht_2">Dhairya Chandarana aka Dhairya</string>
     <string name="hht_3">Priyankar Sharma aka ps_minky16</string>
-    <string name="hht_4">All Others Who Tested and Shared Feedback in Testing Group</string>
+    <string name="hht_4">Todos los demás que probaron y compartieron comentarios en el grupo de pruebas</string>
     <string name="hht_5">Parikshit Singh aka rishi2603</string>
     <string name="hht_6">DrUnknownEMC</string>
     <string name="hht_7">Sushobith aka sushobith</string>
     <string name="hht_8">gFknQ</string>
     <string name="hht_9">Sunil Harali</string>
-    <string name="translators_header">Translators Credits</string>
+    <string name="translators_header">Créditos de la traducción</string>
     <string name="translator_1">novas78</string>
-    <string name="language_1">Czech</string>
+    <string name="language_1">Checo</string>
     <string name="translator_2">Z-Pepe</string>
-    <string name="language_2">Italian</string>
+    <string name="language_2">Italiano</string>
     <string name="translator_3">vellosid</string>
-    <string name="language_3">Romanian</string>
+    <string name="language_3">Rumano</string>
     <string name="translator_4">alexisya</string>
-    <string name="language_4">Russian</string>
+    <string name="language_4">Ruso</string>
     <string name="translator_5">Evan2408</string>
-    <string name="language_5">Chinese Simplified</string>
+    <string name="language_5">Chino Simplificado</string>
     <string name="translator_6">vo.stro</string>
-    <string name="language_6">Indonesian</string>
+    <string name="language_6">Indonesio</string>
     <!-- SELinux status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status">Estado de SELinux</string>
+    <string name="selinux_status_disabled">Desactivado</string>
+    <string name="selinux_status_permissive">Permisivo</string>
+    <string name="selinux_status_enforcing">Obligatorio</string>
     <!-- About phone, uptime. Deep sleep ratio since last reboot. -->
-    <string name="status_deep_sleep">(Deep sleep: %1$d%2$s)</string>
+    <string name="status_deep_sleep">(Sueño profundo: %1$d%2$s)</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone1_title">Phone ringtone - SIM 1</string>
+    <string name="ringtone1_title">Tono de llamada - SIM 1</string>
     <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
-    <string name="ringtone2_title">Phone ringtone - SIM 2</string>
+    <string name="ringtone2_title">Tono de llamada - SIM 2</string>
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
-    <string name="battery_temp">Battery temperature</string>
+    <string name="battery_temp">Temperatura de la batería</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Reset stats</string>
-    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="battery_stats_reset">Reiniciar estadísticas</string>
+    <string name="battery_stats_message">Estadísticas de la batería van a reiniciarse</string>
     <!-- Screenshot shutter sound -->
-    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
+    <string name="screenshot_shutter_sound_title">Sonido de captura de pantalla</string>
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
     <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN o contraseña correctos</string>
     <!-- Density category -->
-    <string name="density_category">Density options</string>
+    <string name="density_category">Opciones de densidad</string>
     <!-- Scramble pin -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Disposición aleatoria</string>
+    <string name="unlock_scramble_pin_layout_summary">Cambiar la disposición de los números del PIN para desbloquear el dispositivo</string>
     <!-- Changelog -->
-    <string name="changelog_title">Xtended Changelog</string>
-    <string name="changelog_summary">Manifested changes done since a week</string>
-    <string name="changelog_error">Unable to load changelog</string>
+    <string name="changelog_title">Registro de cambios Xtended</string>
+    <string name="changelog_summary">Cambios demostrados realizados desde una semana</string>
+    <string name="changelog_error">No se pudo cargar el registro de cambios</string>
     <!-- Lock screen pattern size -->
-    <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
+    <string name="lock_settings_picker_pattern_size_message">Elije un tamaño de patrón</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <string name="lockpattern_settings_enable_error_path_title">Show pattern error</string>
+    <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
+    <string name="lockpattern_settings_enable_dots_title">Mostrar puntos del patrón</string>
     <!-- Custom light color -->
-    <string name="custom_light_title">Light color</string>
-    <string name="custom_light_on_time_title">Light ON time during led pulse (ms)</string>
-    <string name="custom_light_off_time_title">Light OFF time during led pulse (ms)\"</string>
-    <string name="value_equals_default">def</string>
-    <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
+    <string name="custom_light_title">Color del Led</string>
+    <string name="custom_light_on_time_title">Duración del parpadeo del led encendido (ms)</string>
+    <string name="custom_light_off_time_title">Duración del parpadeo del led apagado (ms)\"</string>
+    <string name="value_equals_default">Por defecto</string>
+    <string name="show_light_on_zen_title">Parpadear durante No Molestar</string>
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Auto Rotate Options</string>
-    <string name="display_rotation_summary">Configure screen auto-rotate functions</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string>
+    <string name="display_rotation_title">Opciones de rotación automática</string>
+    <string name="display_rotation_summary">Configurar funciones de rotación automática de pantalla</string>
+    <string name="display_rotation_disabled">Desactivado</string>
+    <string name="display_rotation_unit">Grados</string>
+    <string name="display_rotation_category_title">Modos de rotación</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+    <string name="volume_link_notification_title">Mezclar volumen de tono &amp; notificaciones</string>
     <!-- Increasing ring tone volume -->
-    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-    <string name="increasing_ring_min_volume_title">Start volume</string>
-    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+    <string name="increasing_ring_volume_option_title">Volúmen de timbre creciente</string>
+    <string name="increasing_ring_min_volume_title">Volumen inicial</string>
+    <string name="increasing_ring_ramp_up_time_title">Tiempo de incremento</string>
     <!-- Volume Steps -->
-    <string name="volume_steps_title">Volume steps</string>
-    <string name="volume_steps_summary">Number of steps for volumes</string>
-    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
-    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
-    <string name="volume_steps_music_title">Volume steps: Music</string>
-    <string name="volume_steps_notification_title">Volume steps: Notification</string>
-    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
-    <string name="volume_steps_system_title">Volume steps: System</string>
-    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
-    <string name="volume_steps_reset">Reset</string>
+    <string name="volume_steps_title">Niveles de volumen</string>
+    <string name="volume_steps_summary">Número de pasos para volúmenes</string>
+    <string name="volume_steps_alarm_title">Nivel de volumen: Alarma</string>
+    <string name="volume_steps_dtmf_title">Nivel de volumen: DTMF</string>
+    <string name="volume_steps_music_title">Nivel de volumen: Música</string>
+    <string name="volume_steps_notification_title">Niveles de volumen: Notificaciones</string>
+    <string name="volume_steps_ring_title">Nivel de volumen: Tono de llamada</string>
+    <string name="volume_steps_system_title">Nivel de volumen: Sistema</string>
+    <string name="volume_steps_voice_call_title">Nivel de volumen: Llamada</string>
+    <string name="volume_steps_reset">Restablecer</string>
     <!-- Navigation settings -->
     <string name="back_height_low_label">Full</string>
-    <string name="back_height_high_label">Bottom</string>
-    <string name="back_options_dialog_title">Options</string>
-    <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
+    <string name="back_height_high_label">Parte inferior</string>
+    <string name="back_options_dialog_title">Opciones</string>
+    <string name="back_height_message">Altura de pantalla usada como región tocada para gesto atrás.</string>
     <!-- Smart charging -->
-    <string name="smart_charging_title">Smart Charging</string>
-    <string name="smart_charging_summary">Set maximum charging level</string>
-    <string name="smart_charging_switch_title">Use Smart charging</string>
-    <string name="smart_charging_level_title">Stop trigger level</string>
-    <string name="smart_charging_resume_level_title">Start trigger level</string>
-    <string name="smart_charging_reset_stats_title">Reset battery statistics</string>
-    <string name="smart_charging_reset_stats_summary">Reset battery statistics after reaching user defined charging level</string>
-    <string name="smart_charging_footer">Smart Charging allows you to set maximum charging level to extend the lifespan of your battery</string>
+    <string name="smart_charging_title">Carga inteligente</string>
+    <string name="smart_charging_summary">Establecer nivel máximo de carga</string>
+    <string name="smart_charging_switch_title">Usar Carga inteligente</string>
+    <string name="smart_charging_level_title">Detener nivel de activación</string>
+    <string name="smart_charging_resume_level_title">Nivel de activación inicial</string>
+    <string name="smart_charging_reset_stats_title">Restablecer estadísticas de batería</string>
+    <string name="smart_charging_reset_stats_summary">Restablecer estadísticas de batería después de alcanzar el nivel de carga definido por el usuario</string>
+    <string name="smart_charging_footer">La carga inteligente te permite establecer el nivel máximo de carga para extender la vida útil de tu batería</string>
     <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_data">Cellular data</string>
-    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
-    <string name="data_usage_app_restrict_vpn">VPN data</string>
-    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
-    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_all">Allow network</string>
+    <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
+    <string name="data_usage_app_restrict_data">Datos móviles</string>
+    <string name="data_usage_app_restrict_data_summary">Activar uso de datos moviles</string>
+    <string name="data_usage_app_restrict_vpn">Datos VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activar uso de datos moviles</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activar uso de datos Wi\u2011Fi</string>
     <!-- Media gestures -->
-    <string name="prevent_ringing_option_mute_no_media">Mute, no media</string>
-    <string name="prevent_ringing_option_mute_no_media_summary">On (mute, no media)</string>
+    <string name="prevent_ringing_option_mute_no_media">Silenciado, sin sonido multimedia</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Habilitado (silenciado, sin sonido multimedia)</string>
     <!-- Android debugging as root -->
-    <string name="adb_enable_root">Root Android debugging</string>
-    <string name="adb_enable_summary_root">Enable Android debugging as root</string>
+    <string name="adb_enable_root">Depuración de Root Android</string>
+    <string name="adb_enable_summary_root">Habilitar la depuración de Android como raíz</string>
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
-    <string name="suggestion_button_close">Close</string>
+    <string name="suggestion_button_close">Cerrar</string>
     <!-- Whether the keyguard will directly show the lock entry -->
-    <string name="directly_show_lock">Direct unlock</string>
-    <string name="directly_show_lock_summary">Skip the swipe to unlock screen and immediately begin key entry</string>
+    <string name="directly_show_lock">Desbloqueo directo</string>
+    <string name="directly_show_lock_summary">Omite el deslizamiento para desbloquear la pantalla e inicia inmediatamente la entrada del pin</string>
     <!-- Dismiss notifications with back FP swipe -->
-    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
-    <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
-    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal losckreen on wake gestures</string>
+    <string name="fp_swipe_to_dismiss_notifications_title">Deslice el dedo a la derecha o izquierda para desechar las notificaciones</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Para descartar tus notificaciones, deslice hacia la derecha o izquierda en el sensor dactilar detrás de tu teléfono.</string>
+    <string name="ambient_wake_gestures_title">Gestos de la pantalla ambiente</string>
+    <string name="ambient_wake_gestures_summary">Mostrar pantalla ambiente en lugar de la pantalla de bloqueo normal al despertar con gestos</string>
     <!-- Android debugging over WiFi -->
-    <string name="adb_over_network">ADB over network</string>
-    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+    <string name="adb_over_network">ADB sobre red</string>
+    <string name="adb_over_network_summary">Habilitar la depuración de TCP/IP sobre las interfaces de red (Wi-Fi, redes de USB). Este ajuste se restablece al reiniciar</string>
     <!-- Warning for Adb over Network -->
-    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
-    <string name="adb_over_network_warning_title">Allow ADB over network?</string>
-    <string name="themeroom_title">Theme Room</string>
-    <string name="themeroom_summary">Themes-accents-gradients</string>
-    <string name="accent_color">Accent picker</string>
-    <string name="accent_summary">System wide accent maker</string>
-    <string name="gradient_color">Gradient picker</string>
-    <string name="gradient_summary">Gradient effect maker</string>
+    <string name="adb_over_network_warning">AVISO: ¡Cuando ADB sobre red esté activo, el dispositivo estará abierto a intrusiones en todas las redes conectadas, incluida la red de datos GSM!\n\nUsa solo esta característica cuando estés conectado a redes de confianza.\n\n¿Deseas realmente activar esta función?</string>
+    <string name="adb_over_network_warning_title">Permitir ADB sobre red?</string>
+    <string name="themeroom_title">Sala de Temas</string>
+    <string name="themeroom_summary">Temas acento-gradientes-de-degradados</string>
+    <string name="accent_color">Selector de acento</string>
+    <string name="accent_summary">Fabricante de acentos de todo el sistema</string>
+    <string name="gradient_color">Selector de gradiente</string>
+    <string name="gradient_summary">Fabricador de efectos de degradado</string>
     <!-- Notification Vibration -->
-    <string name="vibrate_on_notifications_title">Notification vibration</string>
-    <string name="vibrate_on_notifications_summary">Vibrate on notifications</string>
+    <string name="vibrate_on_notifications_title">Notificaciones mediante vibración</string>
+    <string name="vibrate_on_notifications_summary">Vibración en notificaciones</string>
     <!-- Themes -->
-    <string name="theme_type_title">System theme</string>
-    <string name="theme_type_summary">Select theme</string>
+    <string name="theme_type_title">Tema del sistema</string>
+    <string name="theme_type_summary">Selecciona un tema</string>
     <string name="theme_type_light">Light</string>
-    <string name="theme_type_pitch_black">Google Dark</string>
-    <string name="theme_type_solarized_dark">Solarized dark</string>
+    <string name="theme_type_pitch_black">Google Oscuro</string>
+    <string name="theme_type_solarized_dark">Solarizado oscuro</string>
     <string name="theme_type_baked_green">Baked Green</string>
     <string name="theme_type_choco_x">Choco X</string>
     <string name="theme_type_du_pitchblack">Pitch black</string>
-    <string name="theme_type_dark_grey">Dark Grey</string>
-    <string name="theme_type_material_ocean">Material Ocean</string>
+    <string name="theme_type_dark_grey">Gris oscuro</string>
+    <string name="theme_type_material_ocean">Material Océano</string>
     <string name="theme_type_xtended_clear">Xtended Clear</string>
     <!-- Running services -->
-    <string name="background_processes_settings_title">Background processes</string>
+    <string name="background_processes_settings_title">Procesos en segundo plano</string>
     <!-- Control Vibration intensities -->
-    <string name="vibration_preferences">Vibration &amp; haptics</string>
-    <string name="summary_vibration_preferences">Change intensities, pattern and more</string>
-    <string name="keywords_vibration_preferences">vibration pattern, vibration intensity, incall, haptics, tap</string>
-    <string name="ringtone_vibration_pattern">Ringtone vibration pattern</string>
-    <string name="vibration_intensity_ringer">Ringtone vibration intensity</string>
-    <string name="vibration_intensity_notification">Notification vibration intensity</string>
-    <string name="vibration_intensity_disabled">Disabled</string>
+    <string name="vibration_preferences">Intensidad de la respuesta táctil y vibración</string>
+    <string name="summary_vibration_preferences">Cambiar intensidades, patrones y más</string>
+    <string name="keywords_vibration_preferences">Patrón de vibración, intensidad de vibración, llamada, háptico, toque, fuerza de vibración</string>
+    <string name="ringtone_vibration_pattern">Patrón de vibración de tono de llamada</string>
+    <string name="vibration_intensity_ringer">Intensidad de vibración de tono de llamada</string>
+    <string name="vibration_intensity_notification">Intensidad de vibración de notificación</string>
+    <string name="vibration_intensity_disabled">Desactivado</string>
     <string name="vibration_intensity_light">Light</string>
     <string name="vibration_intensity_medium">Medium</string>
-    <string name="vibration_intensity_strong">Strong</string>
-    <string name="vibration_intensity_custom">Custom</string>
+    <string name="vibration_intensity_strong">Fuerte</string>
+    <string name="vibration_intensity_custom">Personalizado</string>
     <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
     <string name="pattern_dzzz_da">dzzz-da</string>
     <string name="pattern_mm_mm_mm">mm-mm-mm</string>
     <string name="pattern_da_da_dzzz">da-da-dzzz</string>
-    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="pattern_da_dzzz_da">da-dzz-da</string>
     <!-- Back gesture animation -->
-    <string name="back_gesture_arrow_message">Show an animated arrow for back gesture.</string>
+    <string name="back_gesture_arrow_message">Mostrar una flecha animada para el gesto de atrás.</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+    <string name="display_cutout_force_fullscreen_title">Aplicaciones de pantalla completa</string>
+    <string name="display_cutout_force_fullscreen_summary">Forzar a las aplicaciones para ignorar el espacio de notch</string>
     <!-- About phone screen, Xtended version -->
-    <string name="xtended_version">Xtended version</string>
-    <string name="xtended_version_default">Unknown</string>
-    <string name="keywords_xtended_version">xtended version</string>
+    <string name="xtended_version">Versión de Xtended</string>
+    <string name="xtended_version_default">Desconocido</string>
+    <string name="keywords_xtended_version">Versión de Xtended</string>
     <!-- About phone screen, build date -->
-    <string name="build_date">Build date</string>
+    <string name="build_date">Fecha de compilación</string>
     <string name="build_date_default">2015-01-01-0000</string>
-    <string name="keywords_build_date">build date, build info</string>
+    <string name="keywords_build_date">Fecha de compilación, info de compilación</string>
     <!-- About Firmware information -->
-    <string name="xtended_firmware_version">"Firmware Information"</string>
+    <string name="xtended_firmware_version">"Información del firmware"</string>
     <!-- Improvements to Night Light -->
-    <string name="unknown_night_light_time">Unknown - press to update</string>
-    <string name="night_display_location_text">\n\nThe schedule from sunset to sunrise requires enabled location services to get the correct times for your location.</string>
+    <string name="unknown_night_light_time">Desconocido - toque para actualizar</string>
+    <string name="night_display_location_text">\n\nLa programación de puesta del sol y amanecer necesita que los servicios de ubicación estén habilitados para obtener los horarios correctos en esta ubicación.</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
-    <string name="platform_revision">Platform</string>
+    <string name="platform_revision">Platforma</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
-    <string name="total_ram">Total RAM</string>
+    <string name="total_ram">RAM Total</string>
     <!-- Theme Reset Option -->
-    <string name="theme_option_reset_title">Reset Theme Options</string>
-    <string name="theme_option_reset_message">Are you sure you want to reset themes-accent to default?</string>
+    <string name="theme_option_reset_title">Reiniciar opciones de tema</string>
+    <string name="theme_option_reset_message">¿Seguro que quieres reiniciar todos los colores a su valor por defecto?</string>
     <!-- Custom actions -->
-    <string name="action_nothing">No action</string>
-    <string name="action_menu">Menu</string>
-    <string name="action_app_switch">Recents</string>
-    <string name="action_search">Assistant</string>
-    <string name="action_voice_search">Voice search</string>
-    <string name="action_launch_camera">Camera</string>
-    <string name="action_last_app">Last app</string>
-    <string name="action_splitscreen">Split screen</string>
-    <string name="action_flashlight">Flashlight</string>
-    <string name="action_clear_notifications">Clear notifications</string>
-    <string name="action_volume_panel">Volume panel</string>
-    <string name="action_screen_off">Screen off</string>
-    <string name="action_notifications">Notifications</string>
+    <string name="action_nothing">Ninguna acción</string>
+    <string name="action_menu">Menú</string>
+    <string name="action_app_switch">Recientes</string>
+    <string name="action_search">Asistente</string>
+    <string name="action_voice_search">Búsqueda por voz</string>
+    <string name="action_launch_camera">Cámara</string>
+    <string name="action_last_app">Última aplicación</string>
+    <string name="action_splitscreen">Pantalla dividida</string>
+    <string name="action_flashlight">Linterna</string>
+    <string name="action_clear_notifications">Limpiar notificaciones</string>
+    <string name="action_volume_panel">Panel de volumen</string>
+    <string name="action_screen_off">Pantalla desactivada</string>
+    <string name="action_notifications">Notificaciones</string>
     <string name="action_power_menu">Power menu</string>
-    <string name="action_screenshot">Screenshot</string>
-    <string name="action_qs_panel">QS panel</string>
-    <string name="action_app_action">Application</string>
-    <string name="action_ringer_modes">Ringer modes</string>
-    <string name="kill_app">Kill foreground app</string>
+    <string name="action_screenshot">Captura de Pantalla</string>
+    <string name="action_qs_panel">Panel de ajustes rápidos</string>
+    <string name="action_app_action">Aplicación</string>
+    <string name="action_ringer_modes">Modos de timbre</string>
+    <string name="kill_app">Cerrar aplicación en primer plano</string>
     <!-- Long swipe gestures -->
-    <string name="navbar_gesture_tweaks_pref_title">Advanced gestures</string>
-    <string name="navbar_gesture_tweaks_pref_summary">Customize gestures and set custom actions</string>
-    <string name="navbar_gesture_tweaks_cat_title">Advanced</string>
-    <string name="swipe_app_select_summary">Select an app to launch with the squeeze action</string>
-    <string name="long_back_swipe_timeout_title">Long swipe action timeout</string>
-    <string name="left_swipe_actions_title">Long left swipe action</string>
-    <string name="left_swipe_app_action_title">Select long left swipe app</string>
-    <string name="right_swipe_actions_title">Long right swipe action</string>
-    <string name="right_swipe_app_action_title">Select long right swipe app</string>
-    <string name="gesture_nav_tweaks_footer_info">To choose a specific app activity for the action, long press on any app in the apps picker.\n\nIf launcher is showing, do the swipe at the very bottom area of the screen to trigger the action.</string>
-    <string name="back_swipe_extended_title">Extended swipe action</string>
-    <string name="back_swipe_extended_summary">Trigger action if the swipe is horizontally wider than 3\/4 of display size</string>
+    <string name="navbar_gesture_tweaks_pref_title">Gestos avanzados</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personaliza los gestos y añade acciones personalizadas</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avanzado</string>
+    <string name="swipe_app_select_summary">Seleccione una aplicación para iniciar con la acción de squeeze</string>
+    <string name="long_back_swipe_timeout_title">Tiempo de acción de deslizamiento largo</string>
+    <string name="left_swipe_actions_title">Acción con deslizamiento izquierdo largo</string>
+    <string name="left_swipe_app_action_title">Seleccionar aplicación de deslizamiento izquierdo largo</string>
+    <string name="right_swipe_actions_title">Acción de deslizamiento derecho largo</string>
+    <string name="right_swipe_app_action_title">Seleccionar aplicación de deslizamiento derecho largo</string>
+    <string name="gesture_nav_tweaks_footer_info">Para elegir una actividad de aplicación específica para la acción, mantenga presionada cualquier aplicación en el selector de aplicaciones.\n\nSi se muestra el iniciador, deslice el dedo en la parte inferior de la pantalla para activar la acción.</string>
+    <string name="back_swipe_extended_title">Acción de deslizamiento extendida</string>
+    <string name="back_swipe_extended_summary">Activa la acción si el deslizamiento es horizontalmente más ancho que 3\/4 del tamaño de la pantalla</string>
     <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+    <string name="notification_log_summary">Mostrar historial de notificaciones</string>
     <!-- Fingerprint sensor locations -->
-    <string name="security_settings_fingerprint_sensor_location_back">back</string>
-    <string name="security_settings_fingerprint_sensor_location_front">front</string>
-    <string name="security_settings_fingerprint_sensor_location_left">left side</string>
-    <string name="security_settings_fingerprint_sensor_location_right">right side</string>
+    <string name="security_settings_fingerprint_sensor_location_back">Atrás</string>
+    <string name="security_settings_fingerprint_sensor_location_front">Frontal</string>
+    <string name="security_settings_fingerprint_sensor_location_left">Lado izquierdo</string>
+    <string name="security_settings_fingerprint_sensor_location_right">Lado derecho</string>
     <!-- Format string for fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your device.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Localiza el sensor de huella digital en el <xliff:g id="sensor_location">%1$s </xliff:g> de tu teléfono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Localiza el sensor de huella digital en el <xliff:g id="sensor_location">%1$s </xliff:g> de tu teléfono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Localiza el sersor de huella dactilar <xliff:g id="sensor_location">%1$s</xliff:g> de tu dispositivo.</string>
     <!-- Xtended Updater -->
-    <string name="update_settings_title">Xtended Updater</string>
-    <string name="update_settings_summary">Check for the latest version of the rom</string>
+    <string name="update_settings_title">Actualizador Xtended</string>
+    <string name="update_settings_summary">Buscar la última versión de la rom</string>
     <!-- Adaptive Playback -->
-    <string name="adaptive_playback_screen_title">Adaptive playback</string>
-    <string name="adaptive_playback_timeout_title">Use a timeout of</string>
-    <string name="adaptive_playback_timeout_none_summary">Off</string>
-    <string name="adaptive_playback_timeout_30_secs">30 seconds</string>
-    <string name="adaptive_playback_timeout_30_secs_summary">On (30 seconds)</string>
-    <string name="adaptive_playback_timeout_1_min">1 minute</string>
-    <string name="adaptive_playback_timeout_1_min_summary">On (1 minute)</string>
-    <string name="adaptive_playback_timeout_2_min">2 minutes</string>
-    <string name="adaptive_playback_timeout_2_min_summary">On (2 minutes)</string>
-    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
-    <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
-    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
-    <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+    <string name="adaptive_playback_screen_title">Reproducción adaptativa</string>
+    <string name="adaptive_playback_timeout_title">Use un tiempo de espera de</string>
+    <string name="adaptive_playback_timeout_none_summary">Desactivado</string>
+    <string name="adaptive_playback_timeout_30_secs">30 Segundos</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Activado (30 segundos)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minuto</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Activado (1 minuto)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutos</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Activado (2 minutos)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutos</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Activado (5 minutos)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutos</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Activado (10 minutos)</string>
     <!-- Ultra Power -->
-    <string name="ultra_power_save_title">Ultra Power Saving</string>
-    <string name="ultra_power_save_summary">When screen goes off device will switch to ultra power mode</string>
+    <string name="ultra_power_save_title">Ultra ahorro de energia</string>
+    <string name="ultra_power_save_summary">Cuando la pantalla se apaga, el dispositivo cambiará al modo de ultra power</string>
     <!-- Refresh rate -->
-    <string name="refresh_rate_title">Screen refresh rate</string>
-    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz/120hz for some content</string>
-    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
-    <string name="refresh_rate_summary_max">90Hz/120hz / Refresh rate locked at 90Hz/120hz for all content. Increased battery usage</string>
-    <string name="auto_refresh_rate">Auto</string>
+    <string name="refresh_rate_title">Frecuencia de actualización de la pantalla</string>
+    <string name="refresh_rate_summary_auto">Auto / Automáticamente aumenta la tasa de actualización de 60 a 90Hz para algún contenido</string>
+    <string name="refresh_rate_summary_60">60Hz / Tasa de actualización bloqueada a 60Hz para todo el contenido</string>
+    <string name="refresh_rate_summary_max">90Hz / Tasa de refresco bloqueada a 90Hz para todo el contenido. Aumenta el uso de batería</string>
+    <string name="auto_refresh_rate">Automático</string>
     <!-- Battery health -->
-    <string name="battery_health_title">Battery health</string>
-    <string name="battery_health_summary">Monitor the battery health of your device</string>
-    <string name="current_battery_capacity">Current battery capacity</string>
-    <string name="current_battery_capacity_summary">The current battery capacity measured by the kernel</string>
-    <string name="designed_battery_capacity">Designed battery capacity</string>
-    <string name="designed_battery_capacity_summary">The battery capacity designed by the manufacturer</string>
-    <string name="battery_charge_cycles">Charge Cycles Completed</string>
+    <string name="battery_health_title">Estado de la batería</string>
+    <string name="battery_health_summary">Controlar la salud de la batería de su dispositivo</string>
+    <string name="current_battery_capacity">Capacidad total de la batería</string>
+    <string name="current_battery_capacity_summary">La capacidad actual de la batería medida por el núcleo</string>
+    <string name="designed_battery_capacity">Capacidad total de la batería</string>
+    <string name="designed_battery_capacity_summary">La capacidad de batería diseñada por el fabricante</string>
+    <string name="battery_charge_cycles">Ciclos de carga completados</string>
     <!-- Hotspot extras -->
-    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de hotspot usar las conexiones VPN de este dispositivo\u2019 como conectividad de subida</string>
     <!-- QS header styles -->
-    <string name="qs_header_style_title">QS Header style</string>
+    <string name="qs_header_style_title">Estilo cabecera</string>
     <string name="qs_header_black">Black</string>
-    <string name="qs_header_grey">Grey</string>
-    <string name="qs_header_lightgrey">Light Grey</string>
-    <string name="qs_header_accent">Accent Based</string>
-    <string name="qs_header_transparent">Transparent</string>
+    <string name="qs_header_grey">Gris</string>
+    <string name="qs_header_lightgrey">Gris claro</string>
+    <string name="qs_header_accent">Basado en el acento</string>
+    <string name="qs_header_transparent">Transparente</string>
     <!-- Notification sound timeout -->
-    <string name="app_notification_sound_timeout_title">Minimum time between notification sounds</string>
-    <string name="app_notification_sound_timeout_summary_template">Allow sounds or vibration no more than once every <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">No restriction</string>
-    <string name="app_notification_sound_timeout_value_10_seconds">10 seconds</string>
-    <string name="app_notification_sound_timeout_value_30_seconds">30 seconds</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
-    <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+    <string name="app_notification_sound_timeout_title">Tiempo mínimo entre sonidos de notificaciones</string>
+    <string name="app_notification_sound_timeout_summary_template">Permite sonidos o vibraciones no más de una vez cada <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Sin restricciones</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 Segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 Segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <!-- Switch styles -->
-    <string name="switch_style_title">Switch Styles</string>
-    <string name="switch_default">Default</string>
+    <string name="switch_style_title">Cambia estilos</string>
+    <string name="switch_default">Por defecto</string>
     <string name="switch_oneplus">OnePlus</string>
-    <string name="switch_narrow">Narrow</string>
-    <string name="switch_contained">Contained</string>
+    <string name="switch_narrow">Estrecho</string>
+    <string name="switch_contained">Recipiente</string>
     <string name="switch_telegram">Telegram</string>
     <!-- Settings dashboard icon style -->
-    <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
-    <string name="theming_settings_dashboard_icons_default2">Default background</string>
-    <string name="theming_settings_dashboard_icons_default_accent2">Accent background</string>
-    <string name="theming_settings_dashboard_icons_plain">Plain</string>
-    <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
-    <string name="theming_settings_dashboard_icons_bg_random">Random Background</string>
-    <string name="theming_settings_dashboard_icons_random">Random Icon</string>
-    <string name="theming_settings_dashboard_icons_random_bg_accent">Icon Random Bg Accent</string>
-    <string name="theming_settings_dashboard_icons_accent_bg_random">Icon Accent Bg Random</string>
+    <string name="theming_settings_dashboard_icons_title">Iconos de menú de ajustes</string>
+    <string name="theming_settings_dashboard_icons_default2">Fondo por defecto</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Fondo de acento</string>
+    <string name="theming_settings_dashboard_icons_plain">Llanura</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Plano con color principal</string>
+    <string name="theming_settings_dashboard_icons_bg_random">Fondo aleatorio</string>
+    <string name="theming_settings_dashboard_icons_random">Icono aleatorio</string>
+    <string name="theming_settings_dashboard_icons_random_bg_accent">Acento de Icono Aleatorio</string>
+    <string name="theming_settings_dashboard_icons_accent_bg_random">Aleatorio de acento del icono</string>
     <!-- QS tile styles -->
-    <string name="qs_tile_style_title">QS tile style</string>
-    <string name="qstile_default">Default</string>
-    <string name="qstile_circle_trim">Circle with trim</string>
-    <string name="qstile_dual_tone_circle">Dual-toned circle</string>
-    <string name="qstile_squircle_trim">Squircle with trim</string>
-    <string name="qstile_wavey">Wavey</string>
-    <string name="qstile_pokesign">Pokesign</string>
+    <string name="qs_tile_style_title">Estilo de ajustes rapidos</string>
+    <string name="qstile_default">Por defecto</string>
+    <string name="qstile_circle_trim">Circulo con recorte</string>
+    <string name="qstile_dual_tone_circle">Círculos de doble tono</string>
+    <string name="qstile_squircle_trim">Cuadracirculo con recorte</string>
+    <string name="qstile_wavey">Ondulado</string>
+    <string name="qstile_pokesign">Pokeparadas</string>
     <string name="qstile_ninja">Ninja</string>
-    <string name="qstile_dottedcircle">Dotted Circle</string>
-    <string name="qstile_attemptmountain">An attempt of a mountain</string>
-    <string name="qstile_squaremedo">The Squaremedo</string>
-    <string name="qstile_inkdrop">Ink</string>
-    <string name="qstile_cookie">Cookie</string>
-    <string name="qstile_circleoutline">CircleOutline</string>
-    <string name="qstile_neon">Neon Light</string>
-    <string name="qstile_triangle">Triangle</string>
+    <string name="qstile_dottedcircle">Círculo punteado</string>
+    <string name="qstile_attemptmountain">Un intento de montaña</string>
+    <string name="qstile_squaremedo">Cuadrados y rombos</string>
+    <string name="qstile_inkdrop">Tinta</string>
+    <string name="qstile_cookie">Galleta</string>
+    <string name="qstile_circleoutline">Esquema de círculo</string>
+    <string name="qstile_neon">Luz de neón</string>
+    <string name="qstile_triangle">Triángulo</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
+    <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <!-- Home handle sizing -->
-    <string name="home_handle_sizer_title">Length used for the gestural navigation bar handle.</string>
-    <string name="home_handle_low_label">Hidden</string>
-    <string name="home_handle_high_label">Long</string>
+    <string name="home_handle_sizer_title">Longitud barra de navegación.</string>
+    <string name="home_handle_low_label">Oculto</string>
+    <string name="home_handle_high_label">Largo</string>
     <!-- Qs Tile Icon Bright-Dark -->
-    <string name="qs_icon_primary_title">Qs Tile Icon Bright|Dark</string>
-    <string name="qs_icon_primary_summary">Make Qs Icon Bright-Dark if gradient tint enabled</string>
+    <string name="qs_icon_primary_title">Icono de acceso rapido Bringht/Dark</string>
+    <string name="qs_icon_primary_summary">Hacer icono Qs brillante-oscuro si el tono degradante está habilitado</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
+    <!-- Lottie Animations -->
+    <string name="apps_category">Apps</string>
+    <string name="volume_key_category_title">Volume Shortcut</string>
+    <string name="connected_devices_category_title">Connected Devices</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (preferred)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD audio</string>
+    <string name="sbc_hd_priority_summary">Whether to use Dual Channel mode for SBC codec by default</string>
+    <!-- Xtensions Styling -->
+    <string name="xtensions_style_title">Xtensions Background</string>
+    <string name="xtensions_style_accent">Accent Color</string>
+    <string name="xtensions_style_gradient">Gradient Color</string>
+    <string name="xtensions_style_random">Random Color</string>
+    <!-- GVM -->
+    <string name="theme_customization_statusbar_height_title">Statusbar Height</string>
+    <string name="theme_customization_ui_radius_title">UI Radius</string>
 </resources>

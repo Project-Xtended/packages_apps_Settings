@@ -227,6 +227,8 @@
     <string name="smart_charging_reset_stats_summary">Ripristina statistiche batteria dopo aver raggiunto il livello stabilito dall\'utente</string>
     <string name="smart_charging_footer">La ricarica intelligente consente di impostare il livello massimo di carica per prolungare la vita della batteria</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Allow network</string>
+    <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
     <string name="data_usage_app_restrict_data">Rete dati</string>
     <string name="data_usage_app_restrict_data_summary">Abilita l\'utilizzo dei dati mobili</string>
     <string name="data_usage_app_restrict_vpn">Dati VPN</string>
@@ -432,10 +434,10 @@
     <string name="theming_settings_dashboard_icons_default_accent2">Sfondo basato sull\' accento</string>
     <string name="theming_settings_dashboard_icons_plain">Semplice</string>
     <string name="theming_settings_dashboard_icons_plain_accent">Accento semplice</string>
-    <string name="theming_settings_dashboard_icons_bg_random">Random Background</string>
-    <string name="theming_settings_dashboard_icons_random">Random Icon</string>
-    <string name="theming_settings_dashboard_icons_random_bg_accent">Icon Random Bg Accent</string>
-    <string name="theming_settings_dashboard_icons_accent_bg_random">Icon Accent Bg Random</string>
+    <string name="theming_settings_dashboard_icons_bg_random">Sfondo Casuale</string>
+    <string name="theming_settings_dashboard_icons_random">Icona Casuale</string>
+    <string name="theming_settings_dashboard_icons_random_bg_accent">Icona Casuale Bg Accento</string>
+    <string name="theming_settings_dashboard_icons_accent_bg_random">Icona Accento Bg Casuale</string>
     <!-- QS tile styles -->
     <string name="qs_tile_style_title">Stile dei tile delle impostazioni rapide</string>
     <string name="qstile_default">Predefinito</string>
@@ -454,12 +456,32 @@
     <string name="qstile_neon">Neon Light</string>
     <string name="qstile_triangle">Triangolo</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
+    <string name="connected_tws_device_saved_title">Auricolari salvati</string>
     <!-- Home handle sizing -->
-    <string name="home_handle_sizer_title">Length used for the gestural navigation bar handle.</string>
-    <string name="home_handle_low_label">Hidden</string>
-    <string name="home_handle_high_label">Long</string>
+    <string name="home_handle_sizer_title">Lunghezza utilizzata per la gestione delle gesture della barra di navigazione.</string>
+    <string name="home_handle_low_label">Nascosta</string>
+    <string name="home_handle_high_label">Lunga</string>
     <!-- Qs Tile Icon Bright-Dark -->
-    <string name="qs_icon_primary_title">Qs Tile Icon Bright|Dark</string>
-    <string name="qs_icon_primary_summary">Make Qs Icon Bright-Dark if gradient tint enabled</string>
+    <string name="qs_icon_primary_title">Icona Piastrelle Qs Luminoso|Scuro</string>
+    <string name="qs_icon_primary_summary">Rendi l\'icona Qs luminosa-scura se la tinta gradiente è abilitata</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
+    <!-- Lottie Animations -->
+    <string name="apps_category">Apps</string>
+    <string name="volume_key_category_title">Volume Shortcut</string>
+    <string name="connected_devices_category_title">Connected Devices</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (preferred)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD audio</string>
+    <string name="sbc_hd_priority_summary">Whether to use Dual Channel mode for SBC codec by default</string>
+    <!-- Xtensions Styling -->
+    <string name="xtensions_style_title">Xtensions Background</string>
+    <string name="xtensions_style_accent">Accent Color</string>
+    <string name="xtensions_style_gradient">Gradient Color</string>
+    <string name="xtensions_style_random">Random Color</string>
+    <!-- GVM -->
+    <string name="theme_customization_statusbar_height_title">Statusbar Height</string>
+    <string name="theme_customization_ui_radius_title">UI Radius</string>
 </resources>

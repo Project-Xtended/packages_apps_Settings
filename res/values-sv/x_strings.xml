@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Xtensions -->
+    <string name="x_settings_title">X-Tensions</string>
+    <string name="x_settings_summary">Vårt Anpassningsnav</string>
+    <!-- Rom version -->
+    <string name="rom_version_title">Xtendedversion</string>
+    <!-- Device Codename -->
+    <string name="about_device_name">Enhetens kodnamn</string>
+    <!-- Xtended maintainer -->
+    <string name="maintainer">Underhållare</string>
+    <!-- Dev Info -->
+    <string name="xtended_about_nfo">Om Xtended</string>
+    <string name="xtended_about_info_summary_title">Om oss!</string>
+    <string name="xtended_info_summary">MSM-Xtended skapar ett Android OS baserat på Google AOSP Project med mer stabilitet och funktioner</string>
+    <string name="devs_header">Huvudutvecklingsteam</string>
+    <string name="testing_header">Hjälpande Händer och Testare</string>
+    <string name="thanks_header">Särskilda tack till dessa utvecklare</string>
+    <string name="xtended_web">Officiell webbplats</string>
+    <string name="xtended_web_summary">Besök för mer information</string>
+    <string name="xtended_telegram">Officiell supportgrupp på Telegram</string>
+    <string name="xtended_telegram_summary">Gå med här för omedelbar support</string>
+    <string name="credits_header">Stort tack</string>
+    <string name="credits_summary">Enormt tack till dessa team</string>
+    <string name="devices">Enheter</string>
+    <string name="devices_title">Officiella Enheter</string>
+    <string name="devices_summary">Enheter som vi för närvarande stöder</string>
+    <string name="dev_1">MadhuSudhan Painoori aka Mady51</string>
+    <string name="dev1_description">Kernelutvecklare, The OS Boot Manager</string>
+    <string name="dev_2">Santosh Jha aka SuperDroidBond</string>
+    <string name="dev2_description">Basutvecklare, The U-I Changer </string>
+    <string name="dev_3">Mukesh Singh aka mukesh22584</string>
+    <string name="dev3_description">Anpassningsutvecklare, The Cherry-Picker</string>
+    <string name="dev_4">Dhanush Krishanan aka Ded_Boi</string>
+    <string name="dev4_description">Funktionshanterare, The Code Puller</string>
+    <string name="dev_5">Honza aka svandasek</string>
+    <string name="dev5_description">Grafikorganiserare, The Image Factory</string>
+    <string name="dev_6">Danny aka mcdachpappe</string>
+    <string name="dev6_description">Code Dev, The Code Fixer</string>
+    <string name="dev_7">Jayant aka Jay_B</string>
+    <string name="dev7_description">Grafikorganiserare, BootAnimator</string>
+    <string name="dev_8">Roger Truttmann aka Roger.T</string>
+    <string name="dev8_description">Grafikorganiserare, BootAnimator</string>
+    <string name="dev_9">Anish Pratheepan aka uLtRaNoOb</string>
+    <string name="dev9_description">Webbutvecklare, Feature Manager</string>
+    <string name="devices_header">Officiellt stödda enheter</string>
+    <string name="device_1">OnePlus 6T | fajita</string>
+    <string name="device1_description">Anish Pratheepan aka uLtRaNoOb</string>
+    <string name="device_2">OnePlus 5T | dumpling</string>
+    <string name="device2_description">Mukesh Singh aka mukesh22584</string>
+    <string name="device_3">OnePlus 5 | cheeseburger</string>
+    <string name="device3_description">Mukesh Singh aka mukesh22584</string>
+    <string name="device_4">OnePlus 3 Unified | oneplus3, oneplus3t</string>
+    <string name="device4_description">Santosh Jha aka SuperDroidBond</string>
+    <string name="device_5">OnePlus 1 | bacon</string>
+    <string name="device5_description">Osama alamoudi aka xawlw</string>
+    <string name="device_6">Xiaomi Redmi Note 4 | mido</string>
+    <string name="device6_description">Sagar Rokade aka sagar.rokade.982</string>
+    <string name="device_7">Xiaomi Redmi Note 5 | vince</string>
+    <string name="device7_description">Mahmoud Ayman</string>
+    <string name="device_8">Xiaomi Redmi Note 5 Pro | whyred</string>
+    <string name="device8_description">Ritesh Majumdar aka Ritzzz</string>
+    <string name="device_9">Xiaomi Redmi 7 (Y3)| onc (onclite)</string>
+    <string name="device9_description">Mohamed Saad aka mylove90</string>
+    <string name="device_10">Xiaomi Redmi 7 Pro| violet</string>
+    <string name="device10_description">Vishwas Mehta</string>
+    <string name="device_11">Xiaomi Redmi K20Pro aka Mi 9T Pro | raphael</string>
+    <string name="device11_description">Ritesh Majumdar aka Ritzzz</string>
+    <string name="device_12">Xiaomi Pocofone F1 | berylliyum</string>
+    <string name="device12_description">Abhijiths aka Abhijiths362 </string>
+    <string name="device_13">Xiaomi Mi A1 | tissot</string>
+    <string name="device13_description">Amar Bajpai</string>
+    <string name="device_14">Moto G5s Plus | sanders</string>
+    <string name="device14_description"> Sai Krishna aka Sai404142</string>
+    <string name="device_15">Lenovo Z2 Plus | z2_plus</string>
+    <string name="device15_description">Pranav Temkar aka Pranav Temkar</string>
+    <string name="device_16">Asus Zenfone Max Pro M1 | X00T</string>
+    <string name="device16_description">Pranav Kapoor aka pranavkapoor001</string>
+    <string name="device_17">Asus Zenfone Max Pro M2 | X01BD</string>
+    <string name="device17_description">Sonal Singh aka SonalSingh18</string>
+    <string name="credits_to_these_teams">Credits-avsnitt</string>
+    <string name="hail_to_teams"> Enormt tack till dessa team</string>
+    <string name="team_1">LineageOS | CyanogenMOD</string>
+    <string name="team_2">Team GZOSP</string>
+    <string name="team_3">Team ColtOS</string>
+    <string name="team_4">Team OmniROM</string>
+    <string name="team_5">Team DirtyUnicorns</string>
+    <string name="team_6">Team Nitrogen OS</string>
+    <string name="team_7">Team AICP</string>
+    <string name="team_8">Team Cr Droid</string>
+    <string name="team_9">Team ScrewdAOSP</string>
+    <string name="team_10">Team CypherOS</string>
+    <string name="team_11">Team LiquidRemix</string>
+    <string name="team_12">Team BenzoROM</string>
+    <string name="team_13">Team Bootleggers Rom</string>
+    <string name="team_14">Team AOSP Extended</string>
+    <string name="team_15">Team ResurrectionRemix</string>
+    <string name="team_16">Team Havoc OS</string>
+    <string name="team_17">Team Substratum</string>
+    <string name="spt_1">ZeNiXxX</string>
+    <string name="spt_2">SKULSHADY</string>
+    <string name="spt_3">HolyAngel</string>
+    <string name="spt_4">NoSpamDan</string>
+    <string name="spt_5">Rituj Beniwal</string>
+    <string name="hht_1">Babloo aka Babloo289</string>
+    <string name="hht_2">Dhairya Chandarana aka Dhairya</string>
+    <string name="hht_3">Priyankar Sharma aka ps_minky16</string>
+    <string name="hht_4">Alla andra som testat och delat feedback i testgruppen</string>
+    <string name="hht_5">Parikshit Singh aka rishi2603</string>
+    <string name="hht_6">DrUnknownEMC</string>
+    <string name="hht_7">Sushobith aka sushobith</string>
+    <string name="hht_8">gFknQ</string>
+    <string name="hht_9">Sunil Harali</string>
+    <string name="translators_header">Översättare</string>
+    <string name="translator_1">novas78</string>
+    <string name="language_1">Tjeckiska</string>
+    <string name="translator_2">Z-Pepe</string>
+    <string name="language_2">Italienska</string>
+    <string name="translator_3">vellosid</string>
+    <string name="language_3">Rumänska</string>
+    <string name="translator_4">alexisya</string>
+    <string name="language_4">Ryska</string>
+    <string name="translator_5">Evan2408</string>
+    <string name="language_5">Kinesiska, förenklad</string>
+    <string name="translator_6">vo.stro</string>
+    <string name="language_6">Indonesiska</string>
+    <!-- SELinux status -->
+    <string name="selinux_status">SELinux-status</string>
+    <string name="selinux_status_disabled">Inaktiverat</string>
+    <string name="selinux_status_permissive">Tillåtande</string>
+    <string name="selinux_status_enforcing">Tvingande</string>
+    <!-- About phone, uptime. Deep sleep ratio since last reboot. -->
+    <string name="status_deep_sleep">(Djupsömn: %1$d%2$s)</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot1 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone1_title">Ringsignal - SIM 1</string>
+    <!-- Sound: Title for the option defining the phone ringtone for slot2 on Muilti SIM device. [CHAR LIMIT=50] -->
+    <string name="ringtone2_title">Ringsignal - SIM 2</string>
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+    <string name="battery_temp">Batteritemperatur</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Nollställ statistik</string>
+    <string name="battery_stats_message">Batteriets historik kommer att återställas</string>
+    <!-- Screenshot shutter sound -->
+    <string name="screenshot_shutter_sound_title">Ljud vid skärmbild</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Snabb upplåsning</string>
+    <string name="unlock_quick_unlock_control_summary">Lås upp automatiskt när rätt PIN/lösenord är angiven</string>
+    <!-- Density category -->
+    <string name="density_category">Täthetsinställningar</string>
+    <!-- Scramble pin -->
+    <string name="unlock_scramble_pin_layout_title">Kasta om layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Kasta om PIN-layout vid upplåsning av enheten</string>
+    <!-- Changelog -->
+    <string name="changelog_title">Xtendeds ändringslogg</string>
+    <string name="changelog_summary">Manifesterade ändringar senaste veckan</string>
+    <string name="changelog_error">Kunde inte ladda ändringsloggen</string>
+    <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">Välj en mönsterstorlek</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Visa mönster vid fel</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Visa mönsterpunkter</string>
+    <!-- Custom light color -->
+    <string name="custom_light_title">Ljusfärg</string>
+    <string name="custom_light_on_time_title">Tid PÅ vid blinkande ljus (ms)</string>
+    <string name="custom_light_off_time_title">Tid AV vid blinkande ljus (ms)</string>
+    <string name="value_equals_default">standard</string>
+    <string name="show_light_on_zen_title">Blinka vid Stör Ej</string>
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Alternativ för automatisk rotation</string>
+    <string name="display_rotation_summary">Konfigurera skärmens automatiska rotationsfunktioner</string>
+    <string name="display_rotation_disabled">Inaktiverat</string>
+    <string name="display_rotation_unit">grader</string>
+    <string name="display_rotation_category_title">Rotationslägen</string>
+    <string name="display_rotation_0_title">0 grader</string>
+    <string name="display_rotation_90_title">90 grader</string>
+    <string name="display_rotation_180_title">180 grader</string>
+    <string name="display_rotation_270_title">270 grader</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Koppla samman ring- &amp; aviseringsvolymerna</string>
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Ökande ringvolym</string>
+    <string name="increasing_ring_min_volume_title">Startvolym</string>
+    <string name="increasing_ring_ramp_up_time_title">Upprampningstid</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Volymsteg</string>
+    <string name="volume_steps_summary">Antal steg för volymer</string>
+    <string name="volume_steps_alarm_title">Volymsteg: Alarm</string>
+    <string name="volume_steps_dtmf_title">Volymsteg: DTMF</string>
+    <string name="volume_steps_music_title">Volymsteg: Musik</string>
+    <string name="volume_steps_notification_title">Volymsteg: Aviseringar</string>
+    <string name="volume_steps_ring_title">Volymsteg: Ringsignal</string>
+    <string name="volume_steps_system_title">Volymsteg: System</string>
+    <string name="volume_steps_voice_call_title">Volymsteg: Röstsamtal</string>
+    <string name="volume_steps_reset">Återställ</string>
+    <!-- Navigation settings -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Botten</string>
+    <string name="back_options_dialog_title">Alternativ</string>
+    <string name="back_height_message">Mängden skärmhöjd som kan användas för tillbakagesten.</string>
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Smart laddning</string>
+    <string name="smart_charging_summary">Ange maximal laddnivå</string>
+    <string name="smart_charging_switch_title">Använd Smart laddning</string>
+    <string name="smart_charging_level_title">Stoppnivå</string>
+    <string name="smart_charging_resume_level_title">Startnivå</string>
+    <string name="smart_charging_reset_stats_title">Nollställ batteristatistik</string>
+    <string name="smart_charging_reset_stats_summary">Nollställ batteristatistik när vald laddnivå är nådd</string>
+    <string name="smart_charging_footer">Smart laddning låter dig ställa in en maximal laddningsnivå för att förlänga batteriets livstid</string>
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Allow network</string>
+    <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
+    <string name="data_usage_app_restrict_data">Mobildata</string>
+    <string name="data_usage_app_restrict_data_summary">Tillåt användning av mobildata</string>
+    <string name="data_usage_app_restrict_vpn">VPN-data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Tillåt användning av VPN-data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi-data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Tillåt användning av Wi\u2011Fi-data</string>
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Tyst, ingen media</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">På (tyst, ingen media)</string>
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Android-Debugging (root)</string>
+    <string name="adb_enable_summary_root">Tillåt Android-debugging som root</string>
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Stäng</string>
+    <!-- Whether the keyguard will directly show the lock entry -->
+    <string name="directly_show_lock">Direkt upplåsning</string>
+    <string name="directly_show_lock_summary">Gå förbi låsskärmen och direkt till kodinmatning</string>
+    <!-- Dismiss notifications with back FP swipe -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Svep fingeravtryck till höger eller vänster för att avvisa aviseringar</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">För att avvisa dina aviseringar, svep till höger eller vänster på fingeravtryckssensorn på baksidan av telefonen.</string>
+    <string name="ambient_wake_gestures_title">Gester på aktiv låsskärm</string>
+    <string name="ambient_wake_gestures_summary">Visa aktiv låsskärm istället för normal vid väckningsgester</string>
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB över nätverk</string>
+    <string name="adb_over_network_summary">Tillåt TCP/IP-debugging över nätverksgränssnitt (Wi-Fi, USB-nätverk). Denna inställning återställs vid omstart</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">VARNING: När ADB över nätverk är tillåtet är din telefon öppen för intrång över alla anslutna nätverk, inklusive mobildata!\n\nAnvänd endast denna funktion när du är uppkopplad mot betrodda nätverk.\n\nVill du verkligen tillåta denna funktion?</string>
+    <string name="adb_over_network_warning_title">Tillåt ADB över nätverk?</string>
+    <string name="themeroom_title">Temarum</string>
+    <string name="themeroom_summary">Teman-accenter-gradienter</string>
+    <string name="accent_color">Accent-väljare</string>
+    <string name="accent_summary">Systemvid accentskapare</string>
+    <string name="gradient_color">Gradientväljare</string>
+    <string name="gradient_summary">Gradienteffektskapare</string>
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">Aviseringsvibration</string>
+    <string name="vibrate_on_notifications_summary">Vibrera vid avisering</string>
+    <!-- Themes -->
+    <string name="theme_type_title">Systemtema</string>
+    <string name="theme_type_summary">Välj tema</string>
+    <string name="theme_type_light">Ljus</string>
+    <string name="theme_type_pitch_black">Google Mörk</string>
+    <string name="theme_type_solarized_dark">Solariserat Mörk</string>
+    <string name="theme_type_baked_green">Bakad grön</string>
+    <string name="theme_type_choco_x">Choco X</string>
+    <string name="theme_type_du_pitchblack">Kolsvart</string>
+    <string name="theme_type_dark_grey">Mörkgrå</string>
+    <string name="theme_type_material_ocean">Material Ocean</string>
+    <string name="theme_type_xtended_clear">Xtended Clear</string>
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Bakgrundsprocesser</string>
+    <!-- Control Vibration intensities -->
+    <string name="vibration_preferences">Vibration &amp; Haptik</string>
+    <string name="summary_vibration_preferences">Ändra intensitet, mönster och mer</string>
+    <string name="keywords_vibration_preferences">vibrationsmönster, vibrationsintensitet, samtal, haptisk feedback, tryck</string>
+    <string name="ringtone_vibration_pattern">Vibrationsmönster för ringsignal</string>
+    <string name="vibration_intensity_ringer">Vibrationsintensitet vid ringsignal</string>
+    <string name="vibration_intensity_notification">Vibrationsintensitet vid avisering</string>
+    <string name="vibration_intensity_disabled">Inaktiverat</string>
+    <string name="vibration_intensity_light">Lätt</string>
+    <string name="vibration_intensity_medium">Medel</string>
+    <string name="vibration_intensity_strong">Stark</string>
+    <string name="vibration_intensity_custom">Egen</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Visa en animerad pil för tillbakagest.</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Fullskärmsappar</string>
+    <string name="display_cutout_force_fullscreen_summary">Tvinga appar att ignorera notch-utrymme</string>
+    <!-- About phone screen, Xtended version -->
+    <string name="xtended_version">Xtendedversion</string>
+    <string name="xtended_version_default">Okänd</string>
+    <string name="keywords_xtended_version">xtendedversion</string>
+    <!-- About phone screen, build date -->
+    <string name="build_date">Byggdatum</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="keywords_build_date">byggdatum, bygginfo</string>
+    <!-- About Firmware information -->
+    <string name="xtended_firmware_version">"Firmware-information"</string>
+    <!-- Improvements to Night Light -->
+    <string name="unknown_night_light_time">Okänd - tryck för att uppdatera</string>
+    <string name="night_display_location_text">\n\nSchemat från solnedgång till soluppgång kräver aktiverade platstjänster för att få rätt tider för din plats.</string>
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Plattform</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Totalt RAM</string>
+    <!-- Theme Reset Option -->
+    <string name="theme_option_reset_title">Återställ temainställningar</string>
+    <string name="theme_option_reset_message">Är du säker på att du vill återställa temaaccenter till standardvärden?</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Ingen åtgärd</string>
+    <string name="action_menu">Meny</string>
+    <string name="action_app_switch">Senaste</string>
+    <string name="action_search">Assistent</string>
+    <string name="action_voice_search">Röstsökning</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Senaste app</string>
+    <string name="action_splitscreen">Delad skärm</string>
+    <string name="action_flashlight">Ficklampa</string>
+    <string name="action_clear_notifications">Rensa aviseringar</string>
+    <string name="action_volume_panel">Volympanel</string>
+    <string name="action_screen_off">Skärm av</string>
+    <string name="action_notifications">Aviseringar</string>
+    <string name="action_power_menu">Avstängningsmeny</string>
+    <string name="action_screenshot">Skärmdump</string>
+    <string name="action_qs_panel">Snabbinställningar</string>
+    <string name="action_app_action">Applikation</string>
+    <string name="action_ringer_modes">Ringlägen</string>
+    <string name="kill_app">Stäng appen i förgrunden</string>
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">- Avancerade gester</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Anpassa gester och ställ in egna handlingar</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avancerad</string>
+    <string name="swipe_app_select_summary">Välj en app att starta med kläm-handlingen</string>
+    <string name="long_back_swipe_timeout_title">Timeout för långa svepningar</string>
+    <string name="left_swipe_actions_title">Lång vänstersvephandling</string>
+    <string name="left_swipe_app_action_title">Välj lång vänstersvep-app</string>
+    <string name="right_swipe_actions_title">Lång högersvephandling</string>
+    <string name="right_swipe_app_action_title">Välj lång högersvep-app</string>
+    <string name="gesture_nav_tweaks_footer_info">För att v\'lja en spevifik app-aktivitet för handlingen, håll in på valfri app i väljaren.\n\nOm launchern visas, gör svepet i botten av skärmen för att trigga handlingen.</string>
+    <string name="back_swipe_extended_title">Utöka svephandling</string>
+    <string name="back_swipe_extended_summary">Utför handling om svepet är horisontell vidare än 3\/4 av skärmstorleken</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Visa aviseringshistorik</string>
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">baksida</string>
+    <string name="security_settings_fingerprint_sensor_location_front">framsida</string>
+    <string name="security_settings_fingerprint_sensor_location_left">vänstersida</string>
+    <string name="security_settings_fingerprint_sensor_location_right">högersida</string>
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Finn fingeravtryckssensorn på surfplattans <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Finn fingeravtryckssensorn på enhetens <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Finn fingeravtryckssensorn på telefonens <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+    <!-- Xtended Updater -->
+    <string name="update_settings_title">Xtended Updater</string>
+    <string name="update_settings_summary">Kolla efter senaste versionen av ROM</string>
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Adaptiv uppspelning</string>
+    <string name="adaptive_playback_timeout_title">Använd en timeout av</string>
+    <string name="adaptive_playback_timeout_none_summary">Av</string>
+    <string name="adaptive_playback_timeout_30_secs">30 sekunder</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">På (30 sekunder)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minut</string>
+    <string name="adaptive_playback_timeout_1_min_summary">På (1 minut)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minuter</string>
+    <string name="adaptive_playback_timeout_2_min_summary">På (2 minuter)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minuter</string>
+    <string name="adaptive_playback_timeout_5_min_summary">På (5 minuter)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minuter</string>
+    <string name="adaptive_playback_timeout_10_min_summary">På (10 minuter)</string>
+    <!-- Ultra Power -->
+    <string name="ultra_power_save_title">Ultraenergisparläge</string>
+    <string name="ultra_power_save_summary">När skärmen stängs av kommer enheten att växla till ultraströmsparläge</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Uppdateringsfrekvens för skärmen</string>
+    <string name="refresh_rate_summary_auto">Höj automatiskt uppdateringsfrekvensen från 60 till 90/120 Hz för visst innehåll</string>
+    <string name="refresh_rate_summary_60">60 Hz / Uppdateringsfrekvens låst till 60 Hz för allt innehåll</string>
+    <string name="refresh_rate_summary_max">90 Hz / 120 Hz / Uppdateringsfrekvensen låst på 90 Hz / 120 Hz för allt innehåll. Ökad strömförbrukning</string>
+    <string name="auto_refresh_rate">Auto</string>
+    <!-- Battery health -->
+    <string name="battery_health_title">Batterihälsa</string>
+    <string name="battery_health_summary">Övervaka batteriets hälsa på din enhet</string>
+    <string name="current_battery_capacity">Nuvarande batterikapacitet</string>
+    <string name="current_battery_capacity_summary">Den nuvarande batterikapaciteten uppmätt av kerneln</string>
+    <string name="designed_battery_capacity">Designad batterikapacitet</string>
+    <string name="designed_battery_capacity_summary">Batterikapaciteten enligt tillverkarens design</string>
+    <string name="battery_charge_cycles">Laddningscykler genomförda</string>
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Tillåt klienter att använda VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Tillåt hotspot-klienter att använda den här enhetens VPN-anslutningar vid anslutningar uppströms</string>
+    <!-- QS header styles -->
+    <string name="qs_header_style_title">QS Header-stil</string>
+    <string name="qs_header_black">Svart</string>
+    <string name="qs_header_grey">Grå</string>
+    <string name="qs_header_lightgrey">Ljusgrå</string>
+    <string name="qs_header_accent">Accentbaserad</string>
+    <string name="qs_header_transparent">Transparent</string>
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Minsta tid mellan aviseringsljud</string>
+    <string name="app_notification_sound_timeout_summary_template">Tillåt ljud eller vibration endast en gång per <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Ingen begränsning</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minuter</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minuter</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minuter</string>
+    <!-- Switch styles -->
+    <string name="switch_style_title">Växla stilar</string>
+    <string name="switch_default">Standard</string>
+    <string name="switch_oneplus">OnePlus</string>
+    <string name="switch_narrow">Smal</string>
+    <string name="switch_contained">Innehållen</string>
+    <string name="switch_telegram">Telegram</string>
+    <!-- Settings dashboard icon style -->
+    <string name="theming_settings_dashboard_icons_title">Anpassa inställningssymboler</string>
+    <string name="theming_settings_dashboard_icons_default2">Standardbakgrund</string>
+    <string name="theming_settings_dashboard_icons_default_accent2">Accentbakgrund</string>
+    <string name="theming_settings_dashboard_icons_plain">Enkel</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Enkel accent</string>
+    <string name="theming_settings_dashboard_icons_bg_random">Slumpad bakgrund</string>
+    <string name="theming_settings_dashboard_icons_random">Slumpad ikon</string>
+    <string name="theming_settings_dashboard_icons_random_bg_accent">Ikon Slumpad Bg Accent</string>
+    <string name="theming_settings_dashboard_icons_accent_bg_random">Ikon Accent Bg slumpad</string>
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Stil på snabbinställningar</string>
+    <string name="qstile_default">Standard</string>
+    <string name="qstile_circle_trim">Cirkel med rand</string>
+    <string name="qstile_dual_tone_circle">Tvåtonad cirkel</string>
+    <string name="qstile_squircle_trim">Rundad kvadrat med rand</string>
+    <string name="qstile_wavey">Vågig</string>
+    <string name="qstile_pokesign">Pokesign</string>
+    <string name="qstile_ninja">Ninja</string>
+    <string name="qstile_dottedcircle">Prickad cirkel</string>
+    <string name="qstile_attemptmountain">Ett försök till ett berg</string>
+    <string name="qstile_squaremedo">The Squaremedo</string>
+    <string name="qstile_inkdrop">Bläck</string>
+    <string name="qstile_cookie">Kaka</string>
+    <string name="qstile_circleoutline">Cirkelkontur</string>
+    <string name="qstile_neon">Neonljus</string>
+    <string name="qstile_triangle">Triangel</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Sparade hörsnäckor</string>
+    <!-- Home handle sizing -->
+    <string name="home_handle_sizer_title">Längd på navigeringsfältets skaft.</string>
+    <string name="home_handle_low_label">Dold</string>
+    <string name="home_handle_high_label">Lång</string>
+    <!-- Qs Tile Icon Bright-Dark -->
+    <string name="qs_icon_primary_title">QS Tile Ikon Ljus|Mörk</string>
+    <string name="qs_icon_primary_summary">Gör QS Ikon Ljus-Mörk om gradientfärgning är aktiverad</string>
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
+    <!-- Lottie Animations -->
+    <string name="apps_category">Apps</string>
+    <string name="volume_key_category_title">Volume Shortcut</string>
+    <string name="connected_devices_category_title">Connected Devices</string>
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (preferred)</string>
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD audio</string>
+    <string name="sbc_hd_priority_summary">Whether to use Dual Channel mode for SBC codec by default</string>
+    <!-- Xtensions Styling -->
+    <string name="xtensions_style_title">Xtensions Background</string>
+    <string name="xtensions_style_accent">Accent Color</string>
+    <string name="xtensions_style_gradient">Gradient Color</string>
+    <string name="xtensions_style_random">Random Color</string>
+    <!-- GVM -->
+    <string name="theme_customization_statusbar_height_title">Statusbar Height</string>
+    <string name="theme_customization_ui_radius_title">UI Radius</string>
+</resources>
