@@ -35,4 +35,7 @@
     <string name="config_batChargeCycle"></string>
     <bool name="config_supportBatteryHealth">true</bool>
 
+    <!-- Ultra Power Saving -->
+    <bool name="config_supportUltraPowerSaving">true</bool>
+
 </resources>
