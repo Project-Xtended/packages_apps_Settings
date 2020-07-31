@@ -302,6 +302,12 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         if (!getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
             getPreferenceScreen().removePreference(mCyclesHealthPref);
         }
+
+        //Ultra Power Saving
+        Preference mUltraPowerSavingPref = (Preference) findPreference(KEY_ULTRA_POWER_SAVING);
+        if (!getResources().getBoolean(R.bool.config_supportUltraPowerSaving)) {
+            getPreferenceScreen().removePreference(mUltraPowerSavingPref);
+        }
     }
 
     private void updateUltraPowerPrefs() {
