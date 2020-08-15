@@ -581,4 +581,7 @@
     <string name="audio_panel_theme_aosp">Xtended AOSP</string>
     <string name="audio_panel_theme_custom">Xtended Custom</string>
 
+    <!-- Center R Notification headers -->
+    <string name="center_notification_headers_title">Center notification headers</string>
+    <string name="center_notification_headers_summary">Whether to Center R style notification headers (Requires a SystemUI restart)</string>
 </resources>
