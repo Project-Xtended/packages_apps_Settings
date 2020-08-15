@@ -585,4 +585,7 @@
     <!-- Back gesture vibration -->
     <string name="back_gesture_haptic">Enable haptic tick effect on back gesture</string>
 
+    <!-- Center R Notification headers -->
+    <string name="center_notification_headers_title">Center notification headers</string>
+    <string name="center_notification_headers_summary">Whether to Center R style notification headers (Requires a SystemUI restart)</string>
 </resources>
