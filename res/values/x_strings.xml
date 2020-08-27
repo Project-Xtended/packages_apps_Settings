@@ -532,6 +532,7 @@
     <string name="qstile_circleoutline">CircleOutline</string>
     <string name="qstile_neon">Neon Light</string>
     <string name="qstile_triangle">Triangle</string>
+    <string name="qstile_oos">OOS</string>
     
     
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
