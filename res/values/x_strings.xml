@@ -580,5 +580,10 @@
     <string name="audio_panel_theme_default">Xtended Default</string>
     <string name="audio_panel_theme_aosp">Xtended AOSP</string>
     <string name="audio_panel_theme_custom">Xtended Custom</string>
+    
+    <!-- Statusbar dual row -->
+    <string name="statusbar_dual_row_title">Dual Row</string>
+    <string name="statusbar_dual_row_summary">Enable dual row statusbar for notifications</string>
+
 
 </resources>
