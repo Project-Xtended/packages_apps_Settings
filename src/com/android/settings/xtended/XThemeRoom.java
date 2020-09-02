@@ -68,6 +68,10 @@ public class XThemeRoom extends DashboardFragment implements
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String QS_HEADER_STYLE = "qs_header_style";
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
+    
+    private static final String STATUSBAR_DUAL_ROW = "statusbar_dual_row";
+    private SystemSettingSwitchPreference mStatusbarDualRow;
+	
     //private static final String QS_PANEL_COLOR = "qs_panel_color";
     private static final String QS_BLUR_ALPHA = "qs_blur_alpha";
     private static final String QS_BLUR_INTENSITY = "qs_blur_intensity";
@@ -120,6 +124,7 @@ public class XThemeRoom extends DashboardFragment implements
         getQsBlurAlphaPref();
         getQsBlurIntenPref();
         getRStylePref();
+        getDualPref();
         setHasOptionsMenu(true);
     }
 
@@ -201,6 +206,12 @@ public class XThemeRoom extends DashboardFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NOTIFICATION_HEADERS, value ? 1 : 0);
+            XtendedUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        }  else if (preference == mStatusbarDualRow) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_DUAL_ROW, value ? 1 : 0);
             XtendedUtils.showSystemUiRestartDialog(getContext());
             return true;
         } else if (preference == mThemeSwitch) {
