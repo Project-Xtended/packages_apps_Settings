@@ -588,6 +588,7 @@
     <string name="volume_panel_compat_val">co.potatoproject.plugin.volume.compact</string>
     <string name="volume_panel_oreo_val">co.potatoproject.plugin.volume.oreo</string>
     <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="volume_panel_stock_val">none</string>
 
     <!-- Back gesture vibration -->
     <string name="back_gesture_haptic">Enable haptic tick effect on back gesture</string>
