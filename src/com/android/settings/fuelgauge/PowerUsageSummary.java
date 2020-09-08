@@ -464,9 +464,9 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
         updateLastFullChargePreference();
-        mScreenUsagePref.setSummary(StringUtil.formatElapsedTime(getContext(),
+        mScreenUsagePref.setSubtitle(StringUtil.formatElapsedTime(getContext(),
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
-        mBatteryTempPref.setSubtitle(BatteryInfo.batteryTemp+" "+Character.toString ((char) 176) + "C");
+        mBatteryTempPref.setSubtitle(BatteryInfo.batteryTemp / 10 + " °C");
         mCurrentBatteryCapacity.setSubtitle(parseBatterymAhText(mBatCurCap));
         mDesignedBatteryCapacity.setSubtitle(parseBatterymAhText(mBatDesCap));
         mBatteryChargeCycles.setSubtitle(parseBatteryCycle(mBatChgCyc));
@@ -493,14 +493,14 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         if (mBatteryInfo != null && mBatteryInfo.averageTimeToDischarge
                 != EstimateKt.AVERAGE_TIME_TO_DISCHARGE_UNKNOWN) {
             mLastFullChargePref.setTitle(R.string.battery_full_charge_last);
-            mLastFullChargePref.setSummary(
+            mLastFullChargePref.setSubtitle(
                     StringUtil.formatElapsedTime(getContext(), mBatteryInfo.averageTimeToDischarge,
                             false /* withSeconds */));
         } else {
             final long lastFullChargeTime = mBatteryUtils.calculateLastFullChargeTime(mStatsHelper,
                     System.currentTimeMillis());
             mLastFullChargePref.setTitle(R.string.battery_last_full_charge);
-            mLastFullChargePref.setSummary(
+            mLastFullChargePref.setSubtitle(
                     StringUtil.formatRelativeTime(getContext(), lastFullChargeTime,
                             false /* withSeconds */));
         }
