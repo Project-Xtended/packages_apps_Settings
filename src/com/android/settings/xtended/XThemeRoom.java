@@ -12,10 +12,12 @@ import android.app.UiModeManager;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.om.IOverlayManager;
 import android.content.om.OverlayInfo;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.SystemProperties;
@@ -24,6 +26,7 @@ import android.os.UserHandle;
 import androidx.fragment.app.Fragment;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
@@ -68,11 +71,12 @@ public class XThemeRoom extends DashboardFragment implements
     private static final String PREF_THEME_SWITCH = "theme_switch";
     private static final String QS_HEADER_STYLE = "qs_header_style";
     private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
-    //private static final String QS_PANEL_COLOR = "qs_panel_color";
     private static final String QS_BLUR_ALPHA = "qs_blur_alpha";
     private static final String QS_BLUR_INTENSITY = "qs_blur_intensity";
+    private static final String FILE_QSPANEL_SELECT = "file_qspanel_select";
     private static final String PREF_R_NOTIF_HEADER = "notification_headers";
     static final int DEFAULT_QS_PANEL_COLOR = 0xffffffff;
+    private static final int REQUEST_PICK_IMAGE = 0;
     private static final int MENU_RESET = Menu.FIRST;
 
     static final int DEFAULT = 0xff1a73e8;
@@ -85,10 +89,10 @@ public class XThemeRoom extends DashboardFragment implements
     private ListPreference mThemeSwitch;
     private ListPreference mQsHeaderStyle;
     private CustomSeekBarPreference mQsPanelAlpha;
-    //private ColorPickerPreference mQsPanelColor;
     private CustomSeekBarPreference mQsBlurAlpha;
     private CustomSeekBarPreference mQsBlurIntensity;
     private SystemSettingSwitchPreference mNotifHeader;
+    private Preference mQsPanelImage;
 
     @Override
     protected String getLogTag() {
@@ -104,19 +108,18 @@ public class XThemeRoom extends DashboardFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-//        addPreferencesFromResource(R.xml.x_theme_room);
-
         mUiModeManager = getContext().getSystemService(UiModeManager.class);
 
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+
+        mQsPanelImage = findPreference(FILE_QSPANEL_SELECT);
 
         setupAccentPref();
         setupGradientPref();
         setupThemeSwitchPref();
         getQsHeaderStylePref();
         getQsPanelAlphaPref();
-        //getQsPanelColorPref();
         getQsBlurAlphaPref();
         getQsBlurIntenPref();
         getRStylePref();
@@ -179,14 +182,6 @@ public class XThemeRoom extends DashboardFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.QS_PANEL_BG_ALPHA, trueValue);
             return true;
-        /*} else if (preference == mQsPanelColor) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(objValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.QS_PANEL_BG_COLOR, intHex, UserHandle.USER_CURRENT);
-            return true;*/
         } else if (preference == mQsBlurAlpha) {
             int value = (Integer) objValue;
             Settings.System.putInt(getContentResolver(),
@@ -299,6 +294,17 @@ public class XThemeRoom extends DashboardFragment implements
         return true;
     }
 
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mQsPanelImage) {
+            Intent intent = new Intent(Intent.ACTION_PICK);
+            intent.setType("image/*");
+            startActivityForResult(intent, REQUEST_PICK_IMAGE);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
     private void setupAccentPref() {
         mThemeColor = (ColorPickerPreference) findPreference(ACCENT_COLOR);
         String colorVal = SystemProperties.get(ACCENT_COLOR_PROP, "-1");
@@ -336,16 +342,6 @@ public class XThemeRoom extends DashboardFragment implements
         mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
-
-    /*private void getQsPanelColorPref() {
-        mQsPanelColor = (ColorPickerPreference) findPreference(QS_PANEL_COLOR);
-        mQsPanelColor.setOnPreferenceChangeListener(this);
-        int intColor = Settings.System.getIntForUser(getActivity().getContentResolver(),
-                Settings.System.QS_PANEL_BG_COLOR, DEFAULT_QS_PANEL_COLOR, UserHandle.USER_CURRENT);
-        String hexColor = String.format("#%08x", (0xffffffff & intColor));
-        mQsPanelColor.setSummary(hexColor);
-        mQsPanelColor.setNewPreviewColor(intColor);
-    }*/
 
     private void getQsBlurAlphaPref() {
         mQsBlurAlpha = (CustomSeekBarPreference) findPreference(QS_BLUR_ALPHA);
@@ -406,6 +402,17 @@ public class XThemeRoom extends DashboardFragment implements
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent result) {
+        if (requestCode == REQUEST_PICK_IMAGE) {
+            if (resultCode != Activity.RESULT_OK) {
+                return;
+            }
+            final Uri imageUri = result.getData();
+            Settings.System.putString(getContentResolver(), Settings.System.QS_PANEL_CUSTOM_IMAGE, imageUri.toString());
         }
     }
 
