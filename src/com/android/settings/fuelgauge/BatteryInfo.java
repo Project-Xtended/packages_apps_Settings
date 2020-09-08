@@ -234,8 +234,7 @@ public class BatteryInfo {
         info.batteryPercentString = Utils.formatPercentage(info.batteryLevel);
         info.mCharging = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_PLUGGED, 0) != 0;
         info.averageTimeToDischarge = estimate.getAverageDischargeTime();
-		int bTemp = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0);
-		info.batteryTemp = (float) (bTemp / 10);
+        info.batteryTemp = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0);
         final Resources resources = context.getResources();
 
         info.statusLabel = Utils.getBatteryStatus(resources, batteryBroadcast);
