@@ -59,6 +59,14 @@
         android:defaultValue="@string/volume_panel_aosp_val"/>
 
     <ListPreference
+        android:key="brightness_slider_style"
+        android:title="@string/brightness_slider_style_title"
+        android:entries="@array/brightness_slider_style_selector_entries"
+        android:entryValues="@array/brightness_slider_style_selector_values"
+        android:defaultValue="0"
+        android:persistent="false" />
+
+    <ListPreference
         android:key="android.theme.customization.font"
         android:title="@string/theme_customization_font_title"/>
 

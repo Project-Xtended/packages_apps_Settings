@@ -613,4 +613,13 @@
     <string name="qs_bg_blur_image_title">Blur Image</string>
     <string name="qs_bg_blur_image_summary">Blur Custom Image</string>
 
+    <!-- Brightness Slider style -->
+    <string name="brightness_slider_style_title">Brightness slider style</string>
+    <string name="brightness_slider_style_default">Default</string>
+    <string name="brightness_slider_style_daniel">Daniel</string>
+    <string name="brightness_slider_style_mememini">Meme mini</string>
+    <string name="brightness_slider_style_memeround">Meme round</string>
+    <string name="brightness_slider_style_memeroundstroke">Meme round stroke</string>
+    <string name="brightness_slider_style_memestroke">Meme stroke</string>
+
 </resources>

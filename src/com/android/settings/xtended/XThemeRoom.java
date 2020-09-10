@@ -75,6 +75,7 @@ public class XThemeRoom extends DashboardFragment implements
     private static final String QS_BLUR_INTENSITY = "qs_blur_intensity";
     private static final String FILE_QSPANEL_SELECT = "file_qspanel_select";
     private static final String PREF_R_NOTIF_HEADER = "notification_headers";
+    private static final String BRIGHTNESS_SLIDER_STYLE = "brightness_slider_style";
     static final int DEFAULT_QS_PANEL_COLOR = 0xffffffff;
     private static final int REQUEST_PICK_IMAGE = 0;
     private static final int MENU_RESET = Menu.FIRST;
@@ -93,6 +94,7 @@ public class XThemeRoom extends DashboardFragment implements
     private CustomSeekBarPreference mQsBlurIntensity;
     private SystemSettingSwitchPreference mNotifHeader;
     private Preference mQsPanelImage;
+    private ListPreference mBrightnessSliderStyle;
 
     @Override
     protected String getLogTag() {
@@ -123,6 +125,7 @@ public class XThemeRoom extends DashboardFragment implements
         getQsBlurAlphaPref();
         getQsBlurIntenPref();
         getRStylePref();
+        getBrightnessSliderPref();
         setHasOptionsMenu(true);
     }
 
@@ -197,6 +200,21 @@ public class XThemeRoom extends DashboardFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NOTIFICATION_HEADERS, value ? 1 : 0);
             XtendedUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mBrightnessSliderStyle) {
+            String value = (String) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BRIGHTNESS_SLIDER_STYLE, Integer.valueOf(value));
+            int valueIndex = mBrightnessSliderStyle.findIndexOfValue(value);
+            mBrightnessSliderStyle.setSummary(mBrightnessSliderStyle.getEntries()[valueIndex]);
+            String overlayName = getOverlayName(ThemesUtils.BRIGHTNESS_SLIDER_THEMES);
+            if (overlayName != null) {
+                handleOverlays(overlayName, false, mOverlayService);
+            }
+            if (valueIndex > 0) {
+                handleOverlays(ThemesUtils.BRIGHTNESS_SLIDER_THEMES[valueIndex],
+                      true, mOverlayService);
+            }
             return true;
         } else if (preference == mThemeSwitch) {
             String theme_switch = (String) objValue;
@@ -366,6 +384,18 @@ public class XThemeRoom extends DashboardFragment implements
         mNotifHeader.setOnPreferenceChangeListener(this);
     }
 
+    private void getBrightnessSliderPref() {
+        mBrightnessSliderStyle = (ListPreference) findPreference(BRIGHTNESS_SLIDER_STYLE);
+        int BrightnessSliderStyle = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.BRIGHTNESS_SLIDER_STYLE, 0);
+        int BrightnessSliderStyleValue = getOverlayPosition(ThemesUtils.BRIGHTNESS_SLIDER_THEMES);
+        if (BrightnessSliderStyleValue != 0) {
+            mBrightnessSliderStyle.setValue(String.valueOf(BrightnessSliderStyle));
+        }
+        mBrightnessSliderStyle.setSummary(mBrightnessSliderStyle.getEntry());
+        mBrightnessSliderStyle.setOnPreferenceChangeListener(this);
+    }
+
     private void setupThemeSwitchPref() {
         mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
         mThemeSwitch.setOnPreferenceChangeListener(this);
@@ -403,6 +433,36 @@ public class XThemeRoom extends DashboardFragment implements
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void handleOverlays(String packagename, Boolean state, IOverlayManager mOverlayService) {
+        try {
+            mOverlayService.setEnabled(packagename, state, USER_SYSTEM);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String getOverlayName(String[] overlays) {
+        String overlayName = null;
+        for (int i = 0; i < overlays.length; i++) {
+            String overlay = overlays[i];
+            if (XtendedUtils.isThemeEnabled(overlay)) {
+                overlayName = overlay;
+            }
+        }
+        return overlayName;
+    }
+
+    private int getOverlayPosition(String[] overlays) {
+        int position = -1;
+        for (int i = 0; i < overlays.length; i++) {
+            String overlay = overlays[i];
+            if (XtendedUtils.isThemeEnabled(overlay)) {
+                position = i;
+            }
+        }
+        return position;
     }
 
     @Override
