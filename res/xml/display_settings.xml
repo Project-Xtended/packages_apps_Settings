@@ -144,19 +144,6 @@
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
     <PreferenceCategory
-        android:key="theme_customization_category"
-        android:title="@string/theme_customization_category"
-        android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
-
-     <Preference
-         android:key="theme_room"
-         android:title="@string/themeroom_title"
-         android:summary="@string/themeroom_summary"
-         android:fragment="com.android.settings.xtended.XThemeRoom" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="density_category"
         android:title="@string/density_category">
 
