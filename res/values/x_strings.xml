@@ -276,4 +276,11 @@
     <string name="qs_tint_random">Random Color</string>
     <string name="qs_tint_accent">Accent Color</string>
 
+    <!-- QS Label Tint -->
+    <string name="qs_label_use_new_tint">QS Label Tint</string>
+    <string name="qs_label_tint_off">Default</string>
+    <string name="qs_label_tint_random">Random Color Tint</string>
+    <string name="qs_label_tint_accent">Accent Color Tint</string>
+    <string name="qs_label_tint_gradient">Gradient Color Tint</string>
+
 </resources>
