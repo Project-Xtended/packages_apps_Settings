@@ -5072,7 +5072,10 @@
     <string name="high_label" msgid="357503396626018487">"Hoch"</string>
     <string name="left_edge" msgid="1513576842959071849">"Linker Rand"</string>
     <string name="right_edge" msgid="1505309103265829121">"Rechter Rand"</string>
-    <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Wenn du die Empfindlichkeit erhöhst, werden eventuell appspezifische Touch-Gesten am Bildschirmrand beeinträchtigt."</string>
+    <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Wenn du die Empfindlichkeit erhöhst oder Bereich vergrößerts, werden eventuell appspezifische Touch-Gesten am Bildschirmrand beeinträchtigt."</string>
+
+    <string name="back_height_dialog_title">Bereich für die Touch-Geste „Zurück“"</string>
+
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Empfindlichkeit bei Touch-Geste „Zurück“"</string>
     <string name="gesture_settings_activity_title" msgid="2025828425762595733">"Empfindlichkeit der Bedienung über Gesten"</string>
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Bedienung über Schaltflächen"</string>
