@@ -94,6 +94,12 @@
             settings:textStart="@string/short_label"
             settings:textEnd="@string/long_label"/>
 
+        <com.xtended.support.preferences.SystemSettingSwitchPreference
+            android:key="back_gesture_haptic"
+            android:title="@string/back_gesture_haptic_title"
+            android:summary="@string/back_gesture_haptic_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <com.xtended.support.preferences.SystemSettingSwitchPreference
@@ -108,11 +114,5 @@
         android:summary="@string/navbar_gesture_tweaks_pref_summary"
         android:fragment="com.android.settings.gestures.GestureTweaksSettings"
         settings:allowDividerAbove="false"/>
-
-    <com.android.settingslib.widget.FooterPreference
-        android:key="gesture_navigation_settings_footer"
-        android:title="@string/back_sensitivity_dialog_message"
-        android:selectable="false"
-        settings:searchable="false"/>
 
 </PreferenceScreen>
