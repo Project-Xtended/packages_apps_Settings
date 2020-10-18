@@ -54,6 +54,9 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
+import com.msm.xtended.preferences.CustomSeekBarPreference;
+import com.msm.xtended.preferences.SystemSettingSwitchPreference;
+
 public class XThemeRoom extends DashboardFragment implements
         OnPreferenceChangeListener, Indexable {
 
@@ -64,6 +67,7 @@ public class XThemeRoom extends DashboardFragment implements
     private static final String GRADIENT_COLOR = "gradient_color";
     private static final String GRADIENT_COLOR_PROP = "persist.sys.theme.gradientcolor";
     private static final String PREF_THEME_SWITCH = "theme_switch";
+    private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
     private static final int MENU_RESET = Menu.FIRST;
 
     static final int DEFAULT = 0xff1a73e8;
@@ -74,6 +78,7 @@ public class XThemeRoom extends DashboardFragment implements
     private ColorPickerPreference mThemeColor;
     private ColorPickerPreference mGradientColor;
     private ListPreference mThemeSwitch;
+    private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     protected String getLogTag() {
@@ -99,6 +104,7 @@ public class XThemeRoom extends DashboardFragment implements
         setupAccentPref();
         setupGradientPref();
         setupThemeSwitchPref();
+        getQsPanelAlphaPref();
         setHasOptionsMenu(true);
     }
 
@@ -141,6 +147,12 @@ public class XThemeRoom extends DashboardFragment implements
                  mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
              } catch (RemoteException ignored) {
              }
+        } else if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) objValue;
+            int trueValue = (int) (((double) bgAlpha / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, trueValue);
+            return true;
         } else if (preference == mThemeSwitch) {
             String theme_switch = (String) objValue;
             final Context context = getContext();
@@ -255,6 +267,14 @@ public class XThemeRoom extends DashboardFragment implements
                 : Color.parseColor("#" + colorVal);
         mGradientColor.setNewPreviewColor(color);
         mGradientColor.setOnPreferenceChangeListener(this);
+    }
+
+    private void getQsPanelAlphaPref() {
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, 255);
+        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
     private void setupThemeSwitchPref() {

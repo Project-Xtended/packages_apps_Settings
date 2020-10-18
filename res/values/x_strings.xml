@@ -404,4 +404,8 @@
     <string name="hidden_label">Hidden</string>
     <string name="long_label">Long</string>
 
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Quick Settings opacity</string>
+    <string name="qs_panel_alpha_summary">Configure opacity of background</string>
+
 </resources>
