@@ -166,6 +166,7 @@ import com.xtended.Xtensions;
 import com.xtended.fragments.SmartPixels;
 import com.xtended.fragments.OmniJawsSettings;
 import com.xtended.fragments.SleepMode;
+import com.android.settings.fuelgauge.smartcharging.SmartChargingSettings;
 
 public class SettingsGateway {
 
@@ -322,6 +323,7 @@ public class SettingsGateway {
             SmartPixels.class.getName(),
             OmniJawsSettings.class.getName(),
             SleepMode.class.getName(),
+            SmartChargingSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -367,5 +369,6 @@ public class SettingsGateway {
             Settings.SmartPixelsActivity.class.getName(),
             Settings.OmniJawsSettingsActivity.class.getName(),
             Settings.SleepModeActivity.class.getName(),
+            Settings.SmartChargingActivity.class.getName(),
     };
 }
