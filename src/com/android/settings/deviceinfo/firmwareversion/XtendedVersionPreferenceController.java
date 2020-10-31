@@ -29,7 +29,7 @@ import com.android.settings.core.BasePreferenceController;
 public class XtendedVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String XTENDED_VERSION_PROPERTY = "ro.xtended.display.version";
+    static final String XTENDED_VERSION_PROPERTY = "ro.modversion";
 
     public XtendedVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
