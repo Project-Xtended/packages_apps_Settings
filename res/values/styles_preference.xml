@@ -34,9 +34,7 @@
         <item name="preferenceFragmentCompatStyle">@style/SettingsPreferenceFragmentStyle</item>
     </style>
 
-    <style name="SettingsCategoryPreference" parent="Preference.Category.Material">
-        <item name="android:layout">@layout/preference_category_settings</item>
-    </style>
+    <style name="SettingsCategoryPreference" parent="Preference.Category.Material" />
 
     <style name="Preference.Xtended.Category" parent="@style/Preference.Category">
         <item name="android:layout">@layout/x_preference_category_material</item>
