@@ -3628,6 +3628,7 @@
     <string name="call_volume_option_title" msgid="1461105986437268924">"Anruflautstärke"</string>
     <string name="alarm_volume_option_title" msgid="6398641749273697140">"Weckerlautstärke"</string>
     <string name="ring_volume_option_title" msgid="1520802026403038560">"Lautstärke Klingeln/Benachrichtigungen"</string>
+    <string name="ring_volume_unlinked_option_title">Lautstärke Klingeln</string>
     <string name="notification_volume_option_title" msgid="4838818791683615978">"Benachrichtigungslautstärke"</string>
     <string name="ringtone_title" msgid="3271453110387368088">"Klingelton"</string>
     <string name="notification_ringtone_title" msgid="6924501621312095512">"Standard-Benachrichtigungston"</string>
