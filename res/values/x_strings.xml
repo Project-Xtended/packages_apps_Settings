@@ -83,4 +83,7 @@
 
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifications, notification log</string>
+
+    <!-- Min refresh rate -->
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
 </resources>
