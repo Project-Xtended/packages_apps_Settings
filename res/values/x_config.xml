@@ -16,4 +16,7 @@
     <!-- Diagonal Screen length provided -->
     <string name="config_screen_diagonal_length" translatable="false"></string>
     
+    <!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">false</bool>
+
 </resources>
