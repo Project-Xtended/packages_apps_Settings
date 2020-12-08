@@ -168,7 +168,12 @@ public class TopLevelSettings extends DashboardFragment implements
                 // Clear colors from previous calls
                 aIcon.resetColorsAicp();
                 switch (mIconStyle) {
+                    case 0:
+                    default:
+                        aIcon.setForegroundColorAicp(mNormalColor);
+                        break;
                     case 1:
+                        aIcon.setForegroundColorAicp(mNormalColor);
                         aIcon.setBackgroundColorAicp(mAccentColor);
                         break;
                     case 2:
@@ -184,6 +189,7 @@ public class TopLevelSettings extends DashboardFragment implements
                         aIcon.setBackgroundColorAicp(R.color.settings_icon_oneplus);
                         break;
                     case 5:
+                        aIcon.setForegroundColorAicp(mNormalColor);
                         aIcon.setBackgroundColorAicp(mRandomColor);
                         break;
                     case 6:
@@ -208,7 +214,12 @@ public class TopLevelSettings extends DashboardFragment implements
                     bg.setTintList(null);
                     fg.setTintList(null);
                     switch (mIconStyle) {
+                        case 0:
+                        default:
+                            fg.setTint(mNormalColor);
+                            break;
                         case 1:
+                            fg.setTint(mNormalColor);
                             bg.setTint(mAccentColor);
                             break;
                         case 2:
@@ -224,6 +235,7 @@ public class TopLevelSettings extends DashboardFragment implements
                             bg.setTint(R.color.settings_icon_oneplus);
                             break;
                         case 5:
+                            fg.setTint(mNormalColor);
                             bg.setTint(mRandomColor);
                             break;
                         case 6:
