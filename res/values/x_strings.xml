@@ -537,4 +537,8 @@
 
     <string name="weather_title">Weather</string>
 
+    <!-- Clock style -->
+    <string name="clock_style_title">Clock styles</string>
+    <string name="clock_style_summary">Customize lockscreen clock</string>
+
 </resources>
