@@ -72,4 +72,15 @@
                 android:targetClass="@string/additional_system_update_menu"/>
     </Preference>
 
+    <Preference
+        android:key="device_stats"
+        android:persistent="false"
+        android:title="Xtended Stats"
+        android:icon="@drawable/ic_sync">
+        <intent
+           android:action="android.intent.action.MAIN"
+           android:targetClass="org.xtendedstats.AnonymousStats"
+           android:targetPackage="org.xtendedstats" />
+    </Preference>
+
 </PreferenceScreen>
