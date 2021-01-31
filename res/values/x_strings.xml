@@ -587,4 +587,8 @@
     <string name="dc_dimming_on_auto_mode_auto">Will turn off automatically</string>
     <string name="keywords_display_dc_dimming">dc dimming, flicker, eye, strain</string>
 
+    <!-- Clipboard toast toggle -->
+    <string name="show_clipboard_toast">Show clipboard access alerts</string>
+    <string name="show_clipboard_toast_summary">Display a toast when an app tries to access the clipboard</string>
+
 </resources>
