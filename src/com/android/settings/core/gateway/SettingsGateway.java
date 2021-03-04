@@ -163,6 +163,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.xtended.Xtensions;
+import com.xtended.fragments.SmartPixels;
 
 public class SettingsGateway {
 
@@ -316,6 +317,7 @@ public class SettingsGateway {
             // X-Tesions Additions
             Xtensions.class.getName(),
             RunningServices.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -358,5 +360,6 @@ public class SettingsGateway {
             // X-Tensions Additions
             Settings.XtensionsSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
