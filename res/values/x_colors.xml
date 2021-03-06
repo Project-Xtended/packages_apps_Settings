@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019-2020 The Project-Xtended
+     Copyright (C) 2021 The Project-Xtended
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,15 +15,8 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Fingerprint -->
-    <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
-
-    <dimen name="picker_circle_preview_size">26dp</dimen>
-    <dimen name="alert_dialog_padding_material">20dp</dimen>
-
-    <!-- The Team -->
-    <dimen name="team_recycler_height">500dp</dimen>
 
     <!-- ProgressCard -->
-    <dimen name="progress_card_horizontal_padding">16dp</dimen>
+    <color name="progress_card_progress_color">#14000000</color>
+
 </resources>
