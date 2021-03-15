@@ -40,8 +40,8 @@
     <string name="config_batChargeCycle"></string>
     <bool name="config_supportBatteryHealth">true</bool>
 
-    <!-- Whether to show min refresh rate in display settings -->
-    <bool name="config_show_min_refresh_rate_switch">false</bool>
+    <!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">false</bool>
 
     <!-- Fingerprint swipe left and right -->
     <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
