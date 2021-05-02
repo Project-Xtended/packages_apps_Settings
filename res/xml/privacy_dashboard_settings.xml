@@ -82,11 +82,13 @@
         settings:searchable="false"/>
 
     <!-- Clipboard access toast notification -->
-    <com.xtended.support.preferences.SystemSettingSwitchPreference
+    <com.xtended.support.preferences.SystemSettingListPreference
         android:key="show_clipboard_toast"
-        android:title="@string/show_clipboard_toast"
-        android:summary="@string/show_clipboard_toast_summary"
-        android:defaultValue="false" />
+        android:title="@string/clipboard_toast_info_title"
+        android:entries="@array/clipboard_toast_info_entries"
+        android:entryValues="@array/clipboard_toast_info_values"
+        android:summary="%s"
+        android:defaultValue="0" />
 
     <!-- Privacy Service -->
     <PreferenceCategory
