@@ -93,6 +93,14 @@
         android:order="-140"
         settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
 
+    <!-- Increasing ring volume -->
+    <com.android.settings.notification.IncreasingRingVolumePreference
+        android:key="increasing_ring_volume"
+        android:icon="@drawable/ring_notif_increasing"
+        android:dependency="increasing_ring"
+        android:order="-139"
+        settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
+
     <!-- Link ringtone and notification volumes -->
     <com.xtended.support.preferences.SecureSettingSwitchPreference
         android:key="volume_link_notification"
@@ -108,14 +116,6 @@
         android:defaultValue="false"
         android:order="-136"
         settings:controller="com.android.settings.notification.IncreasingRingPreferenceController" />
-
-    <!-- Increasing ring volume -->
-    <com.android.settings.notification.IncreasingRingVolumePreference
-        android:key="increasing_ring_volume"
-        android:icon="@drawable/ring_notif_increasing"
-        android:dependency="increasing_ring"
-        android:order="-135"
-        settings:controller="com.android.settings.notification.IncreasingRingVolumePreferenceController" />
 
     <!-- Also vibrate for calls -->
     <Preference
