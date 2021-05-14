@@ -36,7 +36,6 @@ public class RomVersionDetailPreferenceController extends BasePreferenceControll
     private static final String TAG = "romDialogCtrl";
     private static final String KEY_ROM_VERSION_PROP = "ro.xtended.build.version";
     private static final String KEY_ROM_RELEASETYPE_PROP = "ro.xtended.build.type";
-    private static final String KEY_ROM_VARIANT_PROP = "ro.xtended.build.variant";
 
     private final PackageManager mPackageManager;
 
@@ -56,10 +55,8 @@ public class RomVersionDetailPreferenceController extends BasePreferenceControll
                 this.mContext.getString(R.string.device_info_default));
         String romReleasetype = SystemProperties.get(KEY_ROM_RELEASETYPE_PROP,
                 this.mContext.getString(R.string.device_info_default));
-        String romVariant = SystemProperties.get(KEY_ROM_VARIANT_PROP,
-                this.mContext.getString(R.string.device_info_default));
         if (!romVersion.isEmpty() && !romReleasetype.isEmpty())
-            return romVersion + " | " + romReleasetype + " | " + romVariant;
+            return romVersion + " | " + romReleasetype;
         else
             return mContext.getString(R.string.rom_version_default);
     }
