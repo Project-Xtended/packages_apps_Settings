@@ -53,6 +53,7 @@
 
     </PreferenceCategory>
 
+<!--
     <PreferenceCategory
         android:key="ambient_display_category_when_to_show"
         android:title="@string/ambient_display_category_triggers"
@@ -97,7 +98,7 @@
             android:title="@string/advanced_settings" />
 
     </PreferenceCategory>
-
+-->
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
     <PreferenceCategory
