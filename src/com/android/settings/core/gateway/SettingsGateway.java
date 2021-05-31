@@ -165,6 +165,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.xtended.Xtensions;
 import com.xtended.fragments.SmartPixels;
 import com.xtended.fragments.OmniJawsSettings;
+import com.xtended.fragments.SleepMode;
 
 public class SettingsGateway {
 
@@ -320,6 +321,7 @@ public class SettingsGateway {
             RunningServices.class.getName(),
             SmartPixels.class.getName(),
             OmniJawsSettings.class.getName(),
+            SleepMode.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -364,5 +366,6 @@ public class SettingsGateway {
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.OmniJawsSettingsActivity.class.getName(),
+            Settings.SleepModeActivity.class.getName(),
     };
 }

@@ -245,4 +245,5 @@ public class Settings extends SettingsActivity {
     public static class XtensionsSettingsActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
     public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SleepModeActivity extends SettingsActivity {}
 }
