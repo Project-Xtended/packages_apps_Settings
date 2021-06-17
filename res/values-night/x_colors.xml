@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021 The Project-Xtended
+    Copyright (C) 2021 The Project-Xtended
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources>
 
     <!-- ProgressCard -->
-    <color name="progress_card_progress_color">#14000000</color>
-    <color name="progress_card_background_color">@*android:color/primary_device_default_settings_light</color>
+    <color name="progress_card_progress_color">#14FFFFFF</color>
+    <color name="progress_card_background_color">@*android:color/primary_device_default_settings</color>
 
 </resources>
