@@ -465,5 +465,15 @@
     <string name="power_usage_provider_summary">Use battery stats graph and power scheme from Pixel</string>
     <string name="powerusage_provider_google_dialog_title">Changing provider</string>
     <string name="powerusage_provider_google_dialog_message">Settings app will be force closed for changing battery stats provider</string>
+    
+    <!-- Face Unlock -->
+    <string-array name="face_unlock_method_entries">
+        <item>@string/face_unlock_method_default</item>
+        <item>@string/face_unlock_method_swipe</item>
+    </string-array>
+    <string-array name="face_unlock_method_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 
 </resources>
