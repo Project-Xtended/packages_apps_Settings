@@ -39,4 +39,8 @@
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 
+    <!-- Fingerprint -->
+    <style name="FingerprintGravity">
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
