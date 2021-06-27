@@ -165,6 +165,12 @@
         android:key="density_category"
         android:title="@string/density_category">
 
+        <com.xtended.support.preferences.SystemSettingSwitchPreference
+            android:key="use_new_searchbar"
+            android:title="@string/search_bar_style_title"
+            android:summary="@string/search_bar_style_summary"
+            android:defaultValue="false" />
+
         <Preference
             android:key="font_size"
             android:title="@string/title_font_size"

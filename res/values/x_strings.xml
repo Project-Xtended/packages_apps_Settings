@@ -484,5 +484,9 @@
 
     <!-- Battery saver -->
     <string name="battery_saver_is_enabled">Battery saver is enabled</string>
-    
+
+    <!-- Search bar style -->
+    <string name="search_bar_style_title">Use Android 12 search bar</string>
+    <string name="search_bar_style_summary">Enable to use Android 12 style search bar in Settings app. Settings app needs a manual restart after enabling</string>
+
 </resources>

@@ -16,6 +16,8 @@
 -->
 <resources>
 
+    <color name="homepage_container_bg">@android:color/transparent</color>
+
     <!-- ProgressCard -->
     <color name="progress_card_progress_color">#14000000</color>
     <color name="progress_card_background_color">@*android:color/primary_device_default_settings_light</color>
