@@ -430,4 +430,10 @@
     <!-- Scroll fling haptic feedback-->
     <string name="scroll_fling_haptic_feedback_title">Vibrate on scroll flings</string>
     <string name="scroll_fling_haptic_feedback_summary">Vibrate on reaching edges when scrolling with fling gesture</string>
+
+    <!-- VPN app management screen, global VPN -->
+    <string name="global_vpn_title">Global VPN</string>
+    <string name="global_vpn_summary">Force all traffic on the device through this VPN, including work profile and other users.</string>
+    <string name="global_vpn_summary_on">Force all traffic on the device through this VPN, including work profile and other users. Note: When enabled, you will not be able to use a separate VPN in a work profile or other users</string>
+    <string name="global_vpn_summary_any_vpn_active">You need to disable all active VPN connections first to enable this</string>
 </resources>
