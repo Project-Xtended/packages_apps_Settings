@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2021 The Project-Xtended
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Backup Transport selection settings menu and activity title --> 
+	<string name="backup_transport_setting_label">Сменить поставщика резервного копирования</string>
+	<string name="backup_transport_title">Выберите поставщика резервного копирования</string>
+
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+	<string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Найдите датчик отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> вашего планшета.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Найдите датчик отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> вашего устройства.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Найдите датчик отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> вашего телефона.</string>
+
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">задней стороне</string>
+    <string name="security_settings_fingerprint_sensor_location_front">лицевой стороне</string>
+    <string name="security_settings_fingerprint_sensor_location_left">левой стороне</string>
+    <string name="security_settings_fingerprint_sensor_location_right">правой стороне</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключен</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Xtensions -->
+    <string name="x_settings_title">X-Tensions</string>
+    <string name="x_settings_summary">Наш центр настройки</string>
+
+    <!-- ROM version -->
+    <string name="about_device_name">Устройство</string>
+    <string name="build_date">Дата сборки</string>
+    <string name="build_maintainer" translatable="false">Maintainer</string>
+    <string name="rom_version">Версия Xtended</string>
+    <string name="rom_version_default">Неизвестно</string>
+
+    <!-- Hardware info -->
+    <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
+    <string name="platform_revision">Платформа</string>
+    <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
+    <string name="total_ram">Всего ОЗУ</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скриншота</string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Нажмите для отображения информации</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Температура батареи</string>
+
+    <!-- Battery health -->
+    <string name="battery_health_title">Состояние батареи</string>
+    <string name="battery_health_summary">Следите за состоянием батареи вашего устройства</string>
+    <string name="current_battery_capacity">Текущая емкость батареи</string>
+    <string name="current_battery_capacity_summary">Текущая емкость батареи, измеряемая ядром</string>
+    <string name="designed_battery_capacity">Рассчитанная емкость батареи</string>
+    <string name="designed_battery_capacity_summary">Емкость аккумулятора, рассчитанная производителем</string>
+    <string name="battery_charge_cycles">Завершенные циклы зарядки</string>
+
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">уведомления, журнал уведомлений</string>
+
+    <!-- Refresh rate -->
+    <string name="min_refresh_rate_title">Минимальная частота обновления</string>
+    <string name="max_refresh_rate_title">Мааксимальная частота обновления</string>
+
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Умная зарядка</string>
+    <string name="smart_charging_summary">Выбрать максимальный уровень зарядки</string>
+    <string name="smart_charging_switch_title">Использовать умную зарядку</string>
+    <string name="smart_charging_level_title">Максимальный уровень зарядки</string>
+    <string name="smart_charging_resume_level_title">Минимальный уровень зарядки</string>
+    <string name="smart_charging_reset_stats_title">Сбросить статистику батареи</string>
+    <string name="smart_charging_reset_stats_summary">Сбрасывать статистику заряда батареи после достижения указанного уровня зарядки</string>
+    <string name="smart_charging_footer">Умная зарядка позволяет установить максимальный уровень зарядки, чтобы продлить срок службы вашей батареи</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">Статистика зарядки батареи будет сброшена</string>
+
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Отладка с root-правами</string>
+    <string name="adb_enable_summary_root">Разрешить отладку от имени root</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Связать громкость рингтона и уведомлений</string>
+
+    <!-- Scramble pin -->
+    <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
+    <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случвайном порядке</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+    <string name="unlock_quick_unlock_control_summary">Разблокировать устройство без нажатия ОК</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Параметы вращения</string>
+    <string name="display_rotation_summary">Выберите углы поворота экрана</string>
+    <string name="display_rotation_disabled">Отключено</string>
+    <string name="display_rotation_unit">градусы</string>
+    <string name="display_rotation_category_title">Режимы вращения</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
+
+    <!-- Themes customisation -->
+    <string name="theme_customization_systemui_title">Цвет</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">Цвет</string>
+    <string name="custom_light_on_time_title">Время свечения светодиода (мс)</string>
+    <string name="custom_light_off_time_title">Длительность затухания светодиода (мс)</string>
+    <string name="value_equals_default">по умолчанию</string>
+
+    <!-- Lock screen pattern size -->
+    <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
+    <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string> 
+    <string name="lock_pattern_size_5" translatable="false">5 \u00d7 5</string>
+    <string name="lock_pattern_size_6" translatable="false">6 \u00d7 6</string>
+    <string name="lock_settings_picker_pattern_size_message">Выберите размер граф. ключа</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Показать ошибки ввода</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
+
+    <!-- Density category -->
+    <string name="density_category">Параметры чувствительности</string>
+
+    <!-- Vibration patterns -->
+    <string name="vibration_pattern_title">Шаблон вибрации рингтона</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="pattern_custom">Свой</string>
+    <string name="custom_vibration_pattern_title">Свой шаблон</string>
+
+    <!-- Navbar length -->
+    <string name="navbar_length">Длина полосы жестов</string> 
+    <string name="hidden_label">Скрыта</string>
+    <string name="long_label">Длинная</string>
+
+    <!-- Cycle through ringer modes gesture -->
+    <string name="prevent_ringing_option_cycle">Циклический переход между режимами</string>
+    <string name="prevent_ringing_option_cycle_summary">Вкл. (циклический переход по режимам)</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
+    <string name="increasing_ring_min_volume_title">Начальная громкость</string>
+    <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
+
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Адаптивное воспроизведение</string>
+    <string name="adaptive_playback_disabled_summary">Отключено</string>
+    <string name="adaptive_playback_timeout_title">Использовать таймаут</string>
+    <string name="adaptive_playback_timeout_none">Без таймаута</string>
+    <string name="adaptive_playback_timeout_none_summary">Включено (без таймаута)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Включено (30 секунд)</string>
+    <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Включено (1 минута)</string>
+    <string name="adaptive_playback_timeout_2_min">2 минуты</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Включено (2 минуты)</string>
+    <string name="adaptive_playback_timeout_5_min">5 минут</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Включено (5 минут)</string>
+    <string name="adaptive_playback_timeout_10_min">10 минут</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Включено (10 минут)</string>
+
+    <!-- Battery categorization -->
+    <string name="battery_saver_category_title">Энергосбережение</string>
+    <string name="smart_features_category_title">Умные функции</string>
+    <string name="battery_health_category_title">Состояние батареи</string>
+    <string name="battery_usage_category_title">Использование батареи</string>
+
+    <!-- Smart cutoff -->
+    <string name="smart_cutoff_title">Умное отключение</string>
+    <string name="smart_cutoff_summary">Выбрать максимальную температуру</string>
+    <string name="smart_cutoff_switch_title">Использовать умное отключение</string>
+    <string name="smart_cutoff_level_title">Конечный уровень триггера</string>
+    <string name="smart_cutoff_resume_level_title">Начальный уровень триггера</string>
+
+    <!-- SBC HD (Dual Channel) priority -->
+    <string name="sbc_hd_priority_title">SBC HD audio</string>
+    <string name="sbc_hd_priority_summary">Следует ли использовать двухканальный режим для кодека SBC по умолчанию</string>
+
+    <!-- Power Button Fingerprint -->
+    <string name="fingerprint_power_button_press_title">Нажмите для разблокировки</string>
+    <string name="fingerprint_power_button_press_off_summary">Нажмите кнопку питания, чтобы разблокировать с помощью отпечатка пальца, когда экран выключен</string>
+    <string name="fingerprint_power_button_press_on_summary">Нажмите кнопку питания сильно, чтобы разблокировать с помощью отпечатка пальца, когда экран выключен</string>
+
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Удалить существующий снимок лица и создать новый</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Повторить снимок лица</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Блокировка экрана, отпечаток, разблокировка лицом</string>
+    <string name="face_redo_confirm_btn">Повторить</string>
+    <string name="face_redo_warning_msg">Вы хотите удалить существующий снимок лица и создать новый?</string>
+
+    <!-- App Lock -->
+    <string name="applock_title">Блокировка приложений</string>
+    <string name="applock_locked">Заблокировано</string>
+    <string name="applock_unlocked">Разблокировано</string>
+    <string name="applock_locked_apps">Заблокированные приложения</string>
+    <string name="applock_unlocked_apps">Разблокированные приложения</string>
+    <string name="applock_lock_after_title">Заблокировать приложение после</string>
+    <string name="applock_lock_after_instantly">Немедленно</string>
+    <string name="applock_lock_after_15_seconds">15 секунд</string>
+    <string name="applock_lock_after_screen_off">Выключение экана</string> 
+    <string name="applock_lock_after_summary">Приложение будет заблокировано по истечении заданного таймаута</string>
+    <string name="applock_lock_after_instantly_summary">Приложение будет заблокировано немедленно после закрытия</string>
+    <string name="applock_lock_after_15_seconds_summary">Приложение будет заблокировано через 15 секунд после закрытия</string>
+    <string name="applock_lock_after_screen_off_summary">Приложение будет заблокировано после отключения экрана</string>
+    <string name="applock_notification_info">Вы можете показать/скрыть содержимое уведомления для каждого приложения, щелкнув значок уведомления, отображаемый в настройках каждого заблокированного приложения</string>
+    <string name="applock_show_notif">Показывать содержимое уведомлений</string>
+    <string name="applock_hide_notif">Скрывать содержимое уведомлений</string>
+    <string name="applock_setup">Настроить блокировку приложений</string>
+    <string name="applock_overlay_summary">Эта функция недоступна из-за блокировки этого приложения</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 приложение заблокировано</item>
+        <item quantity="other">%d приложений заблокировано</item>
+    </plurals>
+    <string name="keywords_applock_settings">блокировка приложений, блокировщик приложений</string>
+
+    <!-- Running Services -->
+    <string name="background_processes_settings_title">Фоновые процессы</string>
+
+    <!-- OmniJaws -->
+    <string name="weather_title">Погода</string>
+
+    <!-- FontEngine -->
+    <string name="font_picker_title">Шрифт</string>
+    <string name="disable_fonts_installed_title">Выбор шрифта недоступен, чтобы избежать конфликтов с Substratum. Удалите его, если хотите использоватьсистемные шрифты.</string>
+    <string name="font_picker_progress">Применение нового шрифта\u2026</string>
+
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Виброотклик</string>
+    <string name="back_gesture_haptic_summary">Вибрировать при жесте назад</string>
+
+    <!-- Back Gestures -->
+    <string name="smallest_tick_label">Выключен</string>
+    <string name="greatest_tick_label">Половина экрана</string>
+    <string name="gesture_back_deadzone_label">Мёртвая зона</string>
+    <string name="back_sensitivity_dialog_message_cust">\nИспользуйте первый и второй ползунки для настройки чувствительности пролистывания, последний ползунок - для установки мертвой зоны в верхней части экрана, где пролистывание не может быть запущено для избежания конфликтов с жестами в приложении.</string>
+
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Высокая</string>
+    <string name="back_height_high_label">Низкая</string>
+    <string name="back_options_dialog_title">Опции</string>
+    <string name="back_height_message">Высота экрана, используемая в качестве области касания для жеста назад.</string>
+
+    <!-- Custom actions -->
+    <string name="action_nothing">Нет действия</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_app_switch">Недавние</string>
+    <string name="action_search">Ассистент</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_last_app">Последнее приложение</string>
+    <string name="action_splitscreen">Разделение экрана</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Выключение экрана</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_power_menu">Меню кнопки питания</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_qs_panel">Быстрые настройки</string>
+    <string name="action_app_action">Приложение</string>
+    <string name="action_ringer_modes">Режимы звонка</string>
+    <string name="kill_app">Убить активное приложение</string>
+    <string name="recent_app_toggle">Сменить последнее приложение</string>
+    <string name="action_partial_screenshot">Частичный скриншот</string>
+
+    <!-- Long swipe gestures -->
+    <string name="navbar_gesture_tweaks_pref_title">Расширенные настройки жестов</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Настройка пользовательских действий для жестов</string>
+    <string name="navbar_gesture_tweaks_cat_title">Дополнительно</string>
+    <string name="swipe_app_select_summary">Выберите приложение для запуска с помощью жеста сжатия</string>
+    <string name="long_back_swipe_timeout_title">Задержка длинного свайпа</string>
+    <string name="left_swipe_actions_title">Действие длинного свайпа слева</string>
+    <string name="left_swipe_app_action_title">Выберите приложение для запуска долгим свайпом слева</string>
+    <string name="right_swipe_actions_title">Действие длинного свайпа справа</string>
+    <string name="right_swipe_app_action_title">Выберите приложение для запуска долгим свайпом справа</string>
+    <string name="left_vertical_swipe_actions_title">Действие вертикального свайпа в виде буквы L слева</string>
+    <string name="left_vertical_swipe_app_action_title">Выберите приложение для запуска вертикальным свайпом слева</string>
+    <string name="right_vertical_swipe_actions_title">Действие вертикального свайпа в виде буквы L справа</string>
+    <string name="right_vertical_swipe_app_action_title">Выберите приложение для запуска вертикальным свайпом справа</string>
+    <string name="gesture_nav_tweaks_footer_info">Чтобы выбрать действие для конкретного приложения, нажмите и удерживайте нужное приложение.\n\nЕсли панель запуска отображается, проведите пальцем по самой нижней части экрана, чтобы запустить действие.</string>
+    <string name="back_swipe_extended_title">Расширенное действие свайпа</string>
+    <string name="back_swipe_extended_summary">Активируйте действие при более широком свайпе (более половины размера дисплея) или при L-образном свайпе (достаточно длинном по вертикали).</string>
+
+</resources>
