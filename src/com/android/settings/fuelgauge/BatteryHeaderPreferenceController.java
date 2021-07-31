@@ -161,7 +161,7 @@ public class BatteryHeaderPreferenceController extends BasePreferenceController
                 mContext.getColor(R.color.battery_icon_color_error));
         } else {
             mBatteryInfoCard.setTitleTint(
-                Utils.getColorAttrDefaultColor(mContext, android.R.attr.colorAccent));
+                Utils.getColorAttrDefaultColor(mContext, android.R.attr.textColorPrimary));
         }
     }
 
