@@ -63,8 +63,8 @@
     <com.android.settings.widget.LabeledSeekBarPreference
         android:key="gesture_navbar_length"
         android:title="@string/navbar_length"
-        android:max="3"
-        android:defaultValue="1"
+        android:max="4"
+        android:defaultValue="2"
         android:selectable="true"
         settings:textStart="@string/hidden_label"
         settings:textEnd="@string/long_label"/>
