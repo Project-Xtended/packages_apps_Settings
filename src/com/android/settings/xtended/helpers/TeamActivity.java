@@ -49,16 +49,18 @@ public class TeamActivity extends Activity {
     private void initTeam(){
         RecyclerView mRecycleview = findViewById(R.id.listView);
 
-        setTeamMember("Santosh Jha", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "SuperDroidBond",  R.drawable.bond);
         setTeamMember("Mukesh Singh", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "mukesh22584",  R.drawable.mukesh);
         setTeamMember("MadhuSudhan Painoori", getString(R.string.developer_title), "mady51",  R.drawable.mady);
+        setTeamMember("Santosh Jha", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "SuperDroidBond",  R.drawable.bond);
+        setTeamMember("Roger Truttmann", getString(R.string.designer_title), "ROGERdotT",  R.drawable.roger);
         setTeamMember("Anish Pratheepan", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "ultranoob-5",  R.drawable.anish);
+        setTeamMember("Sonal Singh", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "SonalSingh18",  R.drawable.SonalSingh);
+        setTeamMember("Dev Mashru", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "DevMashru",  R.drawable.DevMashru);
         setTeamMember("xawlw", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "xawlw",  R.drawable.xawlw);
         setTeamMember("Ashwatthama", getString(R.string.developer_title) + "/" + getString(R.string.maintainer_title), "sai4041412",  R.drawable.ashw);
         setTeamMember("Dhanush Krishanan", getString(R.string.developer_title), "Destiny911gtr",  R.drawable.ded);
         setTeamMember("Danny", getString(R.string.developer_title), "mcdachpappe",  R.drawable.danny);
         setTeamMember("Honza", getString(R.string.designer_title), "jansvanda",  R.drawable.honza);
-        setTeamMember("Roger Truttmann", getString(R.string.designer_title), "ROGERdotT",  R.drawable.roger);
 
         ListAdapter mAdapter = new ListAdapter(mList);
         mRecycleview.setAdapter(mAdapter);

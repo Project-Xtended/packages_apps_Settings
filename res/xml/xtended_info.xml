@@ -19,13 +19,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                 android:key="xtended_about"
 		android:layout="@layout/xtended_about" />
 	<Preference
+               android:iconSpaceReserved="false"
                android:summary="@string/xtended_info_summary" />
 	<Preference
                android:title="@string/xtended_web"
                android:summary="@string/xtended_web_summary" 
                android:icon="@drawable/ic_devs_info" >
          <intent android:action="android.intent.action.VIEW"
-                android:data="https://msmxtended.org/" />
+                android:data="https://project-xtended.org/" />
         </Preference>
         <Preference
                android:title="@string/xtended_telegram"
@@ -64,8 +65,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
              android:key="xtended_devices"
 	     android:title="@string/devices_title"
              android:summary="@string/devices_summary"
-             android:icon="@drawable/ic_devs_phone"
-             android:fragment="com.android.settings.xtended.XtendedDevices"/>
+             android:icon="@drawable/ic_devs_phone" />
+            <!-- android:fragment="com.android.settings.xtended.XtendedDevices"/-->
     </PreferenceCategory>
 </PreferenceScreen>
 
