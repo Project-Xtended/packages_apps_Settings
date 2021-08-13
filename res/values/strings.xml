@@ -11764,15 +11764,15 @@
     <string name="back_sensitivity_dialog_message">Higher sensitivity or height may conflict with any app gestures along the edges of the screen.</string>
 
     <!-- Title for the dialog that is shown to adjust the back sensitivity [CHAR LIMIT=60] -->
-    <string name="back_sensitivity_dialog_title">Back Sensitivity</string>
+    <string name="back_sensitivity_dialog_title">Back Height &amp; Sensitivity</string>
 
-    <string name="back_height_dialog_title">Back Height</string>
+    <string name="back_height_dialog_title">Handle Length</string>
 
     <!-- Title for the screen to show all the gesture navigation settings [CHAR LIMIT=80] -->
     <string name="gesture_settings_activity_title">Gesture Settings</string>
 
     <!-- Keywords for the gesture navigation settings. [CHAR LIMIT=NONE] -->
-    <string name="keywords_gesture_navigation_settings">gesture navigation, back sensitivity, back gesture</string>
+    <string name="keywords_gesture_navigation_settings">gesture navigation, back sensitivity, back gesture, fullscreen, gesture length</string>
 
     <!-- Preference and settings suggestion title text for ambient display double tap (phone) [CHAR LIMIT=60]-->
     <string name="ambient_display_title" product="default">Double-tap to check phone</string>

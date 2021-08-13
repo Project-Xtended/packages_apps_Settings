@@ -449,4 +449,9 @@
     <string name="face_unlock_method_default">When the screen is turned on</string>
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
 
+    <!-- Gesture navbar length -->
+    <string name="gesture_navbar_length_title">Pill length</string>
+    <string name="short_label">Short</string>
+    <string name="long_label">Long</string>
+
 </resources>
