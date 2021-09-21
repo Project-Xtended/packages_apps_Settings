@@ -801,7 +801,7 @@
     <style name="homepage_spacer_title_style">
         <item name="android:textSize">40sp</item>
         <item name="android:textColor">@color/settingsHeaderColor</item>
-        <item name="android:fontFamily">google-sans-medium</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
     </style>
 
 </resources>

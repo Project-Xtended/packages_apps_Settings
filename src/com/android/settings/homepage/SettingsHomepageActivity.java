@@ -23,15 +23,20 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
+import android.net.Uri;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toolbar;
 import android.provider.Settings;
 import androidx.annotation.VisibleForTesting;
@@ -41,6 +46,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.android.internal.util.UserIcons;
+import com.android.internal.util.xtended.XFontHelper;
+import com.android.internal.util.xtended.XImageUtils;
 
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
@@ -52,7 +59,16 @@ import com.android.settingslib.drawable.CircleFramedDrawable;
 
 import com.google.android.material.appbar.AppBarLayout;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
 public class SettingsHomepageActivity extends FragmentActivity {
+    private static final String TAG = "SettingsHomepageActivity";
 
     Context context;
     ImageView avatarView;
@@ -60,6 +76,11 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
     View homepageSpacer;
     View homepageMainLayout;
+    ImageView iv;
+    ImageView mCustomImage;
+    Drawable mStockDrawable;
+
+    private static final String SPACER_IMAGE = "custom_spacer_image";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,7 +109,7 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-        
+
         avatarView = root.findViewById(R.id.account_avatar);
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
         avatarView.setImageDrawable(getCircularUserIcon(context));
@@ -110,6 +131,69 @@ public class SettingsHomepageActivity extends FragmentActivity {
         homepageSpacer = findViewById(R.id.settings_homepage_spacer);
         homepageMainLayout = findViewById(R.id.main_content_scrollable_container);
 
+        TextView tv = homepageSpacer.findViewById(R.id.spacer_text);
+        iv = homepageSpacer.findViewById(R.id.spacer_image);
+        mCustomImage = homepageSpacer.findViewById(R.id.custom_image);
+        mStockDrawable = context.getDrawable(R.drawable.x_spacer);
+        Drawable xtendedDrawable = context.getDrawable(R.drawable.xtended_dashboard_icon);
+        try {
+            XFontHelper.setFontType(tv, getFontStyle());
+            if (configAnim() == 0) {
+                 iv.setVisibility(View.VISIBLE);
+                 if (isProfileAvatar() == 1) {
+                     homepageSpacer.setBackground(null);
+                     mCustomImage.setImageDrawable(null);
+                     mCustomImage.setVisibility(View.GONE);
+                     iv.setVisibility(View.VISIBLE);
+                     iv.setImageDrawable(getCircularUserIcon(context));
+                     iv.setOnClickListener(new View.OnClickListener() {
+                         @Override
+                         public void onClick(View v) {
+                            Intent intent = new Intent(Intent.ACTION_MAIN);
+                            intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                            startActivity(intent);
+                         }
+                     });
+                 } else if (isProfileAvatar() == 0) {
+                     homepageSpacer.setBackground(null);
+                     mCustomImage.setImageDrawable(null);
+                     mCustomImage.setVisibility(View.GONE);
+                     iv.setVisibility(View.VISIBLE);
+                     if (mStockDrawable != null) {
+                         iv.setImageDrawable(mStockDrawable);
+                     }
+                 } else if (isProfileAvatar() == 2) {
+                     homepageSpacer.setBackground(null);
+                     mCustomImage.setImageDrawable(null);
+                     mCustomImage.setVisibility(View.GONE);
+                     iv.setVisibility(View.VISIBLE);
+                     if (xtendedDrawable != null) {
+                         iv.setImageDrawable(xtendedDrawable);
+                     }
+                 } else if (isProfileAvatar() == 3) {
+                     iv.setVisibility(View.GONE);
+                     BitmapDrawable bp = getCustomImageFromString(SPACER_IMAGE, context);
+                     if (bp == null) Log.d(TAG,"Bitmap is null!!");
+                     if (bp != null)  {
+                         if (isCrop() == 0){
+                             homepageSpacer.setBackground(bp);
+                             mCustomImage.setVisibility(View.GONE);
+                          } else {
+                             homepageSpacer.setBackground(null);
+                             mCustomImage.setImageDrawable(bp);
+                             mCustomImage.setVisibility(View.VISIBLE);
+                          }
+                     }
+                 }
+                 tv.setVisibility(View.GONE);
+            } else if (configAnim() == 1) {
+                 iv.setVisibility(View.GONE);
+                 tv.setVisibility(View.VISIBLE);
+            }
+            if (avatarView != null) {
+                avatarView.setVisibility(isSearchDisabled()? View.GONE: View.VISIBLE);
+             }
+        } catch (Exception e) {}
         if (!isHomepageSpacerEnabled() && homepageSpacer != null && homepageMainLayout != null) {
             homepageSpacer.setVisibility(View.GONE);
             setMargins(homepageMainLayout, 0,0,0,0);
@@ -129,9 +213,68 @@ public class SettingsHomepageActivity extends FragmentActivity {
         fragmentTransaction.commit();
     }
 
+    public void saveCustomFileFromString(Uri fileUri, String fileName, Context mContext) {
+        try {
+            final InputStream fileStream = mContext.getContentResolver().openInputStream(fileUri);
+            File file = new File(mContext.getFilesDir(), fileName);
+            if (file.exists()) {
+                file.delete();
+            }
+            FileOutputStream output = new FileOutputStream(file);
+            byte[] buffer = new byte[8 * 1024];
+            int read;
+            while ((read = fileStream.read(buffer)) != -1) {
+                output.write(buffer, 0, read);
+            }
+            output.flush();
+        } catch (Exception e) {
+        }
+    }
+
+    public BitmapDrawable getCustomImageFromString(String fileName, Context mContext) {
+        String imageUri = Settings.System.getStringForUser(mContext.getContentResolver(),
+                Settings.System.SETTINGS_SPACER_CUSTOM,
+                UserHandle.USER_CURRENT);
+        if (imageUri != null) {
+            saveCustomFileFromString(Uri.parse(imageUri), SPACER_IMAGE, mContext);
+        }
+        BitmapDrawable mImage = null;
+        File file = new File(mContext.getFilesDir(), fileName);
+        if (file.exists()) {
+            final Bitmap image = BitmapFactory.decodeFile(file.getAbsolutePath());
+            mImage = new BitmapDrawable(mContext.getResources(), XImageUtils.resizeMaxDeviceSize(mContext, image));
+        }
+        return mImage;
+    }
+
     private boolean isHomepageSpacerEnabled() {
         return Settings.System.getInt(this.getContentResolver(),
         Settings.System.SETTINGS_SPACER, 0) != 0;
+    }
+
+    private int configAnim() {
+         return Settings.System.getInt(this.getContentResolver(),
+                Settings.System.SETTINGS_SPACER_STYLE, 0);
+    }
+
+    private int getFontStyle() {
+         return Settings.System.getInt(this.getContentResolver(),
+                Settings.System.SETTINGS_SPACER_FONT_STYLE, 0);
+    }
+
+    private int isCrop() {
+        return Settings.System.getInt(this.getContentResolver(),
+        Settings.System.SETTINGS_SPACER_IMAGE_CROP, 1);
+    }
+
+    private int isProfileAvatar() {
+        return Settings.System.getInt(this.getContentResolver(),
+        Settings.System.SETTINGS_SPACER_IMAGE_STYLE, 0);
+    }
+
+    private boolean isSearchDisabled() {
+        return Settings.System.getInt(this.getContentResolver(),
+        Settings.System.SETTINGS_SPACER_IMAGE_SEARCHBAR, 0) == 1;
     }
 
     private static void setMargins (View v, int l, int t, int r, int b) {
@@ -192,5 +335,4 @@ public class SettingsHomepageActivity extends FragmentActivity {
         super.onResume();
         avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
     }
-
 }

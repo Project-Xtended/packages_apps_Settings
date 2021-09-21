@@ -26,11 +26,30 @@
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
     <TextView 
+        android:id="@+id/spacer_text"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:textAppearance="@style/homepage_spacer_title_style"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:visibility="gone"
         android:text="@string/settings_label" />
+
+     <ImageView
+        android:id="@+id/spacer_image"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"
+        android:src="@drawable/x_spacer"/>
+
+     <ImageView
+        android:id="@+id/custom_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"/>
 
 </com.google.android.material.card.MaterialCardView>
