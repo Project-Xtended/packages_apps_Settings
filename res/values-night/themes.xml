@@ -33,7 +33,9 @@
 
     <style name="Theme.AlertDialog.Base" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
         <item name="colorAccent">@*android:color/accent_device_default_dark</item>
-        <item name="android:colorBackground">@color/dialog_background</item>
+        <item name="colorPrimary">@*android:color/primary_device_default_settings</item>
+        <item name="colorPrimaryDark">@*android:color/primary_dark_device_default_settings</item>
+        <item name="android:colorBackground">?android:attr/colorPrimaryDark</item>
     </style>
 
     <!-- Material theme for the pages containing TabLayout and ViewPager -->
