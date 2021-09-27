@@ -273,7 +273,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
         // Check availability of Smart Features
         mSmartFeaturesCat = (PreferenceCategory) findPreference(KEY_SMART_FEATURES_CATEGORY);
-        if (!getResources().getBoolean(R.bool.config_supportSmartFeatures)) {
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_supportSmartFeatures)) {
             getPreferenceScreen().removePreference(mSmartFeaturesCat);
         }
     }
