@@ -41,7 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"
         android:src="@drawable/x_spacer"/>
 
      <ImageView
@@ -49,7 +48,6 @@
         android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/homepage_spacer_imageview_marginBottom"/>
+        android:layout_gravity="center" />
 
 </com.google.android.material.card.MaterialCardView>
