@@ -21,13 +21,20 @@
     android:key="smart_charging_screen"
     android:title="@string/smart_charging_title">
 
+    <com.xtended.support.preferences.SystemSettingSwitchPreference
+        android:key="smart_charging"
+        android:title="@string/smart_charging_switch_title"
+        android:summary="@string/smart_charging_switch_summary"
+        android:defaultValue="false" />
+
     <com.xtended.support.preferences.CustomSeekBarPreference
         android:key="smart_charging_level"
         android:title="@string/smart_charging_level_title"
         android:max="100"
         settings:min="65"
         settings:units="%"
-        android:defaultValue="80" />
+        android:defaultValue="80"
+        android:dependency="smart_charging" />
 
     <com.xtended.support.preferences.CustomSeekBarPreference
         android:key="smart_charging_resume_level"
@@ -35,12 +42,14 @@
         android:max="99"
         settings:min="1"
         settings:units="%"
-        android:defaultValue="60" />
+        android:defaultValue="60"
+        android:dependency="smart_charging" />
 
     <com.xtended.support.preferences.SystemSettingSwitchPreference
         android:key="smart_charging_reset_stats"
         android:title="@string/smart_charging_reset_stats_title"
         android:summary="@string/smart_charging_reset_stats_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="smart_charging" />
 
 </PreferenceScreen>
