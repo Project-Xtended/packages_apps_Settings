@@ -25,25 +25,6 @@
         <item>@string/security_settings_fingerprint_sensor_location_front</item><!-- FOD -->
     </string-array>
 
-    <!-- Vibration patterns -->
-    <string-array name="vibration_pattern_entries">
-        <item>@string/pattern_dzzz_dzzz</item>
-        <item>@string/pattern_dzzz_da</item>
-        <item>@string/pattern_mm_mm_mm</item>
-        <item>@string/pattern_da_da_dzzz</item>
-        <item>@string/pattern_da_dzzz_da</item>
-        <item>@string/pattern_custom</item>
-    </string-array>
-
-    <string-array name="vibration_pattern_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-
     <!-- App Lock -->
     <string-array name="applock_lock_after_entries">
         <item>@string/applock_lock_after_instantly</item>
