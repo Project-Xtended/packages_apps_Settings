@@ -343,4 +343,10 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
 
+    <!-- Settings Dashboard Cat -->
+    <string name="device_category_title">Device Info</string>
+    <string name="connectivity_category_title">Connectivity Settings</string>
+    <string name="system_category_title">System Settings</string>
+    <string name="privacy_category_title">Privacy Settings</string>
+
 </resources>
