@@ -22,7 +22,7 @@
     settings:keywords="@string/keywords_android_version">
 
     <!-- Xtended Logo -->
-    <Preference
+    <com.android.settingslib.widget.LayoutPreference
         android:key="xtended_about"
         android:layout="@layout/xtended_about"
         android:selectable="false"/>

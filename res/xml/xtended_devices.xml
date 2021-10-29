@@ -15,9 +15,10 @@ implied.
 xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="MSM-Xtended Officially Supported Devices">
 
-    <Preference
+    <com.android.settingslib.widget.LayoutPreference
         android:key="xtended_about"
-        android:layout="@layout/xtended_about" />
+        android:layout="@layout/xtended_about"
+        android:selectable="false"/>
 
     <PreferenceCategory
             android:key="xtended_device_maintainers"
