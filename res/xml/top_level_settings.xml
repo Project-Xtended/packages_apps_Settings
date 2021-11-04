@@ -23,7 +23,7 @@
 
     <Preference
         android:fragment="com.xtended.Xtensions"
-        android:icon="@drawable/ic_homepage_xtensions"
+        android:icon="@drawable/ic_settings_xtensions"
         android:key="top_level_xtensions"
         android:order="-155"
         android:title="@string/x_settings_title"
