@@ -20,7 +20,7 @@
     android:key="connected_devices_screen"
     android:title="@string/connected_devices_dashboard_title">
 
-    <Preference
+    <com.android.settingslib.widget.LayoutPreference
         android:key="bluetooth_animation"
         android:layout="@layout/bluetooth_animation" />
 
