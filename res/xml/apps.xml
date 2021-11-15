@@ -21,7 +21,7 @@
     android:key="apps_screen"
     android:title="@string/apps_dashboard_title">
 
-   <Preference
+   <com.android.settingslib.widget.LayoutPreference
         android:key="notification_animation"
         android:layout="@layout/notification_animation" 
         android:order="-999"/>
