@@ -21,7 +21,7 @@
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display">
 
-   <Preference
+   <com.android.settingslib.widget.LayoutPreference
         android:key="display_animation"
         android:layout="@layout/display_animation" />
 
