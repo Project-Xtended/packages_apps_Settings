@@ -162,8 +162,8 @@
     <string name="battery_saver_refresh_rate_summary">Use 60 Hz screen refresh rate to save power when Battery Saver is on</string>
 
     <!-- Navbar length -->
-    <string name="navbar_length">Gesture bar length</string> 
-    <string name="hidden_label">Hidden</string>
+    <string name="navbar_length">Gesture bar length</string>
+    <string name="short_label">Short</string>
     <string name="long_label">Long</string>
 
     <!-- Misc gesture settings -->
