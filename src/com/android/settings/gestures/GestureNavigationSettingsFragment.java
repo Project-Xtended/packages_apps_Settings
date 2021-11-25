@@ -26,7 +26,9 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.UserHandle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.WindowManager;
 
 import com.android.settings.R;
@@ -58,6 +60,9 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
 
     private IOverlayManager mOverlayService;
 
+    private static final String FULLSCREEN_GESTURE_PREF_KEY = "fullscreen_gestures";
+    private static final String FULLSCREEN_GESTURE_OVERLAY_PKG = "com.custom.overlay.systemui.gestural.hidden";
+
     private WindowManager mWindowManager;
     private BackGestureIndicatorView mIndicatorView;
 
@@ -85,7 +90,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
 
-        final Resources res = getActivity().getResources();
+        final Resources res = getResources();
         mDefaultBackGestureInset = res.getDimensionPixelSize(
                 com.android.internal.R.dimen.config_backGestureInset);
         mBackGestureInsetScales = getFloatArray(res.obtainTypedArray(
@@ -93,6 +98,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
 
         initSeekBarPreference(LEFT_EDGE_SEEKBAR_KEY);
         initSeekBarPreference(RIGHT_EDGE_SEEKBAR_KEY);
+        initFullscreenGesturePreference();
         initSeekBarPreference(GESTURE_BAR_LENGTH_KEY);
         initDeadzoneSeekBarPreference(DEADZONE_SEEKBAR_KEY);
         initSeekBarPreference(KEY_BACK_HEIGHT);
@@ -135,7 +141,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     }
 
     private void initSeekBarPreference(final String key) {
-        final LabeledSeekBarPreference pref = getPreferenceScreen().findPreference(key);
+        final LabeledSeekBarPreference pref = findPreference(key);
         pref.setContinuousUpdates(true);
         pref.setHapticFeedbackMode(SeekBarPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
 
@@ -279,6 +285,23 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
                     Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, (int)v);
             return true;
         });
+    }
+
+    private void initFullscreenGesturePreference() {
+        findPreference(FULLSCREEN_GESTURE_PREF_KEY)
+            .setOnPreferenceChangeListener((pref, newValue) -> {
+                final boolean isChecked = (boolean) newValue;
+                Settings.System.putIntForUser(getContext().getContentResolver(),
+                    Settings.System.FULLSCREEN_GESTURES, isChecked ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+                try {
+                    mOverlayService.setEnabled(FULLSCREEN_GESTURE_OVERLAY_PKG,
+                        isChecked, UserHandle.USER_CURRENT);
+                } catch (RemoteException e) {
+                    Log.e(TAG, "RemoteException while setting fullscreen gesture overlay");
+                }
+                return true;
+            });
     }
 
     private static float[] getFloatArray(TypedArray array) {

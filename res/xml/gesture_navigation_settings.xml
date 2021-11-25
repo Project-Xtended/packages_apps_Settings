@@ -74,11 +74,19 @@
         settings:textStart="@string/smallest_tick_label"
         settings:textEnd="@string/greatest_tick_label"/>
 
+    <com.xtended.support.preferences.SystemSettingSwitchPreference
+        android:key="fullscreen_gestures"
+        android:title="@string/fullscreen_gestures_title"
+        android:summary="@string/fullscreen_gestures_summary"
+        android:disableDependentsState="true"
+        android:defaultValue="false" />
+
     <com.android.settings.widget.LabeledSeekBarPreference
         android:key="gesture_navbar_length"
         android:title="@string/navbar_length"
         android:max="2"
         android:selectable="true"
+        android:dependency="fullscreen_gestures"
         settings:textStart="@string/short_label"
         settings:textEnd="@string/long_label"/>
 

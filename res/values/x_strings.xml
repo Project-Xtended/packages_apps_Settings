@@ -412,4 +412,8 @@
     <string name="privacy_category_title">Privacy Settings</string>
     <string name="customset_category_title">Customization Option</string>
 
+    <!-- Fullscreen gestures -->
+    <string name="fullscreen_gestures_title">Fullscreen gestures</string>
+    <string name="fullscreen_gestures_summary">Hide navbar pill and keyboard space</string>
+
 </resources>
