@@ -17,6 +17,7 @@
 package com.android.settings.gestures;
 
 import static android.os.UserHandle.USER_CURRENT;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -295,8 +296,9 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
                     Settings.System.FULLSCREEN_GESTURES, isChecked ? 1 : 0,
                     UserHandle.USER_CURRENT);
                 try {
-                    mOverlayService.setEnabled(FULLSCREEN_GESTURE_OVERLAY_PKG,
-                        isChecked, UserHandle.USER_CURRENT);
+                    mOverlayService.setEnabledExclusiveInCategory(
+                        isChecked ? FULLSCREEN_GESTURE_OVERLAY_PKG : NAV_BAR_MODE_GESTURAL_OVERLAY,
+                        UserHandle.USER_CURRENT);
                 } catch (RemoteException e) {
                     Log.e(TAG, "RemoteException while setting fullscreen gesture overlay");
                 }
