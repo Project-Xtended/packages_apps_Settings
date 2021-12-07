@@ -16,19 +16,14 @@
 
 package com.android.settings.gestures;
 
-import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY;
-
 import android.app.settings.SettingsEnums;
+import android.content.ContentResolver;
 import android.content.Context;
-import android.content.om.IOverlayManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.WindowManager;
 
 import com.android.settings.R;
@@ -51,9 +46,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
 
     private static final String LEFT_EDGE_SEEKBAR_KEY = "gesture_left_back_sensitivity";
     private static final String RIGHT_EDGE_SEEKBAR_KEY = "gesture_right_back_sensitivity";
-
-    private static final String FULLSCREEN_GESTURE_PREF_KEY = "fullscreen_gestures";
-    private static final String FULLSCREEN_GESTURE_OVERLAY_PKG = "com.custom.overlay.systemui.navbar.gestural";
+    private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
 
     private WindowManager mWindowManager;
     private BackGestureIndicatorView mIndicatorView;
@@ -61,7 +54,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private float[] mBackGestureInsetScales;
     private float mDefaultBackGestureInset;
 
-    private IOverlayManager mOverlayManager;
+    private LabeledSeekBarPreference mGestureNavbarLengthPreference;
 
     public GestureNavigationSettingsFragment() {
         super();
@@ -73,8 +66,6 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
 
         mIndicatorView = new BackGestureIndicatorView(getActivity());
         mWindowManager = (WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE);
-        mOverlayManager = IOverlayManager.Stub.asInterface(
-            ServiceManager.getService(Context.OVERLAY_SERVICE));
     }
 
     @Override
@@ -90,7 +81,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         initSeekBarPreference(LEFT_EDGE_SEEKBAR_KEY);
         initSeekBarPreference(RIGHT_EDGE_SEEKBAR_KEY);
 
-        initFullscreenGesturePreference();
+        initGestureNavbarLengthPreference();
     }
 
     @Override
@@ -166,19 +157,16 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         });
     }
 
-    private void initFullscreenGesturePreference() {
-        findPreference(FULLSCREEN_GESTURE_PREF_KEY)
-            .setOnPreferenceChangeListener((pref, newValue) -> {
-                final boolean isChecked = (boolean) newValue;
-                try {
-                    mOverlayManager.setEnabledExclusiveInCategory(
-                        isChecked ? FULLSCREEN_GESTURE_OVERLAY_PKG : NAV_BAR_MODE_GESTURAL_OVERLAY,
-                        UserHandle.USER_CURRENT);
-                } catch (RemoteException e) {
-                    Log.e(TAG, "RemoteException while setting fullscreen gesture overlay");
-                }
-                return true;
-            });
+    private void initGestureNavbarLengthPreference() {
+        final ContentResolver resolver = getContext().getContentResolver();
+        mGestureNavbarLengthPreference = getPreferenceScreen().findPreference(GESTURE_NAVBAR_LENGTH_KEY);
+        mGestureNavbarLengthPreference.setContinuousUpdates(true);
+        mGestureNavbarLengthPreference.setProgress(Settings.Secure.getIntForUser(
+            resolver, Settings.Secure.GESTURE_NAVBAR_LENGTH_MODE,
+            1, UserHandle.USER_CURRENT));
+        mGestureNavbarLengthPreference.setOnPreferenceChangeListener((p, v) ->
+            Settings.Secure.putIntForUser(resolver, Settings.Secure.GESTURE_NAVBAR_LENGTH_MODE,
+                (Integer) v, UserHandle.USER_CURRENT));
     }
 
     private static float[] getFloatArray(TypedArray array) {
