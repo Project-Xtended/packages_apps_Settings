@@ -288,4 +288,9 @@
     <string name="bluetooth_timeout_summary_4hours">4 hours</string>
     <string name="bluetooth_timeout_summary_8hours">8 hours</string>
 
+    <!-- Fullscreen gestures -->
+    <string name="navbar_category">Navigation bar</string>
+    <string name="fullscreen_gestures_title">Fullscreen gestures</string>
+    <string name="fullscreen_gestures_summary">Hide navbar pill and keyboard space</string>
+
 </resources>
