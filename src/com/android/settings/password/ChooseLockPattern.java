@@ -100,7 +100,7 @@ public class ChooseLockPattern extends SettingsActivity {
         private final Intent mIntent;
 
         public IntentBuilder(Context context) {
-            mIntent = new Intent(context, ChooseLockPatternSize.class);
+            mIntent = new Intent(context, ChooseLockPattern.class);
             mIntent.putExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD, false);
             mIntent.putExtra(ChooseLockGeneric.CONFIRM_CREDENTIALS, false);
         }
@@ -208,13 +208,18 @@ public class ChooseLockPattern extends SettingsActivity {
         protected FooterButton mSkipOrClearButton;
         private FooterButton mNextButton;
         @VisibleForTesting protected LockscreenCredential mChosenPattern;
-        private byte mPatternSize = LockPatternUtils.PATTERN_SIZE_DEFAULT;
         private ColorStateList mDefaultHeaderColorList;
 
         /**
          * The patten used during the help screen to show how to draw a pattern.
          */
-        private List<LockPatternView.Cell> mAnimatePattern;
+        private final List<LockPatternView.Cell> mAnimatePattern =
+                Collections.unmodifiableList(Lists.newArrayList(
+                        LockPatternView.Cell.of(0, 0),
+                        LockPatternView.Cell.of(0, 1),
+                        LockPatternView.Cell.of(1, 1),
+                        LockPatternView.Cell.of(2, 1)
+                ));
 
         @Override
         public void onActivityResult(int requestCode, int resultCode,
@@ -264,7 +269,7 @@ public class ChooseLockPattern extends SettingsActivity {
                         if (mChosenPattern == null) throw new IllegalStateException(
                                 "null chosen pattern in stage 'need to confirm");
                         try (LockscreenCredential confirmPattern =
-                                LockscreenCredential.createPattern(pattern, mPatternSize)) {
+                                LockscreenCredential.createPattern(pattern)) {
                             if (mChosenPattern.equals(confirmPattern)) {
                                 updateStage(Stage.ChoiceConfirmed);
                             } else {
@@ -275,8 +280,7 @@ public class ChooseLockPattern extends SettingsActivity {
                         if (pattern.size() < LockPatternUtils.MIN_LOCK_PATTERN_SIZE) {
                             updateStage(Stage.ChoiceTooShort);
                         } else {
-                            mChosenPattern = LockscreenCredential.createPattern(
-                                    pattern, mPatternSize);
+                            mChosenPattern = LockscreenCredential.createPattern(pattern);
                             updateStage(Stage.FirstChoiceValid);
                         }
                     } else {
@@ -463,7 +467,7 @@ public class ChooseLockPattern extends SettingsActivity {
                 w.setBlocking(true);
                 w.setListener(this);
                 w.start(mLockPatternUtils, required, false /* requestGatekeeperPassword */, current,
-                        current, mUserId, mPatternSize);
+                        current, mUserId);
             }
             mForFingerprint = intent.getBooleanExtra(
                     ChooseLockSettingsHelper.EXTRA_KEY_FOR_FINGERPRINT, false);
@@ -524,16 +528,6 @@ public class ChooseLockPattern extends SettingsActivity {
             mSkipOrClearButton = mixin.getSecondaryButton();
             mNextButton = mixin.getPrimaryButton();
 
-            mPatternSize = getActivity().getIntent().getByteExtra("pattern_size",
-                    LockPatternUtils.PATTERN_SIZE_DEFAULT);
-            LockPatternView.Cell.updateSize(mPatternSize);
-            mAnimatePattern = Collections.unmodifiableList(Lists.newArrayList(
-                    LockPatternView.Cell.of(0, 0, mPatternSize),
-                    LockPatternView.Cell.of(0, 1, mPatternSize),
-                    LockPatternView.Cell.of(1, 1, mPatternSize),
-                    LockPatternView.Cell.of(2, 1, mPatternSize)
-                    ));
-
             return layout;
         }
 
@@ -547,8 +541,6 @@ public class ChooseLockPattern extends SettingsActivity {
             mLockPatternView.setTactileFeedbackEnabled(
                     mLockPatternUtils.isTactileFeedbackEnabled());
             mLockPatternView.setFadePattern(false);
-            mLockPatternView.setLockPatternUtils(mLockPatternUtils);
-            mLockPatternView.setLockPatternSize(mPatternSize);
 
             mFooterText = (TextView) view.findViewById(R.id.footerText);
 
@@ -591,11 +583,6 @@ public class ChooseLockPattern extends SettingsActivity {
             } else {
                 // restore from previous state
                 mChosenPattern = savedInstanceState.getParcelable(KEY_PATTERN_CHOICE);
-
-                mLockPatternView.setPattern(DisplayMode.Correct,
-                        LockPatternUtils.byteArrayToPattern(
-                                mChosenPattern.getCredential(), mPatternSize));
-
                 mCurrentCredential = savedInstanceState.getParcelable(KEY_CURRENT_PATTERN);
 
                 updateStage(Stage.values()[savedInstanceState.getInt(KEY_UI_STAGE)]);
@@ -863,7 +850,7 @@ public class ChooseLockPattern extends SettingsActivity {
                 }
             }
             mSaveAndFinishWorker.start(mLockPatternUtils, required,
-                    mRequestGatekeeperPassword, mChosenPattern, mCurrentCredential, mUserId, mPatternSize);
+                    mRequestGatekeeperPassword, mChosenPattern, mCurrentCredential, mUserId);
         }
 
         @Override
@@ -892,18 +879,16 @@ public class ChooseLockPattern extends SettingsActivity {
         private LockscreenCredential mChosenPattern;
         private LockscreenCredential mCurrentCredential;
         private boolean mLockVirgin;
-        private byte mPatternSize;
 
         public void start(LockPatternUtils utils, boolean credentialRequired,
                 boolean requestGatekeeperPassword, LockscreenCredential chosenPattern,
-                LockscreenCredential currentCredential, int userId, byte patternSize) {
+                LockscreenCredential currentCredential, int userId) {
             prepare(utils, credentialRequired, requestGatekeeperPassword, userId);
 
             mCurrentCredential = currentCredential != null ? currentCredential
                     : LockscreenCredential.createNone();
             mChosenPattern = chosenPattern;
             mUserId = userId;
-            mPatternSize = patternSize;
 
             mLockVirgin = !mUtils.isPatternEverChosen(mUserId);
 
@@ -913,7 +898,6 @@ public class ChooseLockPattern extends SettingsActivity {
         @Override
         protected Pair<Boolean, Intent> saveAndVerifyInBackground() {
             final int userId = mUserId;
-            mUtils.setLockPatternSize(mPatternSize, userId);
             final boolean success = mUtils.setLockCredential(mChosenPattern, mCurrentCredential,
                     userId);
             if (success) {

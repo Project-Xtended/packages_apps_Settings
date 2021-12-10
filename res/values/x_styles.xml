@@ -15,13 +15,6 @@
 <!-- This file only contains custom attribute and style definition for preferences -->
 <!-- Things unrelated to preference framework UI customization should go to other styles files -->
 <resources>
-    <!-- CM Security Pattern -->
-    <style name="LockPatternSizeHeaderStyle" parent="android:style/TextAppearance.Material.Subhead">
-        <item name="android:paddingTop">16dp</item>
-        <item name="android:textColor">@color/primary_dark_material_light</item>
-        <item name="android:lineSpacingMultiplier">1.2</item>
-    </style>
-
     <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
         <item name="customPreferenceStyle">@style/CustomPreference</item>
     </style>
