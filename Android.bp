@@ -51,7 +51,8 @@ android_library {
     aaptflags: ["--extra-packages com.xtended"],
 
     resource_dirs: ["res",
-                    "Xtensions/res"
+                    "Xtensions/res",
+                    "res-pixel",
     ],
 
     static_libs: [
@@ -83,7 +84,15 @@ android_library {
         "lottie",
         "glide",
         "VendorSupport-preference",
+        "androidx.navigation_navigation-common-ktx",
+        "androidx.navigation_navigation-fragment-ktx",
+        "androidx.navigation_navigation-runtime-ktx",
+        "androidx.navigation_navigation-ui-ktx",
+        "kotlin-stdlib",
+        "SettingsGoogle-lib",
     ],
+    manifest: "AndroidManifest.xml",
+    additional_manifests: ["SettingsGoogle-Manifest.xml"],
 
     libs: [
         "telephony-common",
