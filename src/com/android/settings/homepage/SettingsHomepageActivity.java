@@ -62,7 +62,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     static ArrayList<String> text=new ArrayList<>();
     static {
         text.add("Welcome to The Project-Xtended !!!");
-	text.add("Be Calm, Be Patient, Be Xtended !!!");
+	text.add("Be Calm, Be Patient, Be Xtended Forever !!!");
 	text.add("Always remember that you're unique");
         text.add("Unicorns ARE real, just got fat n renamed as rhinos");
         text.add("If there is a *WILL*, there are 500 relatives");
@@ -126,7 +126,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         });
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-	collapsing_toolbar.setTitle("Settings");
+	collapsing_toolbar.setTitle("Be Xtended");
         mCategoryMixin = new CategoryMixin(this);
         getLifecycle().addObserver(mCategoryMixin);
 

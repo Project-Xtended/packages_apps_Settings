@@ -118,7 +118,7 @@ public class TopLevelSettings extends DashboardFragment implements
 
     	    String key = preference.getKey().toString();
 	    if (key.equals("category")){
-		preference.setLayoutResource(R.layout.homepage_category);
+		preference.setLayoutResource(R.layout.x_preference_category_material);
 	    } else {
 		preference.setLayoutResource(R.layout.card_view_pref);
 	    }
