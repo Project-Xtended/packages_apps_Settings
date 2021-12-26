@@ -74,6 +74,7 @@
 
             <TextView
                 android:id="@+id/greeter"
+                android:ellipsize="marquee"
                 android:layout_width="match_parent"
                 android:gravity="start"
                 android:layout_height="wrap_content"

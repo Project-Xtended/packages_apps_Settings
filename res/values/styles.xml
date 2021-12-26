@@ -920,6 +920,6 @@
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">39sp</item>
     </style>
 </resources>

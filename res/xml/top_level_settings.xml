@@ -22,6 +22,12 @@
     android:title="Settings">
 
     <Preference
+        android:title="@string/customset_category_title"
+        android:key="category"
+        android:selectable="false"
+        android:order="-175"/>
+
+    <Preference
         android:fragment="com.xtended.Xtensions"
         android:icon="@drawable/ic_settings_xtensions"
         android:key="top_level_xtensions"
@@ -118,14 +124,6 @@
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
-
-    <com.android.settingslib.RestrictedTopLevelPreference
-        android:icon="@drawable/ic_settings_wallpaper_white"
-        android:key="top_level_wallpaper"
-        android:order="-70"
-        android:title="@string/wallpaper_settings_title"
-        android:summary="@string/wallpaper_dashboard_summary"
-        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <Preference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
