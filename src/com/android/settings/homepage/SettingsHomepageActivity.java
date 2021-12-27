@@ -78,6 +78,21 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         text.add("If you're trying, You're already better than average");
     }
 
+    static ArrayList<String> welcome=new ArrayList<>();
+    static {
+        welcome.add("Be Xtended !!!");
+        welcome.add("Welcome Back");
+        welcome.add("Hi Captain");
+        welcome.add("Hello Honey");
+        welcome.add("Dare Devil");
+        welcome.add("He-Man");
+        welcome.add("You're Best");
+        welcome.add("Aye Aye Sir");
+        welcome.add("Own It, Be It");
+        welcome.add("Master Shifu");
+        welcome.add("Longlive Xtended");
+    }
+
     @Override
     public CategoryMixin getCategoryMixin() {
         return mCategoryMixin;
@@ -126,7 +141,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         });
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-	collapsing_toolbar.setTitle("Be Xtended");
+	collapsing_toolbar.setTitle(welcome.get(randomNum(0, welcome.size()-1)));
         mCategoryMixin = new CategoryMixin(this);
         getLifecycle().addObserver(mCategoryMixin);
 
