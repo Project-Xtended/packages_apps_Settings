@@ -83,6 +83,7 @@ android_library {
         "lottie",
         "glide",
         "VendorSupport-preference",
+        "powerusagefeaturegoogle",
     ],
 
     libs: [
@@ -147,4 +148,10 @@ filegroup {
 android_library_import {
     name: "glide",
     aars: ["libs/glide-4.9.0.aar"],
+}
+
+java_import {
+    name: "powerusagefeaturegoogle",
+    jars: ["libs/powerusagefeaturegoogle.jar"],
+    sdk_version: "current",
 }
