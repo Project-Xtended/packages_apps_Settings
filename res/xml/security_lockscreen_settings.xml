@@ -97,12 +97,6 @@
             settings:searchable="false"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
-        <com.xtended.support.preferences.SecureSettingSwitchPreference
-           android:key="doze_pulse_on_double_tap"
-           android:title="@string/double_tap_on_doze_to_wake_title"
-           android:summary="@string/double_tap_on_doze_to_wake_summary"
-           android:defaultValue="true" />
-
         <SwitchPreference
             android:key="ambient_display_notification"
             android:title="@string/doze_title"
