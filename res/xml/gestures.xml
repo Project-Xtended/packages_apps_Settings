@@ -60,6 +60,12 @@
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
 
+    <SwitchPreference
+        android:key="toggle_power_button_ends_call_preference"
+        android:persistent="false"
+        android:title="@string/accessibility_power_button_ends_call_prerefence_title"
+        settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController"/>
+
     <Preference
         android:key="gesture_tap_screen_input_summary"
         android:title="@string/ambient_display_tap_screen_title"

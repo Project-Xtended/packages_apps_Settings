@@ -49,16 +49,6 @@
             android:title="@string/accessibility_text_and_display_title"
             settings:searchable="true"/>
 
-        <com.android.settings.display.darkmode.DarkModePreference
-            android:key="dark_ui_mode_accessibility"
-            android:icon="@drawable/ic_dark_ui"
-            android:title="@string/dark_ui_mode"
-            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-            android:widgetLayout="@null"
-            settings:widgetLayout="@null"
-            settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:searchable="false"/>
-
         <Preference
             android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment"
             android:key="magnification_preference_screen"
@@ -81,13 +71,6 @@
             android:icon="@drawable/ic_tap_assistance"
             android:persistent="false"
             android:title="@string/accessibility_tap_assistance_title"
-            settings:searchable="true"/>
-
-        <Preference
-            android:fragment="com.android.settings.accessibility.SystemControlsFragment"
-            android:key="system_controls_preference_screen"
-            android:icon="@drawable/ic_system_controls"
-            android:title="@string/accessibility_system_controls_title"
             settings:searchable="true"/>
 
         <Preference
