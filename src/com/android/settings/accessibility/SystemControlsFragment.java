@@ -23,8 +23,6 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-/** Accessibility settings for system controls. */
-@SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class SystemControlsFragment extends DashboardFragment {
 
     private static final String TAG = "SystemControlsFragment";
@@ -43,8 +41,4 @@ public class SystemControlsFragment extends DashboardFragment {
     protected String getLogTag() {
         return TAG;
     }
-
-    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.accessibility_system_controls);
-
 }
