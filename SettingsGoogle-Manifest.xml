@@ -58,6 +58,12 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity android:name="com.google.android.settings.aware.AwareAssistSettingsActivity" android:exported="true" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.settings.future.AWARE_ASSIST_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity android:theme="@android:style/Theme.NoDisplay" android:label="@string/aware_settings_title" android:icon="@drawable/ic_suggestion_aware" android:name="com.google.android.settings.aware.AwareSettingsActivity" android:exported="true" android:enabled="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.AWARE_SETTING"/>
