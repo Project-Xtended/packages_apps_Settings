@@ -135,6 +135,12 @@ android_library_import {
     aars: ["libs/contextualcards.aar"],
 }
 
+java_import  {
+	name: "SettingsGoogle-lib",
+    sdk_version: "current",
+	jars: ["libs/SettingsGoogle.jar"],
+}
+
 filegroup {
     name: "Settings_proguard_flags",
     srcs: ["proguard.flags"],
