@@ -369,5 +369,5 @@
     <string name="app_volume_summary">Allow to set different volume levels for each app</string>
  
     <string name="high_power_apps_summary">Per-app battery optimization</string>
-                
+
 </resources>
