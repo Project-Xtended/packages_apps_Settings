@@ -4547,6 +4547,8 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                   android:value="com.xtended.Xtensions"/>
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                android:value="@string/menu_key_xtensions"/>
             <meta-data android:name="com.android.settings.title"
                        android:resource="@string/x_settings_title" />
             <meta-data android:name="com.android.settings.summary"

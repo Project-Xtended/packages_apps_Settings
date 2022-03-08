@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.provider.Settings;
 import android.text.TextUtils;
+import com.android.settings.R;
 
 import androidx.annotation.VisibleForTesting;
 
@@ -81,5 +82,10 @@ public class DoubleTapPowerPreferenceController extends GesturePreferenceControl
     public boolean setChecked(boolean isChecked) {
         return Settings.Secure.putInt(mContext.getContentResolver(), SECURE_KEY,
                 isChecked ? ON : OFF);
+    }
+
+    @Override
+    public int getSliceHighlightMenuRes() {
+        return R.string.menu_key_xtensions;
     }
 }

@@ -27,7 +27,8 @@
         android:key="top_level_xtensions"
         android:order="-155"
         android:title="@string/x_settings_title"
-        android:summary="@string/x_settings_summary" />
+        android:summary="@string/x_settings_summary"
+        settings:highlightableMenuKey="@string/menu_key_xtensions" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"

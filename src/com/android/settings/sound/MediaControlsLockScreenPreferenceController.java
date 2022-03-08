@@ -53,6 +53,6 @@ public class MediaControlsLockScreenPreferenceController extends TogglePreferenc
 
     @Override
     public int getSliceHighlightMenuRes() {
-        return R.string.menu_key_sound;
+        return R.string.menu_key_security;
     }
 }
