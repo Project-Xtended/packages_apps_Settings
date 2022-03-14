@@ -178,6 +178,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.xtended.Xtensions;
 
+import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
+
 public class SettingsGateway {
 
     /**
@@ -344,6 +346,7 @@ public class SettingsGateway {
             TurnScreenOnDetails.class.getName(),
             // X-Tesions Additions
             Xtensions.class.getName(),
+            WifiTetherClientManager.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
