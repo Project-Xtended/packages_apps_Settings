@@ -52,6 +52,12 @@
         settings:controller="com.android.settings.fuelgauge.BatterySaverController" />
 
     <Preference
+        android:key="battery_charge_sound"
+        android:title="@string/notification_battery_charge_level_title"
+        android:summary="@string/notification_battery_charge_level_summary"
+        android:fragment="com.android.settings.fuelgauge.BatteryChargeSoundSettings" />
+
+    <Preference
         android:fragment="com.android.settings.fuelgauge.SmartBatterySettings"
         android:key="smart_battery_manager"
         android:title="@string/smart_battery_manager_title"
@@ -59,10 +65,11 @@
         settings:keywords="@string/keywords_battery_adaptive_preferences" />
 
     <Preference
-        android:key="battery_charge_sound"
-        android:title="@string/notification_battery_charge_level_title"
-        android:summary="@string/notification_battery_charge_level_summary"
-        android:fragment="com.android.settings.fuelgauge.BatteryChargeSoundSettings" />
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:summary="@string/high_power_apps_summary">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
 
     <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
         android:key="battery_temp"

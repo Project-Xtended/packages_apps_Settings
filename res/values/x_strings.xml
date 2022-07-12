@@ -351,5 +351,6 @@
 
     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
     <string name="screen_time_summary_usage_today">%1$s today</string>
+    <string name="high_power_apps_summary">Per-app battery optimization</string>
 
 </resources>
