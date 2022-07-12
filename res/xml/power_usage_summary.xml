@@ -59,6 +59,12 @@
         settings:keywords="@string/keywords_battery_adaptive_preferences" />
 
     <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
+
+    <Preference
         android:key="battery_charge_sound"
         android:title="@string/notification_battery_charge_level_title"
         android:summary="@string/notification_battery_charge_level_summary"
