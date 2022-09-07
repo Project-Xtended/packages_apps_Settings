@@ -41,7 +41,8 @@
         android:key="phone_specs"
         android:title="@string/specs_title"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SpecsPreferenceController"/>
 
     <!-- Device Codename -->
@@ -49,7 +50,8 @@
         android:key="about_device_name"
         android:title="@string/about_device_name"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
+        android:selectable="false"        
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
     <!-- ROM version -->
@@ -65,7 +67,8 @@
         android:key="os_build_maintainer"
         android:title="@string/build_maintainer"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.RomBuildMaintainerPreferenceController"/>
 
     <!-- Security patch -->
