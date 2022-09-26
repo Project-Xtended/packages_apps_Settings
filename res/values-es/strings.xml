@@ -5926,4 +5926,23 @@
     <string name="find_broadcast_password_dialog_password_error" msgid="243855327674765">"Contraseña incorrecta"</string>
     <string name="bt_le_audio_scan_qr_code_scanner" msgid="7614569515419813053">"Para empezar a escuchar, centra el código QR aquí abajo"</string>
     <string name="bt_le_audio_qr_code_is_not_valid_format" msgid="7821837654128137901">"El código QR no tiene un formato válido"</string>
+
+    <!-- Color picker -->
+    <string name="invalid_color">Color no válido</string>
+    <string name="confirm">Confirmar</string>
+
+    <!-- Monet -->
+    <string name="monet_engine_title">Monet</string>
+    <string name="monet_engine_summary">Modifica algunos parametros de monet</string>
+    <string name="color_override_title">Color personalizado</string>
+    <string name="color_override_default_summary">Usando el color del fondo de pantalla</string>
+    <string name="custom_color_override_summary_placeholder">
+        <xliff:g example="#FF0000" id="Color">%1$s</xliff:g>
+    </string>
+    <string name="invalid_color_input">Color no válido</string>
+    <string name="white_luminance_title">Brillo</string>
+    <string name="linear_lightness_title">Luminosidad</string>
+    <string name="chroma_factor_title">Colorido</string>
+    <string name="accurate_shades_title">Sombras precisas</string>
+
 </resources>
