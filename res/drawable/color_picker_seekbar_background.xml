@@ -4,6 +4,6 @@
     SPDX-License-Identifier: Apache-2.0
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="5dp" />
+    <corners android:radius="@*android:dimen/config_dialogCornerRadius" />
     <gradient android:type="linear" />
 </shape>
