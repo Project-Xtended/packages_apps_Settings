@@ -402,4 +402,13 @@
 
     <!-- AdGuard DNS Option -->
     <string name="private_dns_mode_adguard" translatable="false">AdGuard DNS</string>
+
+    <!-- Open DNS Option -->
+    <string name="private_dns_mode_open_dns" translatable="false">Open DNS</string>
+
+    <!-- Cleanbrowsing DNS Option -->
+    <string name="private_dns_mode_cleanbrowsing" translatable="false">Cleanbrowsing DNS</string>
+
+    <!-- Quad9 DNS Option -->
+    <string name="private_dns_mode_quad9" translatable="false">Quad9 DNS</string>
 </resources>
