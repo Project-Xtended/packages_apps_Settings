@@ -225,4 +225,7 @@
 
     <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
 
+    <!-- Face Unlock -->
+    <color name="face_enroll_check_color">#42a5f5</color>
+    <color name="face_enroll_icon_color">#42a5f5</color>
 </resources>
