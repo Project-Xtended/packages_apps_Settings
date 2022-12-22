@@ -521,4 +521,8 @@
     <dimen name="x_preference_category_line_margin_start">10.0dip</dimen>
     <dimen name="x_preference_category_height">40.0dip</dimen>
 
+    <!-- About phone header dimensions -->
+    <dimen name="card_margin_start">20dp</dimen>
+    <dimen name="card_margin_end">20dp</dimen>
+
 </resources>

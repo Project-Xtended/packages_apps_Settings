@@ -229,4 +229,9 @@
 
     <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
 
+    <!-- About phone header colors -->
+    <color name="op_control_text_color_primary">#d8000000</color>
+    <color name="op_control_text_color_primary_inverse">#ffffff</color>
+    <color name="op_control_text_color_secondary">#66000000</color>
+
 </resources>
