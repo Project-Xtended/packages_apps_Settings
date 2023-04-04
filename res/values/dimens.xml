@@ -519,8 +519,4 @@
     <dimen name="x_preference_category_line_margin_start">10.0dip</dimen>
     <dimen name="x_preference_category_height">40.0dip</dimen>
 
-    <dimen name="default_margin">16dp</dimen>
-    <dimen name="default_padding">16dp</dimen>
-    <dimen name="color_picker_preview_height">80dp</dimen>
-
 </resources>
