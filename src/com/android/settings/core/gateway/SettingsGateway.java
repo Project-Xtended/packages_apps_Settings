@@ -104,8 +104,10 @@ import com.android.settings.fuelgauge.batterysaver.BatterySaverSettings;
 import com.android.settings.fuelgauge.batteryusage.PowerUsageSummary;
 import com.android.settings.gestures.ButtonNavigationSettingsFragment;
 import com.android.settings.gestures.DoubleTapPowerSettings;
+import com.android.settings.gestures.DoubleTapScreenSettings;
 import com.android.settings.gestures.GestureNavigationSettingsFragment;
 import com.android.settings.gestures.OneHandedSettings;
+import com.android.settings.gestures.PickupGestureSettings;
 import com.android.settings.gestures.PowerMenuSettings;
 import com.android.settings.gestures.SystemNavigationGestureSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
@@ -244,6 +246,8 @@ public class SettingsGateway {
             CombinedBiometricSettings.class.getName(),
             CombinedBiometricProfileSettings.class.getName(),
             DoubleTapPowerSettings.class.getName(),
+            DoubleTapScreenSettings.class.getName(),
+            PickupGestureSettings.class.getName(),
             SystemNavigationGestureSettings.class.getName(),
             DataUsageSummary.class.getName(),
             DreamSettings.class.getName(),
