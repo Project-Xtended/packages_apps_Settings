@@ -17,4 +17,13 @@
     <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
     
     <dimen name="rounded_corner_theme_overlay_radius">24dp</dimen>
+    <dimen name="stroke_widthAboutUI">1dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="rdnt_cardview_padding">16dp</dimen>
+    <dimen name="rdnt_top_icn">42dp</dimen>
+    <dimen name="rdnt_top_icn_max">52.5dp</dimen>
+    <dimen name="rdnt_cardview_margin_list">16dip</dimen>
+    <dimen name="rdnt_pref_vert">5.5dp</dimen>
+    <dimen name="rdnt_card_radius">22dp</dimen>
 </resources>

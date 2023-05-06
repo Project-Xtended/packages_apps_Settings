@@ -21,38 +21,22 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Xtended Logo -->
+    <!-- Xtended info -->
     <com.android.settingslib.widget.LayoutPreference
-        android:key="xtended_about"
-        android:layout="@layout/xtended_about"
-        android:selectable="false"/>
+        android:key="xtended_info"
+        android:layout="@layout/xtended_info"
+        android:selectable="false" />
 
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_android_version"
+        settings:layout="@layout/xtended_card_about"
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
-
-    <!-- Phone Specs -->
-    <Preference
-        android:key="phone_specs"
-        android:title="@string/specs_title"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="false"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SpecsPreferenceController"/>
-
-    <!-- Device Codename -->
-    <Preference
-        android:key="about_device_name"
-        android:title="@string/about_device_name"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="false"
-        android:selectable="false"        
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
     <!-- ROM version -->
     <Preference
@@ -75,26 +59,10 @@
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
+        android:icon="@drawable/ic_security_patch"
+        settings:layout="@layout/xtended_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Build date -->
-    <Preference
-        android:key="os_build_date"
-        android:title="@string/build_date"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.RomBuildDatePreferenceController"/>
-
-    <!-- Build number -->
-    <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
     <!-- Mainline module version -->
     <Preference
@@ -105,30 +73,46 @@
         android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
-    <!-- Baseband -->
-    <Preference
-        android:key="base_band"
-        android:title="@string/baseband_version"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_legal"
+        settings:layout="@layout/xtended_card_about"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+
+    <!-- Baseband -->
+    <Preference
+        android:key="base_band"
+        android:title="@string/baseband_version"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_model_hardware"
+        android:selectable="false"
+        settings:layout="@layout/xtended_card_about"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+
+    <Preference
+        android:key="os_build_number"
+        android:title="@string/build_number"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_build_number"
+        android:selectable="false"
+        settings:layout="@layout/xtended_card_about"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
 
     <!-- SELinux -->
     <Preference
         android:key="selinux_status"
         android:title="@string/selinux_status"
         android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_selinux_status"
         android:selectable="false"
-        settings:enableCopying="true"
+        settings:layout="@layout/xtended_card_about"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
 
 </PreferenceScreen>

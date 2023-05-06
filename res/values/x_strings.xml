@@ -394,6 +394,42 @@
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
     <string name="skip_biometric_auth_confirmation_title">Skip manually confirmation</string>
 
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Change backup provider</string>
+    <string name="backup_transport_title">Select backup provider</string>
+
+    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="build_date">Build date</string>
+    <string name="xtended_version">XtendedDroid version</string>
+    <string name="about_device_name">Device</string>
+    <string name="xtended_release_type_title">Release type</string>
+    <string name="xtended_maintainer_title">Maintainer</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">The device name can and will be seen by the nearby devices</string>
+    <string name="about_device_version_type_gapps">GApps</string>
+    <string name="about_device_version_type_vanilla">Vanilla</string>
+    <string name="version">Xtended Version</string>
+    <string name="edit">Edit</string>
+    <string name="device_name">Device name</string>
+
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 

@@ -234,4 +234,6 @@
     <color name="op_control_text_color_primary_inverse">#ffffff</color>
     <color name="op_control_text_color_secondary">#66000000</color>
 
+    <color name="rdnt_crd_bg">#00000000</color>
+    <color name="user_crd_bg">@android:color/system_neutral1_0</color>
 </resources>
