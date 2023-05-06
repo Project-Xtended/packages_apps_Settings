@@ -89,7 +89,7 @@
                 android:layout_marginBottom="6dp"
                 android:layout_gravity="center"
                 android:tint="?android:attr/colorAccent"
-                android:src="@drawable/ic_rom_logo" />
+                android:src="@drawable/ic_settings_xtended_logo" />
 
             </com.google.android.material.card.MaterialCardView>
 
