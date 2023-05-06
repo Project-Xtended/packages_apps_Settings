@@ -38,23 +38,6 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- ROM version -->
-    <Preference
-        android:key="os_rom_version"
-        android:title="@string/rom_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.RomVersionDetailPreferenceController" />
-
-    <!-- Build maintainer -->
-    <Preference
-        android:key="os_build_maintainer"
-        android:title="@string/build_maintainer"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="false"
-        android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.RomBuildMaintainerPreferenceController"/>
-
     <!-- Security patch -->
     <Preference
         android:key="security_key"

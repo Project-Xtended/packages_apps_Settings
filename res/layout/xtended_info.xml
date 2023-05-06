@@ -52,14 +52,6 @@
             android:gravity="center"
             android:orientation="vertical" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:tint="?android:attr/colorAccent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_settings_xtended_logo" />
-
     </com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
