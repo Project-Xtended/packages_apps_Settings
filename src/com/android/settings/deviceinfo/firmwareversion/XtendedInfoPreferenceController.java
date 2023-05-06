@@ -33,7 +33,6 @@
  
      private static final String KEY_xtended_info = "xtended_info";
  
-     private static final String PROP_XTENDED_DISPLAY_DATE = "ro.xtended.build.date";
      private static final String PROP_XTENDED_DEVICE = "ro.xtended.device";
      private static final String PROP_XTENDED_RELEASETYPE = "ro.xtended.build.type";
      private static final String PROP_XTENDED_EDITION = "ro.xtended.build.version";
@@ -44,7 +43,7 @@
      }
  
      private String getxtendedVersion() {
-         final String displayDate = SystemProperties.get(PROP_XTENDED_DISPLAY_DATE,
+         final String displayDate = SystemProperties.get(PROP_XTENDED_EDITION,
                  this.mContext.getString(R.string.device_info_default));
  
          return displayDate;
@@ -61,11 +60,8 @@
      private String getxtendedReleaseType() {
          final String releaseType = SystemProperties.get(PROP_XTENDED_RELEASETYPE,
                  this.mContext.getString(R.string.device_info_default));
-         final String xtendedEdition = SystemProperties.get(PROP_XTENDED_EDITION,
-                 this.mContext.getString(R.string.device_info_default));
- 
          return releaseType.substring(0, 1).toUpperCase() +
-                  releaseType.substring(1).toLowerCase() + " | " + xtendedEdition;
+                  releaseType.substring(1).toLowerCase();
      }
  
      private String getxtendedMaintainer() {
