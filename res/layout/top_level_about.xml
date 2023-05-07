@@ -83,14 +83,6 @@
                 app:strokeColor="@color/op_control_text_color_primary"
                 app:strokeWidth="1dp">
 
-            <ImageView
-                android:layout_width="34dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="6dp"
-                android:layout_gravity="center"
-                android:tint="?android:attr/colorAccent"
-                android:src="@drawable/ic_settings_xtended_logo" />
-
             </com.google.android.material.card.MaterialCardView>
 
             <androidx.preference.internal.PreferenceImageView
