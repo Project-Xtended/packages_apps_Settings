@@ -32,7 +32,7 @@ import com.android.settings.core.BasePreferenceController;
 
 public class RomVersionDetailPreferenceController extends BasePreferenceController {
 
-    private static final Uri INTENT_URI_DATA = Uri.parse("https://paypal.me/mukesh22584/");
+    private static final Uri INTENT_URI_DATA = Uri.parse("https://github.com/Project-Xtended");
     private static final String TAG = "romDialogCtrl";
     private static final String KEY_ROM_VERSION_PROP = "ro.xtended.build.version";
     private static final String KEY_ROM_RELEASETYPE_PROP = "ro.xtended.build.type";
